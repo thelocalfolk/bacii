@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "hero_jVaWmY": {
       "type": "hero",
@@ -16,7 +17,6 @@
           "name": "Heading",
           "settings": {
             "text": "<p>Little clothes.<br/>Big personalities.</p>",
-            "text_color": "#007DFE",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -27,6 +27,7 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "text_color": "#007DFE",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -42,7 +43,6 @@
           "name": "Subheading",
           "settings": {
             "text": "<p>Playful organic cotton clothing for little personalities with big feelings, big imaginations and even bigger snack obsessions.</p>",
-            "text_color": "#007DFE",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -53,6 +53,7 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "text_color": "#007DFE",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -312,7 +313,6 @@
           "type": "text",
           "settings": {
             "text": "<p>Big personalities deserve better basics.</p>",
-            "text_color": "#007DFE",
             "width": "fill",
             "max_width": "normal",
             "alignment": "center",
@@ -323,6 +323,7 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "text_color": "#007DFE",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -363,7 +364,6 @@
               "type": "text",
               "settings": {
                 "text": "<p>Organic Cotton</p>",
-                "text_color": "#007DFE",
                 "width": "fill",
                 "max_width": "normal",
                 "alignment": "left",
@@ -374,6 +374,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "text_color": "#007DFE",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -388,7 +389,6 @@
               "type": "text",
               "settings": {
                 "text": "<p>Made from soft, GOTS-certified organic cotton that's gentle on growing bodies and durable enough for everyday play.</p>",
-                "text_color": "#007DFE",
                 "width": "fill",
                 "max_width": "normal",
                 "alignment": "left",
@@ -399,6 +399,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "text_color": "#007DFE",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -410,7 +411,10 @@
               "blocks": {}
             }
           },
-          "block_order": ["col1_title", "col1_body"]
+          "block_order": [
+            "col1_title",
+            "col1_body"
+          ]
         },
         "col2": {
           "type": "group",
@@ -442,7 +446,6 @@
               "type": "text",
               "settings": {
                 "text": "<p>Original Illustrations</p>",
-                "text_color": "#007DFE",
                 "width": "fill",
                 "max_width": "normal",
                 "alignment": "left",
@@ -453,6 +456,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "text_color": "#007DFE",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -467,7 +471,6 @@
               "type": "text",
               "settings": {
                 "text": "<p>Every graphic starts as an original Bacii character, inspired by the funny, messy and memorable moments of childhood.</p>",
-                "text_color": "#007DFE",
                 "width": "fill",
                 "max_width": "normal",
                 "alignment": "left",
@@ -478,6 +481,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "text_color": "#007DFE",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -489,7 +493,10 @@
               "blocks": {}
             }
           },
-          "block_order": ["col2_title", "col2_body"]
+          "block_order": [
+            "col2_title",
+            "col2_body"
+          ]
         },
         "col3": {
           "type": "group",
@@ -521,7 +528,6 @@
               "type": "text",
               "settings": {
                 "text": "<p>Made to Be Passed Down</p>",
-                "text_color": "#007DFE",
                 "width": "fill",
                 "max_width": "normal",
                 "alignment": "left",
@@ -532,6 +538,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "text_color": "#007DFE",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -546,7 +553,6 @@
               "type": "text",
               "settings": {
                 "text": "<p>Quality fabrics, timeless fits and durable prints mean our pieces are made to be loved by more than one little personality.</p>",
-                "text_color": "#007DFE",
                 "width": "fill",
                 "max_width": "normal",
                 "alignment": "left",
@@ -557,6 +563,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "text_color": "#007DFE",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -568,7 +575,10 @@
               "blocks": {}
             }
           },
-          "block_order": ["col3_title", "col3_body"]
+          "block_order": [
+            "col3_title",
+            "col3_body"
+          ]
         },
         "col4": {
           "type": "group",
@@ -600,7 +610,6 @@
               "type": "text",
               "settings": {
                 "text": "<p>Ethically Made</p>",
-                "text_color": "#007DFE",
                 "width": "fill",
                 "max_width": "normal",
                 "alignment": "left",
@@ -611,6 +620,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "text_color": "#007DFE",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -625,7 +635,6 @@
               "type": "text",
               "settings": {
                 "text": "<p>Produced in a carefully selected factory that shares our commitment to quality, responsibility and safe working conditions.</p>",
-                "text_color": "#007DFE",
                 "width": "fill",
                 "max_width": "normal",
                 "alignment": "left",
@@ -636,6 +645,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "text_color": "#007DFE",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -647,10 +657,19 @@
               "blocks": {}
             }
           },
-          "block_order": ["col4_title", "col4_body"]
+          "block_order": [
+            "col4_title",
+            "col4_body"
+          ]
         }
       },
-      "block_order": ["heading_vp", "col1", "col2", "col3", "col4"],
+      "block_order": [
+        "heading_vp",
+        "col1",
+        "col2",
+        "col3",
+        "col4"
+      ],
       "name": "Value Props",
       "settings": {
         "content_direction": "row",
@@ -687,8 +706,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "video_position": "cover",
-            "background_image_position": "cover"
+            "video_position": "cover"
           },
           "blocks": {}
         },
@@ -697,25 +715,15 @@
           "name": "Content",
           "static": true,
           "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "flex-start",
-            "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
-            "gap": 16,
-            "padding-block-start": 48,
-            "padding-block-end": 48,
-            "padding-inline-start": 48,
-            "padding-inline-end": 48
+            "gap": 16
           },
           "blocks": {
             "about_label": {
               "type": "text",
               "settings": {
                 "text": "<p>About us</p>",
-                "text_color": "#FCF5EF",
                 "width": "fill",
                 "max_width": "normal",
                 "alignment": "left",
@@ -726,6 +734,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "text_color": "#FCF5EF",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -740,7 +749,6 @@
               "type": "text",
               "settings": {
                 "text": "<p>Bacii celebrates the big personalities packed into little people.</p>",
-                "text_color": "#FCF5EF",
                 "width": "fill",
                 "max_width": "normal",
                 "alignment": "left",
@@ -751,6 +759,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "text_color": "#FCF5EF",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -765,7 +774,6 @@
               "type": "text",
               "settings": {
                 "text": "<p>Bacii was born from the beautiful chaos of childhood. Created by a mum of two boys, Bacii began with a simple idea: children's clothing should feel as playful, expressive and unique as the little people wearing it. When I couldn't find pieces that felt fun without being over the top, and elevated without losing personality, I decided to create them. Designed in Australia and made from premium organic cotton, Bacii combines playful graphics, thoughtful colours and relaxed silhouettes made for everyday adventures — from playgrounds and park dates to snack breaks and sofa cuddles.</p>",
-                "text_color": "#FCF5EF",
                 "width": "fill",
                 "max_width": "normal",
                 "alignment": "left",
@@ -776,6 +784,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "text_color": "#FCF5EF",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -804,7 +813,12 @@
               "blocks": {}
             }
           },
-          "block_order": ["about_label", "about_heading", "about_body", "about_btn"]
+          "block_order": [
+            "about_label",
+            "about_heading",
+            "about_body",
+            "about_btn"
+          ]
         }
       },
       "name": "About Us",
@@ -826,7 +840,6 @@
           "type": "text",
           "settings": {
             "text": "<p>Shop Collections</p>",
-            "text_color": "{{ settings.color_palette.foreground }}",
             "width": "fill",
             "max_width": "normal",
             "alignment": "left",
@@ -837,6 +850,7 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "text_color": "{{ settings.color_palette.foreground }}",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -848,7 +862,9 @@
           "blocks": {}
         }
       },
-      "block_order": ["collections_heading"],
+      "block_order": [
+        "collections_heading"
+      ],
       "name": "Shop Collections",
       "settings": {
         "layout_type": "grid",
@@ -876,25 +892,15 @@
           "name": "Content",
           "static": true,
           "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "flex-start",
-            "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
-            "gap": 16,
-            "padding-block-start": 48,
-            "padding-block-end": 48,
-            "padding-inline-start": 48,
-            "padding-inline-end": 48
+            "gap": 16
           },
           "blocks": {
             "vision_label": {
               "type": "text",
               "settings": {
                 "text": "<p>Our Vision</p>",
-                "text_color": "#FCF5EF",
                 "width": "fill",
                 "max_width": "normal",
                 "alignment": "left",
@@ -905,6 +911,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "text_color": "#FCF5EF",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -919,7 +926,6 @@
               "type": "text",
               "settings": {
                 "text": "<p>Because childhood should be celebrated loudly, joyfully and unapologetically.</p>",
-                "text_color": "#FCF5EF",
                 "width": "fill",
                 "max_width": "normal",
                 "alignment": "left",
@@ -930,6 +936,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "text_color": "#FCF5EF",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -944,7 +951,6 @@
               "type": "text",
               "settings": {
                 "text": "<p>Our vision is to build a children's label that feels joyful, distinctive and lasting. We want Bacii to become a recognisable brand that families genuinely connect with, one that celebrates individuality, creativity and the playful spirit of childhood.</p>",
-                "text_color": "#FCF5EF",
                 "width": "fill",
                 "max_width": "normal",
                 "alignment": "left",
@@ -955,6 +961,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "text_color": "#FCF5EF",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -983,7 +990,12 @@
               "blocks": {}
             }
           },
-          "block_order": ["vision_label", "vision_heading", "vision_body", "vision_btn"]
+          "block_order": [
+            "vision_label",
+            "vision_heading",
+            "vision_body",
+            "vision_btn"
+          ]
         },
         "media_vision": {
           "type": "_media-without-appearance",
@@ -991,8 +1003,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "video_position": "cover",
-            "background_image_position": "cover"
+            "video_position": "cover"
           },
           "blocks": {}
         }
@@ -1043,9 +1054,9 @@
               "name": "Details",
               "static": true,
               "settings": {
+                "show_alignment": false,
                 "padding-block-start": 0,
-                "padding-block-end": 0,
-                "show_alignment": false
+                "padding-block-end": 0
               },
               "blocks": {}
             },
@@ -1089,7 +1100,6 @@
           "type": "text",
           "settings": {
             "text": "<p>Join the Bacii Club</p>",
-            "text_color": "#FCF5EF",
             "width": "fill",
             "max_width": "normal",
             "alignment": "center",
@@ -1100,6 +1110,7 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "text_color": "#FCF5EF",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -1114,7 +1125,6 @@
           "type": "text",
           "settings": {
             "text": "<p>Made for the little personalities who keep us laughing. Sign up for early access to new collections, exclusive offers and first dibs on our latest drops.</p>",
-            "text_color": "#FCF5EF",
             "width": "fill",
             "max_width": "narrow",
             "alignment": "center",
@@ -1125,6 +1135,7 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "text_color": "#FCF5EF",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -1155,7 +1166,11 @@
           "blocks": {}
         }
       },
-      "block_order": ["newsletter_heading", "newsletter_subtext", "newsletter_form"],
+      "block_order": [
+        "newsletter_heading",
+        "newsletter_subtext",
+        "newsletter_form"
+      ],
       "name": "Newsletter",
       "settings": {
         "content_direction": "column",
