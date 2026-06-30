@@ -27,3 +27,9 @@
 #header-component .header__row--top {
   background-color: transparent !important;
 }
+
+/* Suppress Horizon's full-width hover underlay — it expands to 100% height
+   on nav hover and visually swallows the pill. We handle our own bg. */
+#header-component .header__underlay-closed {
+  display: none;
+}
