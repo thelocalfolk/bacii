@@ -60,7 +60,17 @@
   h5, .h5 { font-size: var(--font-size-h5); line-height: var(--line-height-h5); letter-spacing: var(--letter-spacing-h5); }
 
 
-  /* Hero content sits above the photo */
+  /* Hero — cream gradient over the left half of the photo only */
+  .hero .hero__media-grid::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, var(--color-cream) 10%, rgba(252,245,239,0.6) 22%, transparent 35%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* Hero content sits above the gradient overlay */
   .hero .hero__content-wrapper {
     position: relative;
     z-index: 2;
