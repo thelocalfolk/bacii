@@ -1,0 +1,28 @@
+/* ============================================================
+   Bacii — custom overrides
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   Header pill shape
+   The Figma nav sits in a cream (#FCF5EF) pill that floats
+   over the page rather than spanning full-width.
+   ---------------------------------------------------------- */
+.header-section {
+  /* allow the pill to sit over the hero below */
+  position: relative;
+  z-index: var(--layer-menu-drawer);
+}
+
+.header__row--top .header__columns {
+  background-color: #FCF5EF;
+  border-radius: 1000px;
+  /* give the pill breathing room from the viewport edges */
+  margin-inline: auto;
+  max-width: calc(var(--page-width) + 2rem);
+  padding-inline: 2rem;
+}
+
+/* The header itself stays transparent so only the pill has a bg */
+#header-component .header__row--top {
+  background-color: transparent !important;
+}

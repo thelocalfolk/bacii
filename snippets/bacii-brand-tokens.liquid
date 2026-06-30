@@ -1,0 +1,102 @@
+{% doc %}
+  Bacii brand design tokens — all named colours and type fine-tuning.
+  Rendered once in theme.liquid after color-palette.liquid.
+{% enddoc %}
+{% style %}
+  :root {
+    /* Brand colours */
+    --color-cream:       #FCF5EF;
+    --color-dark-grey:   #59697A;
+    --color-blue:        #007DFE;
+    --color-coral:       #FF835D;
+    --color-mint:        #7BD8B3;
+    --color-butter:      #FFECA8;
+    --color-bubblegum:   #F5A8B8;
+    --color-periwinkle:  #C9BCF4;
+    --color-tiffany:     #D8F9F2;
+
+    /* Type scale — exact Figma values */
+    --font-size-h1: 60px;
+    --line-height-h1: 1.0;
+    --letter-spacing-h1: 0.02em;
+
+    --font-size-h2: 30px;
+    --line-height-h2: 1.15;
+    --letter-spacing-h2: 0.02em;
+
+    --font-size-h4: 22px;
+    --line-height-h4: 25px;
+    --letter-spacing-h4: 0.02em;
+
+    --font-size-h5: 17px;
+    --line-height-h5: 20px;
+    --letter-spacing-h5: 0.02em;
+
+    --font-size-btn: 18px;
+    --line-height-btn: 1.5;
+    --letter-spacing-btn: 0.02em;
+
+    --font-size-link: 14px;
+    --line-height-link: 33px;
+
+    --font-size-body-1: 15px;
+    --line-height-body-1: 1.5;
+
+    --font-size-body-2: 12px;
+    --line-height-body-2: 1.55;
+
+    /* Button & input shape */
+    --btn-radius: 28px;
+    --input-radius: 1000px;
+
+    /* Page max-width */
+    --page-max-width: 1440px;
+  }
+
+  /* Apply exact heading sizes — Horizon's token steps don't map 1:1 */
+  h1, .h1 { font-size: var(--font-size-h1); line-height: var(--line-height-h1); letter-spacing: var(--letter-spacing-h1); }
+  h2, .h2 { font-size: var(--font-size-h2); line-height: var(--line-height-h2); letter-spacing: var(--letter-spacing-h2); }
+  h4, .h4 { font-size: var(--font-size-h4); line-height: var(--line-height-h4); letter-spacing: var(--letter-spacing-h4); }
+  h5, .h5 { font-size: var(--font-size-h5); line-height: var(--line-height-h5); letter-spacing: var(--letter-spacing-h5); }
+
+
+  /* Hero — cream gradient left→right over the photo */
+  .hero .hero__media-grid::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, var(--color-cream) 20%, rgba(252,245,239,0.6) 45%, transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* Hero content sits above the gradient overlay */
+  .hero .hero__content-wrapper {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Pill nav header — cream capsule floating over the page at all scroll states */
+  .header-section {
+    background-color: transparent !important;
+    padding-block: 12px;
+  }
+
+  #header-component .header__columns,
+  #header-component[transparent] .header__columns,
+  #header-component[data-sticky-state] .header__columns {
+    background-color: var(--color-cream) !important;
+    border-radius: 1000px !important;
+    padding-inline: 24px;
+    margin-inline: 48px;
+  }
+
+  /* True pill radius on inputs (Horizon schema caps at 32 via settings) */
+  input[type="email"],
+  input[type="text"],
+  input[type="search"],
+  .field__input,
+  .newsletter-form__field-wrapper input {
+    border-radius: var(--input-radius) !important;
+  }
+{% endstyle %}
