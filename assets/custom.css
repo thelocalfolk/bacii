@@ -16,9 +16,10 @@
 .header__row--top .header__columns {
   background-color: #FCF5EF;
   border-radius: 1000px;
-  /* give the pill breathing room from the viewport edges */
-  margin-inline: auto;
-  max-width: calc(var(--page-width) + 2rem);
+  /* Figma: pill is 1368px wide on 1440px canvas = 36px inset each side.
+     Pill top is at y=76, announcement bar ends at y=50 → 26px gap above. */
+  margin-inline: 36px;
+  margin-block-start: 26px;
   padding-inline: 2rem;
 }
 
