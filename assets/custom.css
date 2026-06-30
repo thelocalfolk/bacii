@@ -28,6 +28,15 @@
   background-color: transparent !important;
 }
 
+/* ----------------------------------------------------------
+   Hero height — Figma spec: 888px tall
+   ---------------------------------------------------------- */
+@media screen and (min-width: 990px) {
+  .hero {
+    --hero-min-height: 888px !important;
+  }
+}
+
 /* Suppress Horizon's full-width hover underlay — it expands to 100% height
    on nav hover and visually swallows the pill. We handle our own bg. */
 #header-component .header__underlay-closed {
