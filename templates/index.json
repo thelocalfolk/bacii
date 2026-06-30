@@ -110,7 +110,7 @@
         "section_height": "large",
         "section_height_custom": 50,
         "background_color": "rgba(0,0,0,0)",
-        "toggle_overlay": true,
+        "toggle_overlay": false,
         "overlay_color": "#FCF5EF",
         "overlay_style": "gradient",
         "gradient_direction": "to right",

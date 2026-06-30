@@ -29,21 +29,6 @@
 }
 
 /* ----------------------------------------------------------
-   Hero gradient overlay
-   Figma: cream panel covers left 67% (971/1440px), fading to
-   transparent at that edge. Horizon's default goes full-width
-   at full opacity — override to match.
-   ---------------------------------------------------------- */
-.hero .overlay--gradient {
-  background: linear-gradient(
-    to right,
-    rgba(252, 245, 239, 0.45) 0%,
-    rgba(252, 245, 239, 0.15) 40%,
-    rgba(252, 245, 239, 0) 60%
-  ) !important;
-}
-
-/* ----------------------------------------------------------
    Hero height — Figma spec: 888px tall
    ---------------------------------------------------------- */
 @media screen and (min-width: 990px) {
