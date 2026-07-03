@@ -956,6 +956,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
+            "image": "shopify://shop_images/Image_7.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
