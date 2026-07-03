@@ -969,7 +969,7 @@
         "collection_list": [],
         "layout_type": "grid",
         "carousel_on_mobile": true,
-        "columns": 4,
+        "columns": 3,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
         "columns_gap": 8,
