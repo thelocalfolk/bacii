@@ -999,6 +999,20 @@
               },
               "blocks": {}
             },
+            "spacer_g34cFR": {
+              "type": "spacer",
+              "name": "t:names.spacer",
+              "settings": {
+                "size": "percent",
+                "percent_size": 100,
+                "pixel_size": 120,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
+              },
+              "blocks": {}
+            },
             "about_heading": {
               "type": "text",
               "settings": {
@@ -1070,6 +1084,7 @@
           },
           "block_order": [
             "about_label",
+            "spacer_g34cFR",
             "about_heading",
             "about_body",
             "about_btn"
