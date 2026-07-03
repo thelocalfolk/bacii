@@ -958,11 +958,111 @@
           "type": "_content-without-appearance",
           "static": true,
           "settings": {
-            "horizontal_alignment_flex_direction_column": "center",
+            "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 24
           },
-          "blocks": {}
+          "blocks": {
+            "about_label": {
+              "type": "text",
+              "settings": {
+                "text": "<p>About us</p>",
+                "width": "fill",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h4",
+                "font": "var(--font-heading--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#fcf5ef",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "about_heading": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Bacii celebrates the big personalities packed into little people.</p>",
+                "width": "fill",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h2",
+                "font": "var(--font-heading--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#fcf5ef",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "about_body": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Bacii was born from the beautiful chaos of childhood. Created by a mum of two boys, Bacii began with a simple idea: children&#39;s clothing should feel as playful, expressive and unique as the little people wearing it.</p><p>When I couldn&#39;t find pieces that felt fun without being over the top, and elevated without losing personality, I decided to create them. Designed in Australia and made from premium organic cotton, Bacii combines playful graphics, thoughtful colours and relaxed silhouettes made for everyday adventures — from playgrounds and park dates to snack breaks and sofa cuddles.</p>",
+                "width": "fill",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "0.9375rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#fcf5ef",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "about_btn": {
+              "type": "button",
+              "settings": {
+                "label": "About Us",
+                "link": "/pages/about",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "custom_button_background": "#fcf5ef",
+                "custom_button_text": "#c9bcf4",
+                "custom_button_border": "#fcf5ef",
+                "link_text_color": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "about_label",
+            "about_heading",
+            "about_body",
+            "about_btn"
+          ]
         }
       },
       "name": "About Us",
