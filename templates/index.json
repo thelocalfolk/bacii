@@ -212,6 +212,16 @@
         "padding-block-end": 48
       }
     },
+    "wavy_marquee": {
+      "type": "bacii-wavy-marquee",
+      "settings": {
+        "text": "Made for big personalities|100% Organic Cotton|Designed in Australia|Original Illustrations|Made to be Passed Down|Ethically Made|Designed for Everyday Play",
+        "bg_color": "#f5a8b8",
+        "text_color": "#fcf5ef",
+        "speed": 55,
+        "overlap": 0
+      }
+    },
     "product_list_fa6P9H": {
       "type": "product-list",
       "blocks": {
@@ -392,7 +402,7 @@
       },
       "name": "Featured collection",
       "settings": {
-        "collection": "all",
+        "collection": "new-arrivals",
         "layout_type": "carousel",
         "carousel_on_mobile": true,
         "max_products": 8,
@@ -1471,11 +1481,24 @@
             "custom_width": 40,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
             "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
+            "border_color": "",
             "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -1603,16 +1626,6 @@
         "border_radius": 0,
         "padding-block-start": 64,
         "padding-block-end": 64
-      }
-    },
-    "wavy_marquee": {
-      "type": "bacii-wavy-marquee",
-      "settings": {
-        "text": "Made for big personalities|100% Organic Cotton|Designed in Australia|Original Illustrations|Made to be Passed Down|Ethically Made|Designed for Everyday Play",
-        "bg_color": "#F5A8B8",
-        "text_color": "#FCF5EF",
-        "speed": 55,
-        "overlap": 0
       }
     }
   },
