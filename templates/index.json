@@ -1080,7 +1080,7 @@
       "settings": {
         "media_position": "left",
         "media_width": "medium",
-        "media_height": "60svh",
+        "media_height": "80svh",
         "section_width": "full-width",
         "extend_media": true,
         "background_color": "#c9bcf4",
@@ -1185,6 +1185,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
+            "image": "shopify://shop_images/Image_18.png",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -1308,7 +1309,7 @@
       "settings": {
         "media_position": "right",
         "media_width": "medium",
-        "media_height": "60svh",
+        "media_height": "80svh",
         "section_width": "full-width",
         "extend_media": true,
         "background_color": "#f5a8b8",
