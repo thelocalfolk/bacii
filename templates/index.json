@@ -1044,7 +1044,7 @@
                 "label": "About Us",
                 "link": "/pages/about",
                 "open_in_new_tab": false,
-                "style_class": "button",
+                "style_class": "button-custom",
                 "custom_button_background": "#fcf5ef",
                 "custom_button_text": "#c9bcf4",
                 "custom_button_border": "#fcf5ef",
