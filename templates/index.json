@@ -887,7 +887,7 @@
       "name": "About Us",
       "settings": {
         "media_position": "left",
-        "media_width": "wide",
+        "media_width": "medium",
         "media_height": "60svh",
         "section_width": "full-width",
         "extend_media": true,
