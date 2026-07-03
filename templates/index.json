@@ -447,7 +447,7 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "flex-start",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
+            "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "flex-start",
             "gap": 8,
             "width": "fill",
@@ -478,13 +478,21 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "col1_icon": {
+              "type": "custom-liquid",
+              "name": "Icon",
+              "settings": {
+                "custom_liquid": "<div style=\"text-align:center;\"><img src=\"{{ 'vp-icon-organic-cotton.svg' | asset_url }}\" alt=\"\" style=\"height:56px;width:auto;display:inline-block;\"></div>"
+              },
+              "blocks": {}
+            },
             "col1_title": {
               "type": "text",
               "settings": {
                 "text": "<p>Organic Cotton</p>",
                 "width": "fill",
                 "max_width": "normal",
-                "alignment": "left",
+                "alignment": "center",
                 "type_preset": "h4",
                 "font": "var(--font-heading--family)",
                 "font_size": "",
@@ -509,7 +517,7 @@
                 "text": "<p>Made from soft, GOTS-certified organic cotton that's gentle on growing bodies and durable enough for everyday play.</p>",
                 "width": "fill",
                 "max_width": "normal",
-                "alignment": "left",
+                "alignment": "center",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "0.75rem",
@@ -530,6 +538,7 @@
             }
           },
           "block_order": [
+            "col1_icon",
             "col1_title",
             "col1_body"
           ]
@@ -542,7 +551,7 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "flex-start",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
+            "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "flex-start",
             "gap": 8,
             "width": "fill",
@@ -573,13 +582,21 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "col2_icon": {
+              "type": "custom-liquid",
+              "name": "Icon",
+              "settings": {
+                "custom_liquid": "<div style=\"text-align:center;\"><img src=\"{{ 'vp-icon-original-illustrations.svg' | asset_url }}\" alt=\"\" style=\"height:56px;width:auto;display:inline-block;\"></div>"
+              },
+              "blocks": {}
+            },
             "col2_title": {
               "type": "text",
               "settings": {
                 "text": "<p>Original Illustrations</p>",
                 "width": "fill",
                 "max_width": "normal",
-                "alignment": "left",
+                "alignment": "center",
                 "type_preset": "h4",
                 "font": "var(--font-heading--family)",
                 "font_size": "",
@@ -604,7 +621,7 @@
                 "text": "<p>Every graphic starts as an original Bacii character, inspired by the funny, messy and memorable moments of childhood.</p>",
                 "width": "fill",
                 "max_width": "normal",
-                "alignment": "left",
+                "alignment": "center",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "0.75rem",
@@ -625,6 +642,7 @@
             }
           },
           "block_order": [
+            "col2_icon",
             "col2_title",
             "col2_body"
           ]
@@ -637,7 +655,7 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "flex-start",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
+            "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "flex-start",
             "gap": 8,
             "width": "fill",
@@ -668,13 +686,21 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "col3_icon": {
+              "type": "custom-liquid",
+              "name": "Icon",
+              "settings": {
+                "custom_liquid": "<div style=\"text-align:center;\"><img src=\"{{ 'vp-icon-made-to-be-passed-down.svg' | asset_url }}\" alt=\"\" style=\"height:56px;width:auto;display:inline-block;\"></div>"
+              },
+              "blocks": {}
+            },
             "col3_title": {
               "type": "text",
               "settings": {
                 "text": "<p>Made to Be Passed Down</p>",
                 "width": "fill",
                 "max_width": "normal",
-                "alignment": "left",
+                "alignment": "center",
                 "type_preset": "h4",
                 "font": "var(--font-heading--family)",
                 "font_size": "",
@@ -699,7 +725,7 @@
                 "text": "<p>Quality fabrics, timeless fits and durable prints mean our pieces are made to be loved by more than one little personality.</p>",
                 "width": "fill",
                 "max_width": "normal",
-                "alignment": "left",
+                "alignment": "center",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "0.75rem",
@@ -720,6 +746,7 @@
             }
           },
           "block_order": [
+            "col3_icon",
             "col3_title",
             "col3_body"
           ]
@@ -732,7 +759,7 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "flex-start",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
+            "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "flex-start",
             "gap": 8,
             "width": "fill",
@@ -763,13 +790,21 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "col4_icon": {
+              "type": "custom-liquid",
+              "name": "Icon",
+              "settings": {
+                "custom_liquid": "<div style=\"text-align:center;\"><img src=\"{{ 'vp-icon-ethically-made.svg' | asset_url }}\" alt=\"\" style=\"height:56px;width:auto;display:inline-block;\"></div>"
+              },
+              "blocks": {}
+            },
             "col4_title": {
               "type": "text",
               "settings": {
                 "text": "<p>Ethically Made</p>",
                 "width": "fill",
                 "max_width": "normal",
-                "alignment": "left",
+                "alignment": "center",
                 "type_preset": "h4",
                 "font": "var(--font-heading--family)",
                 "font_size": "",
@@ -794,7 +829,7 @@
                 "text": "<p>Produced in a carefully selected factory that shares our commitment to quality, responsibility and safe working conditions.</p>",
                 "width": "fill",
                 "max_width": "normal",
-                "alignment": "left",
+                "alignment": "center",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "0.75rem",
@@ -815,6 +850,7 @@
             }
           },
           "block_order": [
+            "col4_icon",
             "col4_title",
             "col4_body"
           ]
