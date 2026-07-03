@@ -212,16 +212,6 @@
         "padding-block-end": 48
       }
     },
-    "wavy_marquee": {
-      "type": "bacii-wavy-marquee",
-      "settings": {
-        "text": "Made for big personalities|100% Organic Cotton|Designed in Australia|Original Illustrations|Made to be Passed Down|Ethically Made|Designed for Everyday Play",
-        "bg_color": "#f5a8b8",
-        "text_color": "#fcf5ef",
-        "speed": 55,
-        "overlap": 0
-      }
-    },
     "product_list_fa6P9H": {
       "type": "product-list",
       "blocks": {
@@ -402,7 +392,7 @@
       },
       "name": "Featured collection",
       "settings": {
-        "collection": "new-arrivals",
+        "collection": "all",
         "layout_type": "carousel",
         "carousel_on_mobile": true,
         "max_products": 8,
@@ -926,10 +916,10 @@
         "vertical_alignment": "flex-start",
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "flex-start",
         "gap": 32,
         "section_width": "page-width",
-        "section_height": "medium",
+        "section_height": "fit",
         "section_height_custom": 50,
         "background_media": "none",
         "background_color": "#ffeca8",
@@ -956,7 +946,6 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/Image_7.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -996,20 +985,6 @@
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "spacer_g34cFR": {
-              "type": "spacer",
-              "name": "t:names.spacer",
-              "settings": {
-                "size": "percent",
-                "percent_size": 100,
-                "pixel_size": 120,
-                "custom_mobile_size": false,
-                "size_mobile": "percent",
-                "percent_size_mobile": 100,
-                "pixel_size_mobile": 120
               },
               "blocks": {}
             },
@@ -1084,7 +1059,6 @@
           },
           "block_order": [
             "about_label",
-            "spacer_g34cFR",
             "about_heading",
             "about_body",
             "about_btn"
@@ -1095,7 +1069,7 @@
       "settings": {
         "media_position": "left",
         "media_width": "medium",
-        "media_height": "80svh",
+        "media_height": "60svh",
         "section_width": "full-width",
         "extend_media": true,
         "background_color": "#c9bcf4",
@@ -1136,7 +1110,7 @@
           "static": true,
           "settings": {
             "placement": "on_image",
-            "horizontal_alignment": "center",
+            "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "collection_card_gap": 8,
             "background_color": "",
@@ -1147,31 +1121,6 @@
             "border_radius": 0
           },
           "blocks": {
-            "collection_title_GXHzjW": {
-              "type": "collection-title",
-              "name": "t:names.collection_title",
-              "settings": {
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h4",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "background": false,
-                "background_color": "{{ settings.color_palette.background }}",
-                "text_color": "#FFFFFF",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
             "collection-card-image": {
               "type": "_collection-card-image",
               "static": true,
@@ -1190,9 +1139,7 @@
               "blocks": {}
             }
           },
-          "block_order": [
-            "collection_title_GXHzjW"
-          ]
+          "block_order": []
         }
       },
       "block_order": [
@@ -1200,11 +1147,7 @@
       ],
       "name": "Shop Collections",
       "settings": {
-        "collection_list": [
-          "tees",
-          "shorts",
-          "dresses"
-        ],
+        "collection_list": [],
         "layout_type": "grid",
         "carousel_on_mobile": true,
         "columns": 3,
@@ -1231,7 +1174,6 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/Image_18.png",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -1271,20 +1213,6 @@
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "spacer_jkmr9n": {
-              "type": "spacer",
-              "name": "t:names.spacer",
-              "settings": {
-                "size": "percent",
-                "percent_size": 100,
-                "pixel_size": 120,
-                "custom_mobile_size": false,
-                "size_mobile": "percent",
-                "percent_size_mobile": 100,
-                "pixel_size_mobile": 120
               },
               "blocks": {}
             },
@@ -1359,7 +1287,6 @@
           },
           "block_order": [
             "vision_label",
-            "spacer_jkmr9n",
             "vision_heading",
             "vision_body",
             "vision_btn"
@@ -1370,7 +1297,7 @@
       "settings": {
         "media_position": "right",
         "media_width": "medium",
-        "media_height": "80svh",
+        "media_height": "60svh",
         "section_width": "full-width",
         "extend_media": true,
         "background_color": "#f5a8b8",
@@ -1544,24 +1471,11 @@
             "custom_width": 40,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
             "background_media": "none",
-            "background_color": "",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
-            "border_color": "",
             "border_radius": 0,
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -1689,6 +1603,16 @@
         "border_radius": 0,
         "padding-block-start": 64,
         "padding-block-end": 64
+      }
+    },
+    "wavy_marquee": {
+      "type": "bacii-wavy-marquee",
+      "settings": {
+        "text": "Made for big personalities|100% Organic Cotton|Designed in Australia|Original Illustrations|Made to be Passed Down|Ethically Made|Designed for Everyday Play",
+        "bg_color": "#F5A8B8",
+        "text_color": "#FCF5EF",
+        "speed": 55,
+        "overlap": 48
       }
     }
   },
