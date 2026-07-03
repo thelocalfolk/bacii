@@ -1604,11 +1604,22 @@
         "padding-block-start": 64,
         "padding-block-end": 64
       }
+    },
+    "wavy_marquee": {
+      "type": "bacii-wavy-marquee",
+      "settings": {
+        "text": "Made for big personalities|100% Organic Cotton|Designed in Australia|Original Illustrations|Made to be Passed Down|Ethically Made|Designed for Everyday Play",
+        "bg_color": "#F5A8B8",
+        "text_color": "#FCF5EF",
+        "speed": 35,
+        "overlap": 0
+      }
     }
   },
   "order": [
     "hero_jVaWmY",
     "section_GFViaT",
+    "wavy_marquee",
     "product_list_fa6P9H",
     "value_props_butter",
     "about_split",

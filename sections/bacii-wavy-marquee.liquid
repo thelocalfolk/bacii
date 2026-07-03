@@ -1,0 +1,142 @@
+{%- comment -%}
+  Bacii — Wavy scrolling marquee ribbon (custom).
+  Pink wavy band with infinite horizontal scrolling value-prop text (Approach A:
+  wavy band, horizontal text). Sits below the coral tagline / above featured products.
+{%- endcomment -%}
+
+{%- liquid
+  assign items = section.settings.text | split: '|'
+  assign sep_svg = '<svg class="bacii-marquee__sep" viewBox="0 0 63 62" aria-hidden="true" focusable="false"><path fill="currentColor" d="M13.024 32.9971C13.9877 32.9973 14.7589 33.9775 14.9253 35.1641C15.758 41.1735 23.4159 47.3247 31.5035 47.2705C38.6624 47.2161 45.708 41.1737 46.5406 35.1641C46.7071 33.9774 47.4781 32.9971 48.4419 32.9971H61.2964C62.2603 32.9971 63.0492 33.9772 63.0054 35.1748C61.2704 51.9191 47.092 61.9673 31.5035 62C14.662 62.0325 0.686009 51.0698 0.00248406 35.1748C-0.0500913 33.9772 0.738825 32.9971 1.71147 32.9971H13.024ZM17.3208 0C19.174 0.000144537 20.734 0.920284 22.0005 2.77344C23.3871 4.50672 24.0806 6.88005 24.0806 9.87988C24.0806 12.0798 23.7339 13.6934 23.0406 14.7334C22.4672 15.7733 21.3069 16.6926 19.5738 17.5059C18.1873 18.1991 16.854 18.5458 15.5874 18.5459C13.6276 18.5459 12.0005 17.8533 10.7339 16.4668C9.57395 14.9602 9.00053 13.1727 9.00053 11.0928C9.0006 8.66633 9.69409 6.35997 11.0806 4.16016C12.9339 1.38687 15.0142 0 17.3208 0ZM48.7339 5.77441L55.1431 5.80176C57.403 5.81143 59.2269 7.65119 59.2173 9.91113C59.2078 12.1191 57.4489 13.9217 55.2417 13.9844L49.6988 14.1416L42.1695 13.9072C39.9596 13.8384 38.206 12.0215 38.2154 9.81055C38.225 7.55691 40.0603 5.73756 42.314 5.74707L48.7339 5.77441Z"/></svg>'
+-%}
+
+<div class="bacii-marquee bacii-marquee--{{ section.id }}">
+  <svg class="bacii-marquee__band" viewBox="0 0 1440 155" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <path fill="{{ section.settings.bg_color }}" d="M0,40 C120,10 240,10 360,40 C480,70 600,70 720,40 C840,10 960,10 1080,40 C1200,70 1320,70 1440,40 L1440,115 C1320,145 1200,145 1080,115 C960,85 840,85 720,115 C600,145 480,145 360,115 C240,85 120,85 0,115 Z"/>
+  </svg>
+  <div class="bacii-marquee__viewport">
+    <div class="bacii-marquee__track">
+      {%- for n in (1..2) -%}
+        <div class="bacii-marquee__group"{% if n == 2 %} aria-hidden="true"{% endif %}>
+          {%- for item in items -%}
+            <span class="bacii-marquee__item">{{ item | strip }}</span>
+            {{ sep_svg }}
+          {%- endfor -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{%- style -%}
+  .bacii-marquee--{{ section.id }} {
+    --marquee-color: {{ section.settings.text_color }};
+    --marquee-speed: {{ section.settings.speed }}s;
+    position: relative;
+    width: 100%;
+    height: clamp(84px, 9vw, 140px);
+    overflow: hidden;
+    margin-block: {{ section.settings.overlap | times: -1 }}px 0;
+  }
+  .bacii-marquee--{{ section.id }} .bacii-marquee__band {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .bacii-marquee--{{ section.id }} .bacii-marquee__viewport {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  .bacii-marquee--{{ section.id }} .bacii-marquee__track {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: max-content;
+    animation: bacii-marquee-scroll-{{ section.id }} var(--marquee-speed) linear infinite;
+  }
+  .bacii-marquee--{{ section.id }} .bacii-marquee__group {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .bacii-marquee--{{ section.id }} .bacii-marquee__item {
+    flex: 0 0 auto;
+    color: var(--marquee-color);
+    font-family: var(--font-heading--family);
+    font-size: clamp(15px, 1.5vw, 22px);
+    letter-spacing: 0.04em;
+    line-height: 1;
+    white-space: nowrap;
+    padding-inline: clamp(0.6rem, 1.4vw, 1.4rem);
+  }
+  .bacii-marquee--{{ section.id }} .bacii-marquee__sep {
+    flex: 0 0 auto;
+    width: clamp(16px, 1.4vw, 22px);
+    height: auto;
+    color: var(--marquee-color);
+    opacity: 0.95;
+  }
+  @keyframes bacii-marquee-scroll-{{ section.id }} {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .bacii-marquee--{{ section.id }} .bacii-marquee__track { animation: none; }
+  }
+{%- endstyle -%}
+
+{% schema %}
+{
+  "name": "Wavy marquee",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Marquee text",
+      "info": "Separate each phrase with a | (pipe).",
+      "default": "Made for big personalities|100% Organic Cotton|Designed in Australia|Original Illustrations|Made to be Passed Down|Ethically Made|Designed for Everyday Play"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Band colour",
+      "default": "#F5A8B8"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text colour",
+      "default": "#FCF5EF"
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "unit": "s",
+      "label": "Scroll duration",
+      "default": 35
+    },
+    {
+      "type": "range",
+      "id": "overlap",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Overlap section above",
+      "info": "Pulls the ribbon up so its top wave meets the coral band.",
+      "default": 0
+    }
+  ],
+  "presets": [
+    { "name": "Wavy marquee" }
+  ]
+}
+{% endschema %}
