@@ -1606,7 +1606,7 @@
       }
     },
     "wavy_marquee": {
-      "type": "bacii-wavy-marquee",
+      "type": "bacii-marquee",
       "settings": {
         "text": "Made for big personalities|100% Organic Cotton|Designed in Australia|Original Illustrations|Made to be Passed Down|Ethically Made|Designed for Everyday Play",
         "bg_color": "#F5A8B8",
