@@ -1,0 +1,163 @@
+{%- comment -%}
+  Bacii — Wavy scrolling marquee ribbon (Approach B: text follows the wave).
+  Pink wavy band (a thick-stroked wave path) with the value-prop phrases laid
+  ALONG the wave via SVG <textPath>, scrolled seamlessly with requestAnimationFrame.
+  Separator is a cream flower glyph (textPath renders glyphs only, not SVG icons).
+{%- endcomment -%}
+
+{%- liquid
+  assign items = section.settings.text | split: '|'
+  capture phrase
+    for item in items
+      echo item | strip
+      echo ' ✿ '
+    endfor
+  endcapture
+  assign phrase = phrase | strip | append: ' '
+-%}
+
+<div class="bmw bmw--{{ section.id }}"
+     data-phrase="{{ phrase | escape }}"
+     data-speed="{{ section.settings.speed }}"
+     style="--bmw-color:{{ section.settings.text_color }};--bmw-bg:{{ section.settings.bg_color }};margin-top:-{{ section.settings.overlap }}px;">
+  <svg class="bmw__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-label="{{ phrase | strip | escape }}">
+    <path class="bmw__line" id="bmw-line-{{ section.id }}" fill="none"
+          stroke="{{ section.settings.bg_color }}" stroke-width="70" stroke-linecap="butt"
+          d="M0 60 C120 38 240 38 360 60 C480 82 600 82 720 60 C840 38 960 38 1080 60 C1200 82 1320 82 1440 60"></path>
+    <text class="bmw__text" fill="{{ section.settings.text_color }}"
+          font-family="var(--font-heading--family)" font-size="30" font-weight="500"
+          letter-spacing="0.5" dominant-baseline="middle">
+      <textPath class="bmw__tp" href="#bmw-line-{{ section.id }}" startOffset="0"></textPath>
+    </text>
+  </svg>
+</div>
+
+{%- style -%}
+  .bmw--{{ section.id }} {
+    position: relative;
+    width: 100%;
+    height: clamp(84px, 9vw, 150px);
+    overflow: hidden;
+  }
+  .bmw--{{ section.id }} .bmw__svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+{%- endstyle -%}
+
+<script>
+  (function () {
+    var id = {{ section.id | json }};
+    var root = document.querySelector('.bmw--' + id);
+    if (!root || root.dataset.bmwInit === '1') return;
+    root.dataset.bmwInit = '1';
+
+    var svg = root.querySelector('.bmw__svg');
+    var line = root.querySelector('.bmw__line');
+    var text = root.querySelector('.bmw__text');
+    var tp = root.querySelector('.bmw__tp');
+    var phrase = root.getAttribute('data-phrase');
+    var speed = parseFloat(root.getAttribute('data-speed')) || 40; // px per second
+
+    var H = 120, mid = 60, amp = 22, thick = 70, fontSize = 30;
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function wavePath(W, period) {
+      var half = period / 2, x = 0, dir = -1, d = 'M0 ' + mid;
+      while (x < W) {
+        var nx = x + half, cy = mid + dir * amp;
+        d += ' C' + (x + half / 2).toFixed(1) + ' ' + cy.toFixed(1) +
+             ' ' + (nx - half / 2).toFixed(1) + ' ' + cy.toFixed(1) +
+             ' ' + nx.toFixed(1) + ' ' + mid;
+        x = nx; dir *= -1;
+      }
+      return d;
+    }
+
+    var repLen = 0;
+
+    function build() {
+      var W = root.clientWidth || 1440;
+      var Hpx = root.clientHeight || 120;
+      // 1:1 viewBox in px so glyphs are not distorted
+      svg.setAttribute('viewBox', '0 0 ' + W + ' ' + Hpx);
+      svg.setAttribute('preserveAspectRatio', 'none');
+      // recompute wave geometry proportional to height
+      mid = Hpx / 2;
+      thick = Math.min(Hpx * 0.62, 96);
+      amp = Hpx * 0.18;
+      fontSize = Math.max(15, Math.min(Hpx * 0.26, 26));
+      line.setAttribute('stroke-width', thick.toFixed(1));
+      text.setAttribute('font-size', fontSize.toFixed(1));
+
+      var period = W / Math.max(2, Math.round(W / 340));
+      // path spans a bit beyond the viewport so the right edge always has wave/text
+      line.setAttribute('d', wavePath(W + period, period));
+
+      // measure one repetition length, then fill enough repetitions to cover W + 1 rep
+      tp.textContent = phrase;
+      repLen = text.getComputedTextLength();
+      if (!repLen || repLen < 5) { setTimeout(build, 250); return; }
+      var need = Math.ceil((W + repLen) / repLen) + 1;
+      var s = '';
+      for (var i = 0; i < need; i++) s += phrase;
+      tp.textContent = s;
+    }
+
+    var offset = 0, last = null, raf = null;
+    function tick(now) {
+      if (last == null) last = now;
+      var dt = (now - last) / 1000; last = now;
+      offset -= speed * dt;
+      if (repLen && offset <= -repLen) offset += repLen;
+      tp.setAttribute('startOffset', offset.toFixed(1));
+      raf = requestAnimationFrame(tick);
+    }
+
+    function start() {
+      build();
+      if (reduce) return;
+      cancelAnimationFrame(raf); last = null;
+      raf = requestAnimationFrame(tick);
+    }
+
+    var reReady = (document.fonts && document.fonts.ready) ? document.fonts.ready : Promise.resolve();
+    reReady.then(start);
+
+    var rt;
+    window.addEventListener('resize', function () {
+      clearTimeout(rt);
+      rt = setTimeout(function () { build(); }, 200);
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Wavy marquee",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Marquee text",
+      "info": "Separate each phrase with a | (pipe).",
+      "default": "Made for big personalities|100% Organic Cotton|Designed in Australia|Original Illustrations|Made to be Passed Down|Ethically Made|Designed for Everyday Play"
+    },
+    { "type": "color", "id": "bg_color", "label": "Band colour", "default": "#F5A8B8" },
+    { "type": "color", "id": "text_color", "label": "Text colour", "default": "#FCF5EF" },
+    {
+      "type": "range", "id": "speed", "min": 15, "max": 160, "step": 5, "unit": "px/s",
+      "label": "Scroll speed", "default": 55
+    },
+    {
+      "type": "range", "id": "overlap", "min": 0, "max": 60, "step": 2, "unit": "px",
+      "label": "Overlap section above", "default": 0
+    }
+  ],
+  "presets": [ { "name": "Wavy marquee" } ]
+}
+{% endschema %}
