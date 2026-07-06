@@ -20,9 +20,7 @@
             "menu": "footer-shop",
             "heading": "Shop",
             "menu_spacing": 8,
-            "show_as_accordion": false,
-            "heading_text_color": "#59697a",
-            "link_text_color": "#59697a"
+            "show_as_accordion": false
           },
           "blocks": {}
         },
@@ -32,9 +30,7 @@
             "menu": "footer-bacii",
             "heading": "Bacii",
             "menu_spacing": 8,
-            "show_as_accordion": false,
-            "heading_text_color": "#59697a",
-            "link_text_color": "#59697a"
+            "show_as_accordion": false
           },
           "blocks": {}
         },
@@ -44,9 +40,7 @@
             "menu": "footer-customer-care",
             "heading": "Customer Care",
             "menu_spacing": 8,
-            "show_as_accordion": false,
-            "heading_text_color": "#59697a",
-            "link_text_color": "#59697a"
+            "show_as_accordion": false
           },
           "blocks": {}
         },

@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "main": {
       "type": "product-information",
@@ -136,9 +137,9 @@
                   "type": "review",
                   "settings": {
                     "show_number": true,
-                    "alignment": "left",
                     "type_preset": "paragraph",
-                    "width": "fit-content"
+                    "width": "fit-content",
+                    "alignment": "left"
                   },
                   "blocks": {}
                 }
@@ -441,7 +442,6 @@
           ]
         }
       },
-      "block_order": [],
       "settings": {
         "content_width": "content-center-aligned",
         "desktop_media_position": "left",
