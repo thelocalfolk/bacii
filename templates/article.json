@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "section": {
       "type": "main-blog-post",
@@ -20,11 +21,12 @@
             "max_width": "normal",
             "alignment": "center",
             "type_preset": "h2",
-            "font": "var(--font-primary--family)",
+            "font": "var(--font-heading--family)",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
+            "text_color": "#59697a",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -43,6 +45,7 @@
             "show_author": false,
             "alignment": "center",
             "show_alignment": true,
+            "text_color": "#59697a",
             "padding-block-start": 0,
             "padding-block-end": 0
           },
@@ -62,8 +65,8 @@
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
+            "padding-block-start": 8,
+            "padding-block-end": 8,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
@@ -83,14 +86,455 @@
       ],
       "settings": {
         "content_direction": "column",
-        "gap": 32,
+        "gap": 24,
         "background_color": "{{ settings.color_palette.background }}",
         "padding-block-start": 40,
-        "padding-block-end": 80
+        "padding-block-end": 64
+      }
+    },
+    "related_posts": {
+      "type": "featured-blog-posts",
+      "blocks": {
+        "static-blog-title": {
+          "type": "_featured-blog-posts-title",
+          "name": "Title",
+          "static": true,
+          "settings": {
+            "text": "<h2>More stories</h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-heading--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "static-blog-post-card": {
+          "type": "_featured-blog-posts-card",
+          "name": "Blog card",
+          "static": true,
+          "settings": {
+            "alignment": "left",
+            "gap": 8,
+            "background_color": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "image": {
+              "type": "_featured-blog-posts-image",
+              "static": true,
+              "settings": {
+                "image_ratio": "square",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0
+              },
+              "blocks": {}
+            },
+            "title": {
+              "type": "_heading",
+              "name": "Title",
+              "static": true,
+              "settings": {
+                "type_preset": "h4",
+                "font": "var(--font-heading--family)",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text": "<h4>{{ closest.article.title }}</h4>",
+                "read_only": false,
+                "alignment": "left",
+                "show_alignment": false,
+                "text_color": "#59697a",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "blog-post-info-text": {
+              "type": "_blog-post-info-text",
+              "name": "Details",
+              "static": true,
+              "settings": {
+                "show_date": true,
+                "show_author": false,
+                "type_preset": "",
+                "alignment": "left",
+                "text_color": "#59697a",
+                "show_alignment": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "blog-post-description": {
+              "type": "_blog-post-description",
+              "name": "Excerpt",
+              "static": true,
+              "settings": {
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "0.75rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#59697a",
+                "padding-block-start": 8,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": []
+        }
+      },
+      "name": "More stories",
+      "settings": {
+        "blog": "news",
+        "layout_type": "grid",
+        "carousel_on_mobile": true,
+        "post_limit": 3,
+        "columns": 3,
+        "mobile_columns": "1",
+        "mobile_card_size": "60cqw",
+        "columns_gap": 16,
+        "rows_gap": 16,
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "section_width": "page-width",
+        "gap": 28,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    },
+    "article_faq": {
+      "type": "media-with-content",
+      "blocks": {
+        "media": {
+          "type": "_media-without-appearance",
+          "static": true,
+          "settings": {
+            "media_type": "image",
+            "link": "",
+            "video_loop": true,
+            "video_autoplay": false,
+            "image_position": "cover",
+            "video_position": "cover"
+          },
+          "blocks": {}
+        },
+        "content": {
+          "type": "_content-without-appearance",
+          "static": true,
+          "settings": {
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 20
+          },
+          "blocks": {
+            "faq_eyebrow": {
+              "type": "text",
+              "settings": {
+                "text": "<p>FAQ's</p>",
+                "width": "fill",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h5",
+                "font": "var(--font-heading--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#fcf5ef",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "faq_heading": {
+              "type": "text",
+              "settings": {
+                "text": "<p>We may have already answered your questions.  Read our Frequently Asked Questions</p>",
+                "width": "fill",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h2",
+                "font": "var(--font-heading--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#fcf5ef",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "faq_body": {
+              "type": "text",
+              "settings": {
+                "text": "<p>We've covered the things parents ask us most often—from sizing and shipping to fabric care and returns. And if you can't find what you're looking for, our inbox is always open.</p>",
+                "width": "fill",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "0.75rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#fcf5ef",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "faq_btn": {
+              "type": "button",
+              "settings": {
+                "label": "Frequently Asked Questions",
+                "link": "/pages/faq",
+                "open_in_new_tab": false,
+                "style_class": "button-custom",
+                "custom_button_background": "#fcf5ef",
+                "custom_button_text": "#007dfe",
+                "custom_button_border": "#fcf5ef",
+                "link_text_color": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "faq_eyebrow",
+            "faq_heading",
+            "faq_body",
+            "faq_btn"
+          ]
+        }
+      },
+      "name": "FAQ Callout",
+      "settings": {
+        "media_position": "right",
+        "media_width": "medium",
+        "media_height": "60svh",
+        "section_width": "full-width",
+        "extend_media": true,
+        "background_color": "#007dfe",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "newsletter_bacii_club": {
+      "type": "section",
+      "blocks": {
+        "nl_text": {
+          "type": "group",
+          "name": "Text",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-start",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 40,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "background_media": "none",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "newsletter_heading": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Join the Bacii Club</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h4",
+                "font": "var(--font-heading--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#fcf5ef",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "newsletter_subtext": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Made for the little personalities who keep us laughing. Sign up for early access to new collections, exclusive offers and first dibs on our latest drops.</p>",
+                "width": "fill",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "0.75rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#fcf5ef",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "newsletter_heading",
+            "newsletter_subtext"
+          ]
+        },
+        "newsletter_form": {
+          "type": "email-signup",
+          "settings": {
+            "width": "custom",
+            "custom_width": 56,
+            "heading": "",
+            "heading_text_color": "#fcf5ef",
+            "heading_preset": "h3",
+            "border_style": "all",
+            "input_style": "custom",
+            "border_width": 2,
+            "border_radius": 100,
+            "input_background_color": "rgba(0,0,0,0)",
+            "input_text_color": "#fcf5ef",
+            "input_border_color": "#fcf5ef",
+            "input_type_preset": "paragraph",
+            "style_class": "button-custom",
+            "custom_button_background": "rgba(0,0,0,0)",
+            "custom_button_text": "#fcf5ef",
+            "custom_button_border": "rgba(0,0,0,0)",
+            "link_text_color": "",
+            "display_type": "arrow",
+            "label": "Sign up",
+            "integrated_button": true,
+            "button_type_preset": "paragraph",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "nl_text",
+        "newsletter_form"
+      ],
+      "name": "Newsletter",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "space-between",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 48,
+        "section_width": "page-width",
+        "section_height": "fit",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "#007dfe",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#12121266",
+        "overlay_style": "solid",
+        "gradient_direction": "to bottom",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 64,
+        "padding-block-end": 64
       }
     }
   },
   "order": [
-    "section"
+    "section",
+    "related_posts",
+    "article_faq",
+    "newsletter_bacii_club"
   ]
 }
