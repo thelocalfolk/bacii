@@ -1165,7 +1165,7 @@
       "settings": {
         "media_position": "right",
         "media_width": "medium",
-        "media_height": "60svh",
+        "media_height": "80svh",
         "section_width": "full-width",
         "extend_media": true,
         "background_color": "#7bd8b3",
