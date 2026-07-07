@@ -218,6 +218,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
+            "image": "shopify://shop_images/4ba164d110c4f2e218f6379b94dd2bdbb222a6ce.png",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -260,6 +261,20 @@
               },
               "blocks": {}
             },
+            "spacer_MjgtVL": {
+              "type": "spacer",
+              "name": "t:names.spacer",
+              "settings": {
+                "size": "percent",
+                "percent_size": 100,
+                "pixel_size": 120,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
+              },
+              "blocks": {}
+            },
             "story_heading": {
               "type": "text",
               "settings": {
@@ -288,7 +303,7 @@
             "story_body": {
               "type": "text",
               "settings": {
-                "text": "<p>Bacii was born from the beautiful chaos of raising two spirited boys and discovering that no two kids are ever quite the same. Some are bold. Some are cheeky. Some are wild. Some are sweet. All of them have a way of making life a little more fun.</p><p>That&#39;s why we create playful clothing that celebrates personality first — pieces designed for big imaginations, everyday adventures and the unforgettable characters our kids become.</p><p>Made from premium organic cotton and designed in Australia, our clothes are made to be loved, lived in and handed down.</p>",
+                "text": "<p>Bacii was born from the beautiful chaos of raising two spirited boys and discovering that no two kids are ever quite the same. Some are bold. Some are cheeky. Some are wild. Some are sweet. All of them have a way of making life a little more fun.</p><p>That's why we create playful clothing that celebrates personality first — pieces designed for big imaginations, everyday adventures and the unforgettable characters our kids become.</p><p>Made from premium organic cotton and designed in Australia, our clothes are made to be loved, lived in and handed down.</p>",
                 "width": "fill",
                 "max_width": "normal",
                 "alignment": "left",
@@ -299,7 +314,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "#59697a",
+                "text_color": "#FF835D",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -313,6 +328,7 @@
           },
           "block_order": [
             "story_label",
+            "spacer_MjgtVL",
             "story_heading",
             "story_body"
           ]
@@ -322,7 +338,7 @@
       "settings": {
         "media_position": "right",
         "media_width": "medium",
-        "media_height": "60svh",
+        "media_height": "80svh",
         "section_width": "full-width",
         "extend_media": true,
         "background_color": "#d8f9f2",
@@ -338,6 +354,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
+            "image": "shopify://shop_images/1e8c35eb61c895309c7556c9d0a49ef0ff756b0c.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -377,6 +394,20 @@
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "spacer_AQfqLU": {
+              "type": "spacer",
+              "name": "t:names.spacer",
+              "settings": {
+                "size": "percent",
+                "percent_size": 100,
+                "pixel_size": 120,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
               },
               "blocks": {}
             },
@@ -451,6 +482,7 @@
           },
           "block_order": [
             "fab_label",
+            "spacer_AQfqLU",
             "fab_heading",
             "fab_body",
             "fab_btn"
@@ -461,7 +493,7 @@
       "settings": {
         "media_position": "left",
         "media_width": "medium",
-        "media_height": "60svh",
+        "media_height": "80svh",
         "section_width": "full-width",
         "extend_media": true,
         "background_color": "#c9bcf4",
