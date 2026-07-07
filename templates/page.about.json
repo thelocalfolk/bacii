@@ -42,9 +42,9 @@
           "type": "text",
           "name": "Body",
           "settings": {
-            "text": "<p>Bacii began with two little boys who taught me that childhood isn&#39;t about being perfectly behaved—it&#39;s about being curious, messy, adventurous and completely yourself.</p><p>Inspired by the funny things kids say, do and obsess over, I created Bacii to celebrate the big personalities packed into little people with playful clothing designed for everyday adventures.</p>",
+            "text": "<p>Bacii began with two little boys who taught me that childhood isn't about being perfectly behaved—it's about being curious, messy, adventurous and completely yourself.</p><p>Inspired by the funny things kids say, do and obsess over, I created Bacii to celebrate the big personalities packed into little people with playful clothing designed for everyday adventures.</p>",
             "width": "fit-content",
-            "max_width": "narrow",
+            "max_width": "normal",
             "alignment": "left",
             "type_preset": "rte",
             "font": "var(--font-body--family)",
