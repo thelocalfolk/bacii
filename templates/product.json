@@ -1641,7 +1641,12 @@
       ],
       "name": "Shop Collections",
       "settings": {
-        "collection_list": [],
+        "collection_list": [
+          "tees",
+          "shorts",
+          "dresses",
+          "hats"
+        ],
         "layout_type": "grid",
         "carousel_on_mobile": true,
         "columns": 3,
