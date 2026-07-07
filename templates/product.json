@@ -916,7 +916,7 @@
         "heading_vp": {
           "type": "text",
           "settings": {
-            "text": "<p>Made for big personalities and everyday adventures.</p>",
+            "text": "<p>Made for big personalities and<br>everyday adventures.</p>",
             "width": "fill",
             "max_width": "normal",
             "alignment": "center",
