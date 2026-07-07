@@ -1577,7 +1577,7 @@
         "collections_heading": {
           "type": "text",
           "settings": {
-            "text": "<h5>Collections</h5>",
+            "text": "<h3>Collections</h3>",
             "width": "fill",
             "max_width": "normal",
             "alignment": "left",
