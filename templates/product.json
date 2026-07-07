@@ -905,6 +905,14 @@
     "pdp_value_props": {
       "type": "section",
       "blocks": {
+        "vp_css": {
+          "type": "custom-liquid",
+          "name": "Value props CSS",
+          "settings": {
+            "custom_liquid": "<style>#shopify-section-{{ section.id }} .text-block.h4{font-weight:600}</style>"
+          },
+          "blocks": {}
+        },
         "heading_vp": {
           "type": "text",
           "settings": {
@@ -980,7 +988,7 @@
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "flex-start",
-                "gap": 24,
+                "gap": 28,
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -1020,7 +1028,7 @@
                 "col1_title": {
                   "type": "text",
                   "settings": {
-                    "text": "<p style=\"font-weight:600\">Organic Cotton</p>",
+                    "text": "<p>Organic Cotton</p>",
                     "width": "fill",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1084,7 +1092,7 @@
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "flex-start",
-                "gap": 24,
+                "gap": 28,
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -1124,7 +1132,7 @@
                 "col2_title": {
                   "type": "text",
                   "settings": {
-                    "text": "<p style=\"font-weight:600\">Original Illustrations</p>",
+                    "text": "<p>Original Illustrations</p>",
                     "width": "fill",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1188,7 +1196,7 @@
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "flex-start",
-                "gap": 24,
+                "gap": 28,
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -1228,7 +1236,7 @@
                 "col3_title": {
                   "type": "text",
                   "settings": {
-                    "text": "<p style=\"font-weight:600\">Made to Be Passed Down</p>",
+                    "text": "<p>Made to Be Passed Down</p>",
                     "width": "fill",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1292,7 +1300,7 @@
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "flex-start",
-                "gap": 24,
+                "gap": 28,
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -1332,7 +1340,7 @@
                 "col4_title": {
                   "type": "text",
                   "settings": {
-                    "text": "<p style=\"font-weight:600\">Ethically Made</p>",
+                    "text": "<p>Ethically Made</p>",
                     "width": "fill",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1396,6 +1404,7 @@
         }
       },
       "block_order": [
+        "vp_css",
         "heading_vp",
         "vp_cols"
       ],
