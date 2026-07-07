@@ -91,6 +91,20 @@
     margin-inline: 48px;
   }
 
+  /* Mobile: anchor the pill (smaller side margins) and trim the top float */
+  @media screen and (max-width: 749px) {
+    .header-section {
+      padding-block: 8px;
+    }
+
+    #header-component .header__columns,
+    #header-component[transparent] .header__columns,
+    #header-component[data-sticky-state] .header__columns {
+      padding-inline: 16px;
+      margin-inline: 12px;
+    }
+  }
+
   /* True pill radius on inputs (Horizon schema caps at 32 via settings) */
   input[type="email"],
   input[type="text"],
