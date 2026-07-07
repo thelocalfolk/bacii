@@ -375,7 +375,7 @@
             "fab_label": {
               "type": "text",
               "settings": {
-                "text": "<p>OUR FABRICATION</p>",
+                "text": "<p>Our Fabrication</p>",
                 "width": "fill",
                 "max_width": "normal",
                 "alignment": "left",
