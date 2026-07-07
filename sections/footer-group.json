@@ -17,9 +17,9 @@
         "instafeed_app_block_XKmMc9": {
           "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "title": "",
-            "title_color": "",
-            "title_size_v2": 0,
+            "title": "Follow us on intagram #baciithelabel",
+            "title_color": "{{ settings.color_palette.foreground }}",
+            "title_size_v2": 16,
             "alignment": "center",
             "instafeed_margin_top": 0,
             "instafeed_margin_bottom": 0,
@@ -43,7 +43,7 @@
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
+        "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 12,
         "section_width": "page-width",
