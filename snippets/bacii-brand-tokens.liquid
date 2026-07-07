@@ -91,16 +91,17 @@
     margin-inline: 48px;
   }
 
-  /* Mobile: anchor the pill (smaller side margins) and trim the top float */
+  /* Mobile: anchor the pill (smaller side margins) and shorten its height */
   @media screen and (max-width: 749px) {
     .header-section {
-      padding-block: 8px;
+      padding-block: 4px;
     }
 
     #header-component .header__columns,
     #header-component[transparent] .header__columns,
     #header-component[data-sticky-state] .header__columns {
       padding-inline: 16px;
+      padding-block: 6px !important;
       margin-inline: 12px;
     }
   }
