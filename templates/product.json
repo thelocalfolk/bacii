@@ -319,7 +319,7 @@
                         "input_background_color": "{{ settings.color_palette.background }}",
                         "input_text_color": "{{ settings.color_palette.foreground }}",
                         "input_border_color": "{{ settings.color_palette.foreground }}",
-                        "border_width": 1.5,
+                        "border_width": 1,
                         "border_radius": 50
                       },
                       "blocks": {}
