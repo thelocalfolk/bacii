@@ -980,7 +980,7 @@
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "flex-start",
-                "gap": 8,
+                "gap": 24,
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -1020,7 +1020,7 @@
                 "col1_title": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Organic Cotton</p>",
+                    "text": "<p style=\"font-weight:600\">Organic Cotton</p>",
                     "width": "fill",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1084,7 +1084,7 @@
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "flex-start",
-                "gap": 8,
+                "gap": 24,
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -1124,7 +1124,7 @@
                 "col2_title": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Original Illustrations</p>",
+                    "text": "<p style=\"font-weight:600\">Original Illustrations</p>",
                     "width": "fill",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1188,7 +1188,7 @@
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "flex-start",
-                "gap": 8,
+                "gap": 24,
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -1228,7 +1228,7 @@
                 "col3_title": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Made to Be Passed Down</p>",
+                    "text": "<p style=\"font-weight:600\">Made to Be Passed Down</p>",
                     "width": "fill",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1292,7 +1292,7 @@
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "flex-start",
-                "gap": 8,
+                "gap": 24,
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -1332,7 +1332,7 @@
                 "col4_title": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Ethically Made</p>",
+                    "text": "<p style=\"font-weight:600\">Ethically Made</p>",
                     "width": "fill",
                     "max_width": "normal",
                     "alignment": "center",
