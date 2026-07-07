@@ -501,13 +501,21 @@
         "padding-block-end": 0
       }
     },
-    "value_props": {
+    "section_nhVhqp": {
       "type": "section",
       "blocks": {
-        "heading_vp": {
+        "custom_liquid_d4hCtf": {
+          "type": "custom-liquid",
+          "name": "Value props CSS",
+          "settings": {
+            "custom_liquid": "<style>#shopify-section-{{ section.id }} .text-block.h4{font-weight:600}</style>"
+          },
+          "blocks": {}
+        },
+        "text_UYgMpJ": {
           "type": "text",
           "settings": {
-            "text": "<p>Designed for the little personalities who keep us laughing.</p>",
+            "text": "<p>Made for big personalities and<br>everyday adventures.</p>",
             "width": "fill",
             "max_width": "normal",
             "alignment": "center",
@@ -529,7 +537,7 @@
           },
           "blocks": {}
         },
-        "vp_cols": {
+        "group_RxbHCQ": {
           "type": "group",
           "name": "Columns",
           "settings": {
@@ -569,7 +577,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "col1": {
+            "group_RTTfYW": {
               "type": "group",
               "settings": {
                 "content_direction": "column",
@@ -579,7 +587,7 @@
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "flex-start",
-                "gap": 8,
+                "gap": 28,
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -608,7 +616,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "col1_icon": {
+                "custom_liquid_Jab3AX": {
                   "type": "custom-liquid",
                   "name": "Icon",
                   "settings": {
@@ -616,7 +624,7 @@
                   },
                   "blocks": {}
                 },
-                "col1_title": {
+                "text_ThEaGj": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Organic Cotton</p>",
@@ -641,10 +649,10 @@
                   },
                   "blocks": {}
                 },
-                "col1_body": {
+                "text_C4TzNf": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Made from soft, GOTS-certified organic cotton that&#39;s gentle on growing bodies and durable enough for everyday play.</p>",
+                    "text": "<p>Made from soft, GOTS-certified organic cotton that's gentle on growing bodies and durable enough for everyday play.</p>",
                     "width": "fill",
                     "max_width": "normal",
                     "alignment": "center",
@@ -668,12 +676,12 @@
                 }
               },
               "block_order": [
-                "col1_icon",
-                "col1_title",
-                "col1_body"
+                "custom_liquid_Jab3AX",
+                "text_ThEaGj",
+                "text_C4TzNf"
               ]
             },
-            "col2": {
+            "group_eBg46n": {
               "type": "group",
               "settings": {
                 "content_direction": "column",
@@ -683,7 +691,7 @@
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "flex-start",
-                "gap": 8,
+                "gap": 28,
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -712,7 +720,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "col2_icon": {
+                "custom_liquid_qX8trh": {
                   "type": "custom-liquid",
                   "name": "Icon",
                   "settings": {
@@ -720,7 +728,7 @@
                   },
                   "blocks": {}
                 },
-                "col2_title": {
+                "text_UJbYYP": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Original Illustrations</p>",
@@ -745,7 +753,7 @@
                   },
                   "blocks": {}
                 },
-                "col2_body": {
+                "text_QMpBpF": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Every graphic starts as an original Bacii character, inspired by the funny, messy and memorable moments of childhood.</p>",
@@ -772,12 +780,12 @@
                 }
               },
               "block_order": [
-                "col2_icon",
-                "col2_title",
-                "col2_body"
+                "custom_liquid_qX8trh",
+                "text_UJbYYP",
+                "text_QMpBpF"
               ]
             },
-            "col3": {
+            "group_FTxFzf": {
               "type": "group",
               "settings": {
                 "content_direction": "column",
@@ -787,7 +795,7 @@
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "flex-start",
-                "gap": 8,
+                "gap": 28,
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -816,7 +824,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "col3_icon": {
+                "custom_liquid_E3DkRF": {
                   "type": "custom-liquid",
                   "name": "Icon",
                   "settings": {
@@ -824,7 +832,7 @@
                   },
                   "blocks": {}
                 },
-                "col3_title": {
+                "text_8BH7nr": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Made to Be Passed Down</p>",
@@ -849,7 +857,7 @@
                   },
                   "blocks": {}
                 },
-                "col3_body": {
+                "text_Qtd9yd": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Quality fabrics, timeless fits and durable prints mean our pieces are made to be loved by more than one little personality.</p>",
@@ -876,12 +884,12 @@
                 }
               },
               "block_order": [
-                "col3_icon",
-                "col3_title",
-                "col3_body"
+                "custom_liquid_E3DkRF",
+                "text_8BH7nr",
+                "text_Qtd9yd"
               ]
             },
-            "col4": {
+            "group_drAkgh": {
               "type": "group",
               "settings": {
                 "content_direction": "column",
@@ -891,7 +899,7 @@
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "flex-start",
-                "gap": 8,
+                "gap": 28,
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -920,7 +928,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "col4_icon": {
+                "custom_liquid_rjQdRU": {
                   "type": "custom-liquid",
                   "name": "Icon",
                   "settings": {
@@ -928,7 +936,7 @@
                   },
                   "blocks": {}
                 },
-                "col4_title": {
+                "text_Rat7kk": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Ethically Made</p>",
@@ -953,7 +961,7 @@
                   },
                   "blocks": {}
                 },
-                "col4_body": {
+                "text_WWfWHP": {
                   "type": "text",
                   "settings": {
                     "text": "<p>Produced in a carefully selected factory that shares our commitment to quality, responsibility and safe working conditions.</p>",
@@ -980,23 +988,24 @@
                 }
               },
               "block_order": [
-                "col4_icon",
-                "col4_title",
-                "col4_body"
+                "custom_liquid_rjQdRU",
+                "text_Rat7kk",
+                "text_WWfWHP"
               ]
             }
           },
           "block_order": [
-            "col1",
-            "col2",
-            "col3",
-            "col4"
+            "group_RTTfYW",
+            "group_eBg46n",
+            "group_FTxFzf",
+            "group_drAkgh"
           ]
         }
       },
       "block_order": [
-        "heading_vp",
-        "vp_cols"
+        "custom_liquid_d4hCtf",
+        "text_UYgMpJ",
+        "group_RxbHCQ"
       ],
       "name": "Value Props",
       "settings": {
@@ -1477,7 +1486,7 @@
     "about_intro",
     "our_story",
     "our_fabrication",
-    "value_props",
+    "section_nhVhqp",
     "the_result",
     "featured_blog",
     "newsletter_bacii_club",
