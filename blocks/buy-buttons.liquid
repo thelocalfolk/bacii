@@ -228,12 +228,10 @@
             add_to_cart_text: add_to_cart_text
           %}
 
-          {% content_for 'block',
-            type: 'accelerated-checkout',
-            id: 'accelerated-checkout',
-            can_add_to_cart: can_add_to_cart,
-            form_obj: form
-          %}
+          {%- comment -%}
+            Buy it now / accelerated checkout removed to match Figma single-CTA design.
+            To restore, reinstate the accelerated-checkout content_for block here.
+          {%- endcomment -%}
         </div>
         {%- if block_settings.gift_card_form and product.gift_card? -%}
           </span>
