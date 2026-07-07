@@ -1,0 +1,1768 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "faq_hero": {
+      "type": "hero",
+      "name": "FAQ Hero",
+      "blocks": {
+        "hero_heading": {
+          "type": "text",
+          "name": "Heading",
+          "settings": {
+            "text": "<p>Frequently Asked Questions</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h1",
+            "font": "var(--font-heading--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#fcf5ef",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "hero_heading"
+      ],
+      "settings": {
+        "media_type_1": "image",
+        "image_1": "",
+        "media_type_2": "image",
+        "stack_media_on_mobile": false,
+        "custom_mobile_media": false,
+        "media_type_1_mobile": "image",
+        "media_type_2_mobile": "image",
+        "link": "",
+        "open_in_new_tab": false,
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "flex-end",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "flex-end",
+        "gap": 24,
+        "section_width": "full-width",
+        "section_height": "large",
+        "section_height_custom": 50,
+        "background_color": "rgba(0,0,0,0)",
+        "toggle_overlay": false,
+        "overlay_color": "#12121226",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "faq_orders_shipping": {
+      "type": "section",
+      "name": "FAQ - Orders & Shipping",
+      "blocks": {
+        "cat_head": {
+          "type": "text",
+          "name": "Category heading",
+          "settings": {
+            "text": "<p>Orders &amp; Shipping</p>",
+            "width": "fill",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-heading--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#59697a",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "cat_acc": {
+          "type": "accordion",
+          "name": "Accordion",
+          "settings": {
+            "icon": "plus",
+            "dividers": true,
+            "divider_color": "#59697a",
+            "type_preset": "h5",
+            "background_color": "",
+            "text_color": "#59697a",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 8,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "q1": {
+              "type": "_accordion-row",
+              "name": "When will my order be shipped?",
+              "settings": {
+                "heading": "When will my order be shipped?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q1_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>We aim to dispatch all orders within 1–3 business days. During collection launches, sales or promotional periods, dispatch times may be slightly longer.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q1_a"
+              ]
+            },
+            "q2": {
+              "type": "_accordion-row",
+              "name": "How much is shipping?",
+              "settings": {
+                "heading": "How much is shipping?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q2_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Shipping rates are calculated at checkout based on your location and selected delivery method.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q2_a"
+              ]
+            },
+            "q3": {
+              "type": "_accordion-row",
+              "name": "Do you ship internationally?",
+              "settings": {
+                "heading": "Do you ship internationally?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q3_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Yes. We currently ship to selected international destinations. Shipping rates and delivery timeframes will be calculated at checkout.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q3_a"
+              ]
+            },
+            "q4": {
+              "type": "_accordion-row",
+              "name": "How can I track my order?",
+              "settings": {
+                "heading": "How can I track my order?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q4_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Once your order has been dispatched, you'll receive a shipping confirmation email with tracking details so you can follow its journey.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q4_a"
+              ]
+            },
+            "q5": {
+              "type": "_accordion-row",
+              "name": "What if my order hasn't arrived?",
+              "settings": {
+                "heading": "What if my order hasn't arrived?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q5_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>If your order is taking longer than expected, please contact us at hello@bacii.com.au and we'll happily look into it for you.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q5_a"
+              ]
+            }
+          },
+          "block_order": [
+            "q1",
+            "q2",
+            "q3",
+            "q4",
+            "q5"
+          ]
+        }
+      },
+      "block_order": [
+        "cat_head",
+        "cat_acc"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "flex-start",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "flex-start",
+        "gap": 24,
+        "section_width": "large",
+        "section_height": "fit",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "#fcf5ef",
+        "toggle_overlay": false,
+        "overlay_color": "#12121266",
+        "overlay_style": "solid",
+        "gradient_direction": "to bottom",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "padding-block-start": 40,
+        "padding-block-end": 24
+      }
+    },
+    "faq_sizing_fit": {
+      "type": "section",
+      "name": "FAQ - Sizing & Fit",
+      "blocks": {
+        "cat_head": {
+          "type": "text",
+          "name": "Category heading",
+          "settings": {
+            "text": "<p>Sizing &amp; Fit</p>",
+            "width": "fill",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-heading--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#59697a",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "cat_acc": {
+          "type": "accordion",
+          "name": "Accordion",
+          "settings": {
+            "icon": "plus",
+            "dividers": true,
+            "divider_color": "#59697a",
+            "type_preset": "h5",
+            "background_color": "",
+            "text_color": "#59697a",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 8,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "q1": {
+              "type": "_accordion-row",
+              "name": "How do Bacii garments fit?",
+              "settings": {
+                "heading": "How do Bacii garments fit?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q1_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Our pieces are designed with a relaxed, oversized fit to allow room for movement, comfort and longer wear.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q1_a"
+              ]
+            },
+            "q2": {
+              "type": "_accordion-row",
+              "name": "Should I size up?",
+              "settings": {
+                "heading": "Should I size up?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q2_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Most customers choose their child's regular size for the intended oversized look. If you're unsure, we recommend referring to our size guide.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q2_a"
+              ]
+            },
+            "q3": {
+              "type": "_accordion-row",
+              "name": "Do you have a size guide?",
+              "settings": {
+                "heading": "Do you have a size guide?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q3_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Yes. You'll find detailed sizing information on each product page to help you choose the best fit.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q3_a"
+              ]
+            },
+            "q4": {
+              "type": "_accordion-row",
+              "name": "What age range does Bacii cater for?",
+              "settings": {
+                "heading": "What age range does Bacii cater for?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q4_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Our collections are designed for little personalities aged approximately 2–6 years, with sizing varying by collection.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q4_a"
+              ]
+            }
+          },
+          "block_order": [
+            "q1",
+            "q2",
+            "q3",
+            "q4"
+          ]
+        }
+      },
+      "block_order": [
+        "cat_head",
+        "cat_acc"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "flex-start",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "flex-start",
+        "gap": 24,
+        "section_width": "large",
+        "section_height": "fit",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "#fcf5ef",
+        "toggle_overlay": false,
+        "overlay_color": "#12121266",
+        "overlay_style": "solid",
+        "gradient_direction": "to bottom",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "padding-block-start": 24,
+        "padding-block-end": 24
+      }
+    },
+    "faq_product_care": {
+      "type": "section",
+      "name": "FAQ - Product & Care",
+      "blocks": {
+        "cat_head": {
+          "type": "text",
+          "name": "Category heading",
+          "settings": {
+            "text": "<p>Product &amp; Care</p>",
+            "width": "fill",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-heading--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#59697a",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "cat_acc": {
+          "type": "accordion",
+          "name": "Accordion",
+          "settings": {
+            "icon": "plus",
+            "dividers": true,
+            "divider_color": "#59697a",
+            "type_preset": "h5",
+            "background_color": "",
+            "text_color": "#59697a",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 8,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "q1": {
+              "type": "_accordion-row",
+              "name": "What are Bacii garments made from?",
+              "settings": {
+                "heading": "What are Bacii garments made from?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q1_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>All Bacii pieces are crafted from premium organic cotton selected for comfort, durability and everyday wear.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q1_a"
+              ]
+            },
+            "q2": {
+              "type": "_accordion-row",
+              "name": "Are your fabrics organic?",
+              "settings": {
+                "heading": "Are your fabrics organic?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q2_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Yes. We use high-quality organic cotton to create soft, comfortable pieces designed for busy little humans.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q2_a"
+              ]
+            },
+            "q3": {
+              "type": "_accordion-row",
+              "name": "How do I care for my Bacii pieces?",
+              "settings": {
+                "heading": "How do I care for my Bacii pieces?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q3_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>To keep your garments looking their best, wash inside out on a cold, gentle cycle and avoid tumble drying where possible.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q3_a"
+              ]
+            },
+            "q4": {
+              "type": "_accordion-row",
+              "name": "Will the prints fade?",
+              "settings": {
+                "heading": "Will the prints fade?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q4_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Our garments are designed to be worn, loved and handed down. Following the recommended care instructions will help maintain the quality of both fabric and print.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q4_a"
+              ]
+            },
+            "q5": {
+              "type": "_accordion-row",
+              "name": "Are your products ethically made?",
+              "settings": {
+                "heading": "Are your products ethically made?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q5_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Yes. Bacii garments are produced through certified ethical manufacturing partners who share our commitment to responsible production.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q5_a"
+              ]
+            }
+          },
+          "block_order": [
+            "q1",
+            "q2",
+            "q3",
+            "q4",
+            "q5"
+          ]
+        }
+      },
+      "block_order": [
+        "cat_head",
+        "cat_acc"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "flex-start",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "flex-start",
+        "gap": 24,
+        "section_width": "large",
+        "section_height": "fit",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "#fcf5ef",
+        "toggle_overlay": false,
+        "overlay_color": "#12121266",
+        "overlay_style": "solid",
+        "gradient_direction": "to bottom",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "padding-block-start": 24,
+        "padding-block-end": 24
+      }
+    },
+    "faq_returns_exchanges": {
+      "type": "section",
+      "name": "FAQ - Returns & Exchanges",
+      "blocks": {
+        "cat_head": {
+          "type": "text",
+          "name": "Category heading",
+          "settings": {
+            "text": "<p>Returns &amp; Exchanges</p>",
+            "width": "fill",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-heading--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#59697a",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "cat_acc": {
+          "type": "accordion",
+          "name": "Accordion",
+          "settings": {
+            "icon": "plus",
+            "dividers": true,
+            "divider_color": "#59697a",
+            "type_preset": "h5",
+            "background_color": "",
+            "text_color": "#59697a",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 8,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "q1": {
+              "type": "_accordion-row",
+              "name": "What is your return policy?",
+              "settings": {
+                "heading": "What is your return policy?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q1_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>We accept returns on full-priced items within 14 days of delivery, provided they are unworn, unwashed and in their original condition.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q1_a"
+              ]
+            },
+            "q2": {
+              "type": "_accordion-row",
+              "name": "Can I exchange for another size?",
+              "settings": {
+                "heading": "Can I exchange for another size?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q2_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>If your desired size is available, we're happy to assist with exchanges. Please contact us to arrange this.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q2_a"
+              ]
+            },
+            "q3": {
+              "type": "_accordion-row",
+              "name": "What if my item arrives damaged?",
+              "settings": {
+                "heading": "What if my item arrives damaged?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q3_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>If your order arrives damaged or faulty, please contact us within 7 days of receiving your order and we'll make it right.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q3_a"
+              ]
+            },
+            "q4": {
+              "type": "_accordion-row",
+              "name": "Can I return sale items?",
+              "settings": {
+                "heading": "Can I return sale items?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q4_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Sale items are final sale unless deemed faulty under Australian Consumer Law.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q4_a"
+              ]
+            }
+          },
+          "block_order": [
+            "q1",
+            "q2",
+            "q3",
+            "q4"
+          ]
+        }
+      },
+      "block_order": [
+        "cat_head",
+        "cat_acc"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "flex-start",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "flex-start",
+        "gap": 24,
+        "section_width": "large",
+        "section_height": "fit",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "#fcf5ef",
+        "toggle_overlay": false,
+        "overlay_color": "#12121266",
+        "overlay_style": "solid",
+        "gradient_direction": "to bottom",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "padding-block-start": 24,
+        "padding-block-end": 24
+      }
+    },
+    "faq_about_bacii": {
+      "type": "section",
+      "name": "FAQ - About Bacii",
+      "blocks": {
+        "cat_head": {
+          "type": "text",
+          "name": "Category heading",
+          "settings": {
+            "text": "<p>About Bacii</p>",
+            "width": "fill",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-heading--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#59697a",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "cat_acc": {
+          "type": "accordion",
+          "name": "Accordion",
+          "settings": {
+            "icon": "plus",
+            "dividers": true,
+            "divider_color": "#59697a",
+            "type_preset": "h5",
+            "background_color": "",
+            "text_color": "#59697a",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 8,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "q1": {
+              "type": "_accordion-row",
+              "name": "What does Bacii mean?",
+              "settings": {
+                "heading": "What does Bacii mean?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q1_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Bacii (pronounced \"bah-chee\") is inspired by the Italian word baci, meaning kisses. The two \"i's\" represent founder Peta's two boys — the inspiration behind the brand.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q1_a"
+              ]
+            },
+            "q2": {
+              "type": "_accordion-row",
+              "name": "Where is Bacii designed?",
+              "settings": {
+                "heading": "Where is Bacii designed?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q2_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>All Bacii collections are thoughtfully designed in Australia.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q2_a"
+              ]
+            },
+            "q3": {
+              "type": "_accordion-row",
+              "name": "Where are your products made?",
+              "settings": {
+                "heading": "Where are your products made?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q3_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Our garments are produced through carefully selected ethical manufacturing partners that align with our quality and production standards.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q3_a"
+              ]
+            },
+            "q4": {
+              "type": "_accordion-row",
+              "name": "Why did you start Bacii?",
+              "settings": {
+                "heading": "Why did you start Bacii?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q4_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Bacii was created by a mum of two who wanted children's clothing that felt playful, expressive and full of personality — without sacrificing quality or style.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q4_a"
+              ]
+            }
+          },
+          "block_order": [
+            "q1",
+            "q2",
+            "q3",
+            "q4"
+          ]
+        }
+      },
+      "block_order": [
+        "cat_head",
+        "cat_acc"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "flex-start",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "flex-start",
+        "gap": 24,
+        "section_width": "large",
+        "section_height": "fit",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "#fcf5ef",
+        "toggle_overlay": false,
+        "overlay_color": "#12121266",
+        "overlay_style": "solid",
+        "gradient_direction": "to bottom",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "padding-block-start": 24,
+        "padding-block-end": 24
+      }
+    },
+    "faq_gift_cards": {
+      "type": "section",
+      "name": "FAQ - Gift Cards",
+      "blocks": {
+        "cat_head": {
+          "type": "text",
+          "name": "Category heading",
+          "settings": {
+            "text": "<p>Gift Cards</p>",
+            "width": "fill",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-heading--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#59697a",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "cat_acc": {
+          "type": "accordion",
+          "name": "Accordion",
+          "settings": {
+            "icon": "plus",
+            "dividers": true,
+            "divider_color": "#59697a",
+            "type_preset": "h5",
+            "background_color": "",
+            "text_color": "#59697a",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 8,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "q1": {
+              "type": "_accordion-row",
+              "name": "Do Gift Cards expire?",
+              "settings": {
+                "heading": "Do Gift Cards expire?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q1_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>No. Bacii Gift Cards do not expire.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q1_a"
+              ]
+            },
+            "q2": {
+              "type": "_accordion-row",
+              "name": "Can I send a Gift Card directly to someone?",
+              "settings": {
+                "heading": "Can I send a Gift Card directly to someone?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 100
+              },
+              "blocks": {
+                "q2_a": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Yes. Simply enter the recipient's details at checkout or forward the gift card email once received.</p>",
+                    "width": "fill",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.9375rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "#59697a",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "q2_a"
+              ]
+            }
+          },
+          "block_order": [
+            "q1",
+            "q2"
+          ]
+        }
+      },
+      "block_order": [
+        "cat_head",
+        "cat_acc"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "center",
+        "vertical_alignment": "flex-start",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "flex-start",
+        "gap": 24,
+        "section_width": "large",
+        "section_height": "fit",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "#fcf5ef",
+        "toggle_overlay": false,
+        "overlay_color": "#12121266",
+        "overlay_style": "solid",
+        "gradient_direction": "to bottom",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "padding-block-start": 24,
+        "padding-block-end": 64
+      }
+    },
+    "faq_contact": {
+      "type": "section",
+      "name": "FAQ - Contact",
+      "blocks": {
+        "contact_group": {
+          "type": "group",
+          "name": "Contact copy",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 16,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "contact_eyebrow": {
+              "type": "text",
+              "name": "Eyebrow",
+              "settings": {
+                "text": "<p>CONTACT US</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "0.75rem",
+                "line_height": "normal",
+                "letter_spacing": "0.1em",
+                "case": "uppercase",
+                "wrap": "pretty",
+                "text_color": "#fcf5ef",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "contact_heading": {
+              "type": "text",
+              "name": "Heading",
+              "settings": {
+                "text": "<p>Still can't find what you're looking for?</p>",
+                "width": "fill",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h2",
+                "font": "var(--font-heading--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#fcf5ef",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "contact_body": {
+              "type": "text",
+              "name": "Body",
+              "settings": {
+                "text": "<p>No worries. If we've missed something, we'd love to help. Get in touch and we'll do our best to get back to you as quickly as possible.</p>",
+                "width": "fill",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "0.9375rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#fcf5ef",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "contact_btn": {
+              "type": "button",
+              "name": "Contact Us button",
+              "settings": {
+                "label": "Contact Us",
+                "link": "/pages/contact",
+                "open_in_new_tab": false,
+                "style_class": "button-custom",
+                "custom_button_background": "#fcf5ef",
+                "custom_button_text": "#007dfe",
+                "custom_button_border": "#fcf5ef",
+                "link_text_color": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "contact_eyebrow",
+            "contact_heading",
+            "contact_body",
+            "contact_btn"
+          ]
+        }
+      },
+      "block_order": [
+        "contact_group"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 24,
+        "section_width": "full-width",
+        "section_height": "fit",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "#007dfe",
+        "toggle_overlay": false,
+        "overlay_color": "#12121266",
+        "overlay_style": "solid",
+        "gradient_direction": "to bottom",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "padding-block-start": 64,
+        "padding-block-end": 64
+      }
+    }
+  },
+  "order": [
+    "faq_hero",
+    "faq_orders_shipping",
+    "faq_sizing_fit",
+    "faq_product_care",
+    "faq_returns_exchanges",
+    "faq_about_bacii",
+    "faq_gift_cards",
+    "faq_contact"
+  ]
+}
