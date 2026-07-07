@@ -1577,11 +1577,11 @@
         "collections_heading": {
           "type": "text",
           "settings": {
-            "text": "<p>Shop Collections</p>",
+            "text": "<h5>Collections</h5>",
             "width": "fill",
             "max_width": "normal",
             "alignment": "left",
-            "type_preset": "h2",
+            "type_preset": "h3",
             "font": "var(--font-heading--family)",
             "font_size": "",
             "line_height": "normal",
