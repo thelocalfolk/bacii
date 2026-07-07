@@ -956,6 +956,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
+            "image": "shopify://shop_images/Image_7.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -995,6 +996,20 @@
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "spacer_q6grtx": {
+              "type": "spacer",
+              "name": "t:names.spacer",
+              "settings": {
+                "size": "percent",
+                "percent_size": 100,
+                "pixel_size": 120,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
               },
               "blocks": {}
             },
@@ -1069,6 +1084,7 @@
           },
           "block_order": [
             "about_label",
+            "spacer_q6grtx",
             "about_heading",
             "about_body",
             "about_btn"
