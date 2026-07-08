@@ -168,6 +168,7 @@
             "rotate": -6,
             "flip_horizontal": false,
             "hide_on_mobile": false,
+            "mobile_inflow": true,
             "size_mobile": 210,
             "pos_x_mobile": 50,
             "pos_y_mobile": 77,
