@@ -116,7 +116,8 @@
   {%- comment -%} Inner-page heroes: compact content-fit height via padding; shrink oversized heading and clear the floating pill on mobile {%- endcomment -%}
   {%- unless template.name == 'index' -%}
   .hero .hero__content-wrapper {
-    padding-block: 48px;
+    padding-block-start: 48px;
+    padding-block-end: 16px;
   }
 
   @media screen and (max-width: 749px) {
