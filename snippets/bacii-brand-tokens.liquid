@@ -113,8 +113,12 @@
     }
   }
 
-  {%- comment -%} Inner-page heroes on mobile: shrink the oversized 60px heading and push content clear of the floating pill nav {%- endcomment -%}
+  {%- comment -%} Inner-page heroes: compact content-fit height via padding; shrink oversized heading and clear the floating pill on mobile {%- endcomment -%}
   {%- unless template.name == 'index' -%}
+  .hero .hero__content-wrapper {
+    padding-block: 48px;
+  }
+
   @media screen and (max-width: 749px) {
     .hero h1,
     .hero .h1 {
