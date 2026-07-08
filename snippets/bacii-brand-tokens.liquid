@@ -113,6 +113,22 @@
     }
   }
 
+  {%- comment -%} Inner-page heroes on mobile: shrink the oversized 60px heading and push content clear of the floating pill nav {%- endcomment -%}
+  {%- unless template.name == 'index' -%}
+  @media screen and (max-width: 749px) {
+    .hero h1,
+    .hero .h1 {
+      font-size: 38px;
+      line-height: 1.05;
+    }
+
+    .hero .hero__content-wrapper {
+      padding-block-start: 84px;
+      padding-block-end: 24px;
+    }
+  }
+  {%- endunless -%}
+
   /* True pill radius on inputs (Horizon schema caps at 32 via settings) */
   input[type="email"],
   input[type="text"],
