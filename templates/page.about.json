@@ -1485,16 +1485,6 @@
         "padding-block-start": 64,
         "padding-block-end": 64
       }
-    },
-    "wavy_marquee": {
-      "type": "bacii-marquee",
-      "settings": {
-        "text": "Made for big personalities|100% Organic Cotton|Designed in Australia|Original Illustrations|Made to be Passed Down|Ethically Made|Designed for Everyday Play",
-        "bg_color": "#f5a8b8",
-        "text_color": "#fcf5ef",
-        "speed": 50,
-        "overlap": 48
-      }
     }
   },
   "order": [
@@ -1505,7 +1495,6 @@
     "section_nhVhqp",
     "the_result",
     "featured_blog",
-    "newsletter_bacii_club",
-    "wavy_marquee"
+    "newsletter_bacii_club"
   ]
 }
