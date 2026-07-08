@@ -18,7 +18,7 @@
           "settings": {
             "text": "<p>Stories, inspiration and a little bit of chaos.</p>",
             "width": "fit-content",
-            "max_width": "normal",
+            "max_width": "narrow",
             "alignment": "left",
             "type_preset": "h1",
             "font": "var(--font-heading--family)",
