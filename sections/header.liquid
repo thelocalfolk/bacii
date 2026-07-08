@@ -27,6 +27,8 @@
   elsif section.settings.enable_transparent_header_collection and template.name == 'collection'
     assign transparent = 'always'
     assign transparent_text_color_setting = section.settings.text_color_transparent_collection
+  elsif template.name == 'page' or template.name == 'blog' or template.name == 'article'
+    assign transparent = 'always'
   endif
 
   if section.settings.enable_sticky_header == 'always'
