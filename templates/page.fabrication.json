@@ -173,7 +173,7 @@
         "vertical_alignment_flex_direction_column": "center",
         "gap": 24,
         "section_width": "page-width",
-        "section_height": "fit",
+        "section_height": "",
         "section_height_custom": 50,
         "background_media": "none",
         "background_color": "#ffeca8",
@@ -323,7 +323,7 @@
       "settings": {
         "media_position": "right",
         "media_width": "medium",
-        "media_height": "60svh",
+        "media_height": "80svh",
         "section_width": "full-width",
         "extend_media": true,
         "background_color": "#d8f9f2",
@@ -462,7 +462,7 @@
       "settings": {
         "media_position": "left",
         "media_width": "medium",
-        "media_height": "60svh",
+        "media_height": "80svh",
         "section_width": "full-width",
         "extend_media": true,
         "background_color": "#ff835d",
@@ -478,6 +478,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
+            "image": "shopify://shop_images/8f1dc32e21a2badcf55cae79a4d9403f07c0ae0c.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -499,7 +500,7 @@
               "type": "text",
               "name": "Label",
               "settings": {
-                "text": "<p>OUR MAKERS</p>",
+                "text": "<p>Our Makers</p>",
                 "width": "fill",
                 "max_width": "normal",
                 "alignment": "left",
@@ -518,6 +519,20 @@
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "spacer_EMz6Hj": {
+              "type": "spacer",
+              "name": "t:names.spacer",
+              "settings": {
+                "size": "percent",
+                "percent_size": 100,
+                "pixel_size": 120,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
               },
               "blocks": {}
             },
@@ -576,6 +591,7 @@
           },
           "block_order": [
             "makers_label",
+            "spacer_EMz6Hj",
             "makers_heading",
             "makers_body"
           ]
@@ -585,7 +601,7 @@
       "settings": {
         "media_position": "right",
         "media_width": "medium",
-        "media_height": "60svh",
+        "media_height": "80svh",
         "section_width": "full-width",
         "extend_media": true,
         "background_color": "#007dfe",
