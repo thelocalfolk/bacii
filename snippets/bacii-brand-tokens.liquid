@@ -124,6 +124,11 @@
      setting is unreliable for the hero (fixed editor preview height + image
      aspect can override it), so control it here. Image crops to fill. */
   @media screen and (min-width: 750px) {
+    .hero {
+      min-height: 0 !important;
+      height: 700px !important;
+      overflow: hidden !important;
+    }
     .hero .hero__container {
       min-height: 0 !important;
       height: 700px !important;
