@@ -429,7 +429,7 @@
               "settings": {
                 "text": "<p>They sleep in them, play in them, spill on them, roll around in them and wear them on repeat. That's why choosing the right fabric was one of the most important decisions we made when creating Bacii.</p><p>We chose organic cotton because it's soft, breathable and gentle on delicate skin. Unlike conventional cotton, organic cotton is grown without many of the chemicals commonly used in traditional farming practices.<br/>But for us, it wasn't just about comfort.</p><p>We wanted fabrics that would stand up to real childhood. The kind that can survive playground adventures, endless washing and hopefully be passed down to younger siblings, cousins or friends.</p><p>Our goal isn't fast fashion. It's creating pieces that are loved for longer.<br/>Because the most sustainable clothing is often the clothing that gets worn again and again.</p>",
                 "width": "fill",
-                "max_width": "normal",
+                "max_width": "none",
                 "alignment": "left",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
