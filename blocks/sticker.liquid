@@ -56,13 +56,10 @@
 {%- endif -%}
 
 {% stylesheet %}
-  /* Make the block's parent a positioning anchor wherever it's dropped
-     (hero content wrapper is already relative; generic sections are not). */
-  .section-content-wrapper:has(> .bacii-sticker),
-  .hero__content-wrapper:has(> .bacii-sticker) {
-    position: relative;
-  }
-
+  /* Anchors to the nearest positioned ancestor. In generic sections that is
+     `.section` (full-width band, already position:relative in base.css); in the
+     hero it is `.hero__content-wrapper`. Positions are therefore % of the whole
+     band, so a sticker can sit outside the text column (e.g. bottom-centre). */
   .bacii-sticker {
     position: absolute;
     top: var(--sticker-y);

@@ -162,12 +162,15 @@
           "name": "Mint star sticker",
           "settings": {
             "asset_filename": "sticker-mint-star.svg",
-            "size": 210,
-            "pos_x": 8,
-            "pos_y": 50,
+            "size": 220,
+            "pos_x": 14,
+            "pos_y": 62,
             "rotate": -6,
             "flip_horizontal": false,
             "hide_on_mobile": false,
+            "size_mobile": 210,
+            "pos_x_mobile": 50,
+            "pos_y_mobile": 77,
             "animation": "sway",
             "speed": 3
           },
