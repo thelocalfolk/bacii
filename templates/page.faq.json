@@ -11,7 +11,6 @@
   "sections": {
     "faq_hero": {
       "type": "hero",
-      "name": "FAQ Hero",
       "blocks": {
         "hero_heading": {
           "type": "text",
@@ -38,14 +37,42 @@
             "padding-inline-end": 0
           },
           "blocks": {}
+        },
+        "text_8watAz": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "{{ settings.color_palette.background }}",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 26,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "hero_heading"
+        "hero_heading",
+        "text_8watAz"
       ],
+      "name": "FAQ Hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "",
+        "image_1": "shopify://shop_images/11066bbaffbe2267c7f7da4d1e22f7a8b1eb85fe.jpg",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
@@ -77,7 +104,6 @@
     },
     "faq_orders_shipping": {
       "type": "section",
-      "name": "FAQ - Orders & Shipping",
       "blocks": {
         "cat_head": {
           "type": "text",
@@ -340,6 +366,7 @@
         "cat_head",
         "cat_acc"
       ],
+      "name": "FAQ - Orders & Shipping",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -354,6 +381,8 @@
         "section_height_custom": 50,
         "background_media": "none",
         "background_color": "#fcf5ef",
+        "video_position": "cover",
+        "background_image_position": "cover",
         "toggle_overlay": false,
         "overlay_color": "#12121266",
         "overlay_style": "solid",
@@ -361,6 +390,7 @@
         "border": "none",
         "border_width": 1,
         "border_opacity": 100,
+        "border_color": "",
         "border_radius": 0,
         "padding-block-start": 40,
         "padding-block-end": 24
@@ -368,7 +398,6 @@
     },
     "faq_sizing_fit": {
       "type": "section",
-      "name": "FAQ - Sizing & Fit",
       "blocks": {
         "cat_head": {
           "type": "text",
@@ -590,6 +619,7 @@
         "cat_head",
         "cat_acc"
       ],
+      "name": "FAQ - Sizing & Fit",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -604,6 +634,8 @@
         "section_height_custom": 50,
         "background_media": "none",
         "background_color": "#fcf5ef",
+        "video_position": "cover",
+        "background_image_position": "cover",
         "toggle_overlay": false,
         "overlay_color": "#12121266",
         "overlay_style": "solid",
@@ -611,6 +643,7 @@
         "border": "none",
         "border_width": 1,
         "border_opacity": 100,
+        "border_color": "",
         "border_radius": 0,
         "padding-block-start": 24,
         "padding-block-end": 24
@@ -618,7 +651,6 @@
     },
     "faq_product_care": {
       "type": "section",
-      "name": "FAQ - Product & Care",
       "blocks": {
         "cat_head": {
           "type": "text",
@@ -881,6 +913,7 @@
         "cat_head",
         "cat_acc"
       ],
+      "name": "FAQ - Product & Care",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -895,6 +928,8 @@
         "section_height_custom": 50,
         "background_media": "none",
         "background_color": "#fcf5ef",
+        "video_position": "cover",
+        "background_image_position": "cover",
         "toggle_overlay": false,
         "overlay_color": "#12121266",
         "overlay_style": "solid",
@@ -902,6 +937,7 @@
         "border": "none",
         "border_width": 1,
         "border_opacity": 100,
+        "border_color": "",
         "border_radius": 0,
         "padding-block-start": 24,
         "padding-block-end": 24
@@ -909,7 +945,6 @@
     },
     "faq_returns_exchanges": {
       "type": "section",
-      "name": "FAQ - Returns & Exchanges",
       "blocks": {
         "cat_head": {
           "type": "text",
@@ -1131,6 +1166,7 @@
         "cat_head",
         "cat_acc"
       ],
+      "name": "FAQ - Returns & Exchanges",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -1145,6 +1181,8 @@
         "section_height_custom": 50,
         "background_media": "none",
         "background_color": "#fcf5ef",
+        "video_position": "cover",
+        "background_image_position": "cover",
         "toggle_overlay": false,
         "overlay_color": "#12121266",
         "overlay_style": "solid",
@@ -1152,6 +1190,7 @@
         "border": "none",
         "border_width": 1,
         "border_opacity": 100,
+        "border_color": "",
         "border_radius": 0,
         "padding-block-start": 24,
         "padding-block-end": 24
@@ -1159,7 +1198,6 @@
     },
     "faq_about_bacii": {
       "type": "section",
-      "name": "FAQ - About Bacii",
       "blocks": {
         "cat_head": {
           "type": "text",
@@ -1381,6 +1419,7 @@
         "cat_head",
         "cat_acc"
       ],
+      "name": "FAQ - About Bacii",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -1395,6 +1434,8 @@
         "section_height_custom": 50,
         "background_media": "none",
         "background_color": "#fcf5ef",
+        "video_position": "cover",
+        "background_image_position": "cover",
         "toggle_overlay": false,
         "overlay_color": "#12121266",
         "overlay_style": "solid",
@@ -1402,6 +1443,7 @@
         "border": "none",
         "border_width": 1,
         "border_opacity": 100,
+        "border_color": "",
         "border_radius": 0,
         "padding-block-start": 24,
         "padding-block-end": 24
@@ -1409,7 +1451,6 @@
     },
     "faq_gift_cards": {
       "type": "section",
-      "name": "FAQ - Gift Cards",
       "blocks": {
         "cat_head": {
           "type": "text",
@@ -1549,6 +1590,7 @@
         "cat_head",
         "cat_acc"
       ],
+      "name": "FAQ - Gift Cards",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -1563,6 +1605,8 @@
         "section_height_custom": 50,
         "background_media": "none",
         "background_color": "#fcf5ef",
+        "video_position": "cover",
+        "background_image_position": "cover",
         "toggle_overlay": false,
         "overlay_color": "#12121266",
         "overlay_style": "solid",
@@ -1570,6 +1614,7 @@
         "border": "none",
         "border_width": 1,
         "border_opacity": 100,
+        "border_color": "",
         "border_radius": 0,
         "padding-block-start": 24,
         "padding-block-end": 64
@@ -1577,7 +1622,6 @@
     },
     "faq_contact": {
       "type": "section",
-      "name": "FAQ - Contact",
       "blocks": {
         "contact_group": {
           "type": "group",
@@ -1728,6 +1772,7 @@
       "block_order": [
         "contact_group"
       ],
+      "name": "FAQ - Contact",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -1742,6 +1787,8 @@
         "section_height_custom": 50,
         "background_media": "none",
         "background_color": "#007dfe",
+        "video_position": "cover",
+        "background_image_position": "cover",
         "toggle_overlay": false,
         "overlay_color": "#12121266",
         "overlay_style": "solid",
@@ -1749,6 +1796,7 @@
         "border": "none",
         "border_width": 1,
         "border_opacity": 100,
+        "border_color": "",
         "border_radius": 0,
         "padding-block-start": 64,
         "padding-block-end": 64
