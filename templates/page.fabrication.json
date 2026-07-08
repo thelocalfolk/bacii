@@ -200,6 +200,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
+            "image": "shopify://shop_images/0910bc2662cd16718de47e0f19e40a006cef0c83.png",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -221,11 +222,11 @@
               "type": "text",
               "name": "Label",
               "settings": {
-                "text": "<p>FABRICATION</p>",
+                "text": "<p>Fabrication</p>",
                 "width": "fill",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h5",
+                "type_preset": "h4",
                 "font": "var(--font-heading--family)",
                 "font_size": "",
                 "line_height": "normal",
@@ -240,6 +241,20 @@
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "spacer_AE8edT": {
+              "type": "spacer",
+              "name": "t:names.spacer",
+              "settings": {
+                "size": "percent",
+                "percent_size": 100,
+                "pixel_size": 120,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
               },
               "blocks": {}
             },
@@ -298,6 +313,7 @@
           },
           "block_order": [
             "quality_label",
+            "spacer_AE8edT",
             "quality_heading",
             "quality_body"
           ]
@@ -323,6 +339,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
+            "image": "shopify://shop_images/dc7bc3427a6632e0bdb45d9f6787c38d762035f2.png",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -344,11 +361,11 @@
               "type": "text",
               "name": "Label",
               "settings": {
-                "text": "<p>WHY CHOOSE ORGANIC COTTON</p>",
+                "text": "<p>Why Choose Organic Cotton</p>",
                 "width": "fill",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h5",
+                "type_preset": "h4",
                 "font": "var(--font-heading--family)",
                 "font_size": "",
                 "line_height": "normal",
@@ -363,6 +380,20 @@
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "spacer_ECFVx6": {
+              "type": "spacer",
+              "name": "t:names.spacer",
+              "settings": {
+                "size": "percent",
+                "percent_size": 100,
+                "pixel_size": 120,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
               },
               "blocks": {}
             },
@@ -421,6 +452,7 @@
           },
           "block_order": [
             "organic_label",
+            "spacer_ECFVx6",
             "organic_heading",
             "organic_body"
           ]
