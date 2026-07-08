@@ -60,6 +60,12 @@
   h5, .h5 { font-size: var(--font-size-h5); line-height: var(--line-height-h5); letter-spacing: var(--letter-spacing-h5); }
 
 
+  {%- comment -%}
+    Homepage hero only — cream gradient over the left of the photo for text readability.
+    Scoped to the index template so page/product/collection heroes are controlled by their
+    own overlay setting instead of this hardcoded gradient.
+  {%- endcomment -%}
+  {%- if template.name == 'index' -%}
   /* Hero — cream gradient over the left half of the photo only */
   .hero .hero__media-grid::after {
     content: '';
@@ -75,6 +81,7 @@
     position: relative;
     z-index: 2;
   }
+  {%- endif -%}
 
   /* Pill nav header — cream capsule floating over the page at all scroll states */
   .header-section {
