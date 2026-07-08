@@ -245,15 +245,14 @@
         "padding-block-end": 48
       }
     },
-    "collections_band": {
+    "collection_list_xXzgdy": {
       "type": "collection-list",
       "blocks": {
-        "collections_heading": {
+        "text_FmFQfr": {
           "type": "text",
-          "name": "Heading",
           "settings": {
-            "text": "<p>Collections</p>",
-            "width": "100%",
+            "text": "<h3>Collections</h3>",
+            "width": "fill",
             "max_width": "normal",
             "alignment": "left",
             "type_preset": "h4",
@@ -278,9 +277,9 @@
           "type": "_collection-card",
           "static": true,
           "settings": {
-            "placement": "on_image",
+            "placement": "below_image",
             "horizontal_alignment": "flex-start",
-            "vertical_alignment": "flex-end",
+            "vertical_alignment": "center",
             "collection_card_gap": 8,
             "background_color": "",
             "border": "none",
@@ -290,6 +289,31 @@
             "border_radius": 0
           },
           "blocks": {
+            "collection_title_JRnyh8": {
+              "type": "collection-title",
+              "name": "t:names.collection_title",
+              "settings": {
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "{{ settings.color_palette.background }}",
+                "text_color": "{{ settings.color_palette.foreground }}",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "collection-card-image": {
               "type": "_collection-card-image",
               "static": true,
@@ -308,21 +332,28 @@
               "blocks": {}
             }
           },
-          "block_order": []
+          "block_order": [
+            "collection_title_JRnyh8"
+          ]
         }
       },
       "block_order": [
-        "collections_heading"
+        "text_FmFQfr"
       ],
-      "name": "Collections",
+      "name": "Shop Collections",
       "settings": {
-        "collection_list": [],
+        "collection_list": [
+          "tees",
+          "shorts",
+          "dresses",
+          "hats"
+        ],
         "layout_type": "carousel",
         "carousel_on_mobile": true,
         "columns": 4,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
-        "columns_gap": 28,
+        "columns_gap": 8,
         "bento_gap": 8,
         "rows_gap": 8,
         "max_collections": 4,
@@ -339,6 +370,6 @@
   "order": [
     "collection_heading",
     "main",
-    "collections_band"
+    "collection_list_xXzgdy"
   ]
 }
