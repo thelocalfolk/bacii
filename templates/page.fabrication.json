@@ -568,7 +568,7 @@
               "settings": {
                 "text": "<p>When creating Bacii, we spent months searching for manufacturing partners who shared our commitment to quality, responsible production and thoughtful craftsmanship.</p><p>Today, we work with two specialist factories that produce our clothing and headwear. Both factories operate under internationally recognised standards and have experience producing high-quality products for brands around the world.</p><p>Many of our fabrics are made from certified organic cotton and produced in facilities that follow recognised environmental and social compliance practices, including GOTS, OEKO-TEX and BSCI standards.<br/>While we're a small brand, we're committed to asking questions, choosing partners carefully and continually improving as we grow.<br/>Because childhood should be messy, magical and full of personality - and the clothes that come along for the ride should be made with care</p>",
                 "width": "fill",
-                "max_width": "normal",
+                "max_width": "none",
                 "alignment": "left",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
