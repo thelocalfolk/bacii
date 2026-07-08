@@ -38,6 +38,9 @@
       --sticker-size: {{ s.size }}px;
       --sticker-x: {{ s.pos_x }}%;
       --sticker-y: {{ s.pos_y }}%;
+      --sticker-size-m: {{ s.size_mobile | default: s.size }}px;
+      --sticker-x-m: {{ s.pos_x_mobile | default: s.pos_x }}%;
+      --sticker-y-m: {{ s.pos_y_mobile | default: s.pos_y }}%;
       --sticker-rotate: {{ s.rotate }}deg;
       --sticker-flip: {{ flip_scale }};
     "
@@ -82,6 +85,12 @@
   }
 
   @media screen and (max-width: 749px) {
+    .bacii-sticker {
+      top: var(--sticker-y-m);
+      left: var(--sticker-x-m);
+      width: var(--sticker-size-m);
+    }
+
     .bacii-sticker--hide-mobile {
       display: none;
     }
@@ -192,6 +201,41 @@
       "id": "hide_on_mobile",
       "label": "Hide on mobile",
       "default": false
+    },
+    {
+      "type": "header",
+      "content": "Mobile placement",
+      "info": "Overrides the values above on screens under 750px. Leave at defaults to reuse the desktop placement."
+    },
+    {
+      "type": "range",
+      "id": "size_mobile",
+      "label": "Size (mobile)",
+      "min": 40,
+      "max": 400,
+      "step": 5,
+      "unit": "px",
+      "default": 150
+    },
+    {
+      "type": "range",
+      "id": "pos_x_mobile",
+      "label": "Horizontal position (mobile)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "pos_y_mobile",
+      "label": "Vertical position (mobile)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 50
     },
     {
       "type": "header",

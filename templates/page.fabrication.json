@@ -162,7 +162,7 @@
           "name": "Mint star sticker",
           "settings": {
             "asset_filename": "sticker-mint-star.svg",
-            "size": 160,
+            "size": 210,
             "pos_x": 8,
             "pos_y": 50,
             "rotate": -6,
