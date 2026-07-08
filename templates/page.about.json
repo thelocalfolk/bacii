@@ -17,7 +17,7 @@
           "name": "Heading",
           "settings": {
             "text": "<p>Made for the little personalities who keep us laughing</p>",
-            "width": "fill",
+            "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
             "type_preset": "h1",
@@ -110,7 +110,7 @@
         "gap": 24,
         "section_width": "page-width",
         "section_height": "custom",
-        "section_height_custom": 76,
+        "section_height_custom": 49,
         "background_color": "rgba(0,0,0,0)",
         "toggle_overlay": false,
         "overlay_color": "#fcf5ef",
