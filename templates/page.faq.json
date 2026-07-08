@@ -1620,63 +1620,45 @@
         "padding-block-end": 64
       }
     },
-    "faq_contact": {
-      "type": "section",
+    "media_with_content_yqCR3T": {
+      "type": "media-with-content",
       "blocks": {
-        "contact_group": {
-          "type": "group",
-          "name": "Contact copy",
+        "media": {
+          "type": "_media-without-appearance",
+          "static": true,
           "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
+            "media_type": "image",
+            "image": "shopify://shop_images/Image_18.png",
+            "link": "",
+            "video_loop": true,
+            "video_autoplay": false,
+            "image_position": "cover",
+            "video_position": "cover"
+          },
+          "blocks": {}
+        },
+        "content": {
+          "type": "_content-without-appearance",
+          "static": true,
+          "settings": {
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
-            "gap": 16,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "background_media": "none",
-            "background_color": "",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "gap": 24
           },
           "blocks": {
-            "contact_eyebrow": {
+            "text_RX9hdY": {
               "type": "text",
-              "name": "Eyebrow",
               "settings": {
-                "text": "<p>CONTACT US</p>",
-                "width": "fit-content",
+                "text": "<p>Contact Us</p>",
+                "width": "fill",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "paragraph",
-                "font": "var(--font-body--family)",
-                "font_size": "0.75rem",
+                "type_preset": "h4",
+                "font": "var(--font-heading--family)",
+                "font_size": "",
                 "line_height": "normal",
-                "letter_spacing": "0.1em",
-                "case": "uppercase",
+                "letter_spacing": "normal",
+                "case": "none",
                 "wrap": "pretty",
                 "text_color": "#fcf5ef",
                 "background": false,
@@ -1689,9 +1671,22 @@
               },
               "blocks": {}
             },
-            "contact_heading": {
+            "spacer_7FepEQ": {
+              "type": "spacer",
+              "name": "t:names.spacer",
+              "settings": {
+                "size": "percent",
+                "percent_size": 100,
+                "pixel_size": 120,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
+              },
+              "blocks": {}
+            },
+            "text_Xgj8Fk": {
               "type": "text",
-              "name": "Heading",
               "settings": {
                 "text": "<p>Still can't find what you're looking for?</p>",
                 "width": "fill",
@@ -1715,9 +1710,8 @@
               },
               "blocks": {}
             },
-            "contact_body": {
+            "text_pVb4K7": {
               "type": "text",
-              "name": "Body",
               "settings": {
                 "text": "<p>No worries. If we've missed something, we'd love to help. Get in touch and we'll do our best to get back to you as quickly as possible.</p>",
                 "width": "fill",
@@ -1741,16 +1735,15 @@
               },
               "blocks": {}
             },
-            "contact_btn": {
+            "button_BK6Lw4": {
               "type": "button",
-              "name": "Contact Us button",
               "settings": {
                 "label": "Contact Us",
-                "link": "/pages/contact",
+                "link": "shopify://pages/contact",
                 "open_in_new_tab": false,
                 "style_class": "button-custom",
                 "custom_button_background": "#fcf5ef",
-                "custom_button_text": "#007dfe",
+                "custom_button_text": "#027DFE",
                 "custom_button_border": "#fcf5ef",
                 "link_text_color": "",
                 "width": "fit-content",
@@ -1762,44 +1755,24 @@
             }
           },
           "block_order": [
-            "contact_eyebrow",
-            "contact_heading",
-            "contact_body",
-            "contact_btn"
+            "text_RX9hdY",
+            "spacer_7FepEQ",
+            "text_Xgj8Fk",
+            "text_pVb4K7",
+            "button_BK6Lw4"
           ]
         }
       },
-      "block_order": [
-        "contact_group"
-      ],
-      "name": "FAQ - Contact",
+      "name": "Our Vision",
       "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 24,
+        "media_position": "right",
+        "media_width": "medium",
+        "media_height": "80svh",
         "section_width": "full-width",
-        "section_height": "fit",
-        "section_height_custom": 50,
-        "background_media": "none",
-        "background_color": "#007dfe",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "toggle_overlay": false,
-        "overlay_color": "#12121266",
-        "overlay_style": "solid",
-        "gradient_direction": "to bottom",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_color": "",
-        "border_radius": 0,
-        "padding-block-start": 64,
-        "padding-block-end": 64
+        "extend_media": true,
+        "background_color": "#027DFE",
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     }
   },
@@ -1811,6 +1784,6 @@
     "faq_returns_exchanges",
     "faq_about_bacii",
     "faq_gift_cards",
-    "faq_contact"
+    "media_with_content_yqCR3T"
   ]
 }
