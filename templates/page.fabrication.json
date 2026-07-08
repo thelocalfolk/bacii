@@ -156,11 +156,28 @@
             "padding-inline-end": 0
           },
           "blocks": {}
+        },
+        "sticker_star": {
+          "type": "sticker",
+          "name": "Mint star sticker",
+          "settings": {
+            "asset_filename": "sticker-mint-star.svg",
+            "size": 160,
+            "pos_x": 8,
+            "pos_y": 50,
+            "rotate": -6,
+            "flip_horizontal": false,
+            "hide_on_mobile": false,
+            "animation": "sway",
+            "speed": 3
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "belief_heading",
-        "belief_body"
+        "belief_body",
+        "sticker_star"
       ],
       "name": "Belief Band",
       "settings": {

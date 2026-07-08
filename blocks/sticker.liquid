@@ -1,0 +1,231 @@
+
+
+{%- doc -%}
+  Decorative animated sticker/decal.
+
+  Renders a positioned, optionally-animated image over its parent section
+  (hero, media-with-content, etc.). Purely decorative: pointer-events are
+  disabled so it never blocks clicks, and motion is paused for visitors who
+  prefer reduced motion.
+
+  Image source priority: uploaded image (image_picker) first, otherwise a
+  theme asset filename (e.g. "sticker-mint-star.svg").
+{%- enddoc -%}
+
+{% liquid
+  assign s = block.settings
+  assign flip_scale = 1
+  if s.flip_horizontal
+    assign flip_scale = -1
+  endif
+%}
+
+{%- capture sticker_img -%}
+  {%- if s.image != blank -%}
+    {{ s.image | image_url: width: 600 | image_tag: widths: '150, 300, 450, 600', alt: '', loading: 'lazy', class: 'bacii-sticker__img' }}
+  {%- elsif s.asset_filename != blank -%}
+    {% # theme-check-disable ImgWidthAndHeight %}
+    <img src="{{ s.asset_filename | asset_url }}" alt="" loading="lazy" class="bacii-sticker__img">
+    {% # theme-check-enable ImgWidthAndHeight %}
+  {%- endif -%}
+{%- endcapture -%}
+
+{%- assign sticker_img_stripped = sticker_img | strip -%}
+{%- if sticker_img_stripped != '' -%}
+  <div
+    class="bacii-sticker{% if s.hide_on_mobile %} bacii-sticker--hide-mobile{% endif %}"
+    style="
+      --sticker-size: {{ s.size }}px;
+      --sticker-x: {{ s.pos_x }}%;
+      --sticker-y: {{ s.pos_y }}%;
+      --sticker-rotate: {{ s.rotate }}deg;
+      --sticker-flip: {{ flip_scale }};
+    "
+    {{ block.shopify_attributes }}
+  >
+    <div
+      class="bacii-sticker__inner"
+      style="{% if s.animation != 'none' %}animation: bacii-sticker-{{ s.animation }} {{ s.speed }}s ease-in-out infinite;{% endif %}"
+    >
+      {{ sticker_img }}
+    </div>
+  </div>
+{%- endif -%}
+
+{% stylesheet %}
+  /* Make the block's parent a positioning anchor wherever it's dropped
+     (hero content wrapper is already relative; generic sections are not). */
+  .section-content-wrapper:has(> .bacii-sticker),
+  .hero__content-wrapper:has(> .bacii-sticker) {
+    position: relative;
+  }
+
+  .bacii-sticker {
+    position: absolute;
+    top: var(--sticker-y);
+    left: var(--sticker-x);
+    width: var(--sticker-size);
+    transform: translate(-50%, -50%) rotate(var(--sticker-rotate)) scaleX(var(--sticker-flip));
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  .bacii-sticker__inner {
+    transform-origin: center 70%;
+    will-change: transform;
+  }
+
+  .bacii-sticker__img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (max-width: 749px) {
+    .bacii-sticker--hide-mobile {
+      display: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bacii-sticker__inner {
+      animation: none !important;
+    }
+  }
+
+  @keyframes bacii-sticker-sway {
+    0%, 100% { transform: rotate(-5deg) translateY(0); }
+    50%      { transform: rotate(5deg) translateY(-6px); }
+  }
+  @keyframes bacii-sticker-wiggle {
+    0%, 100% { transform: rotate(-6deg); }
+    50%      { transform: rotate(6deg); }
+  }
+  @keyframes bacii-sticker-float {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-16px); }
+  }
+  @keyframes bacii-sticker-pulse {
+    0%, 100% { transform: scale(1); }
+    50%      { transform: scale(1.09); }
+  }
+  @keyframes bacii-sticker-jelly {
+    0%, 100% { transform: scale(1, 1); }
+    30%      { transform: scale(1.08, 0.92); }
+    60%      { transform: scale(0.94, 1.06); }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Sticker",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Uploaded image"
+    },
+    {
+      "type": "text",
+      "id": "asset_filename",
+      "label": "Or theme asset filename",
+      "info": "Used when no image is uploaded above. e.g. sticker-mint-star.svg",
+      "default": "sticker-mint-star.svg"
+    },
+    {
+      "type": "header",
+      "content": "Placement"
+    },
+    {
+      "type": "range",
+      "id": "size",
+      "label": "Size",
+      "min": 40,
+      "max": 400,
+      "step": 5,
+      "unit": "px",
+      "default": 150
+    },
+    {
+      "type": "range",
+      "id": "pos_x",
+      "label": "Horizontal position",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 88
+    },
+    {
+      "type": "range",
+      "id": "pos_y",
+      "label": "Vertical position",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "rotate",
+      "label": "Rotation",
+      "min": -45,
+      "max": 45,
+      "step": 1,
+      "unit": "deg",
+      "default": -8
+    },
+    {
+      "type": "checkbox",
+      "id": "flip_horizontal",
+      "label": "Flip horizontally",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_on_mobile",
+      "label": "Hide on mobile",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Motion"
+    },
+    {
+      "type": "select",
+      "id": "animation",
+      "label": "Animation",
+      "options": [
+        { "value": "none", "label": "None" },
+        { "value": "sway", "label": "Sway" },
+        { "value": "wiggle", "label": "Wiggle" },
+        { "value": "float", "label": "Float" },
+        { "value": "pulse", "label": "Pulse" },
+        { "value": "jelly", "label": "Jelly" }
+      ],
+      "default": "sway"
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "label": "Speed (seconds per loop)",
+      "min": 1,
+      "max": 6,
+      "step": 0.5,
+      "unit": "s",
+      "default": 3
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sticker"
+    }
+  ]
+}
+{% endschema %}
