@@ -82,12 +82,29 @@
             "custom_width_mobile": 100
           },
           "blocks": {}
+        },
+        "sticker_pretzel": {
+          "type": "sticker",
+          "name": "Pretzel sticker",
+          "settings": {
+            "asset_filename": "sticker-periwinkle.svg",
+            "size": 165,
+            "pos_x": 78,
+            "pos_y": 82,
+            "rotate": -4,
+            "flip_horizontal": false,
+            "hide_on_mobile": true,
+            "animation": "sway",
+            "speed": 3
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "text_heading",
         "text_subheading",
-        "button_cta"
+        "button_cta",
+        "sticker_pretzel"
       ],
       "name": "Hero",
       "settings": {

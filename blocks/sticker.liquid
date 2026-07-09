@@ -33,7 +33,7 @@
 {%- assign sticker_img_stripped = sticker_img | strip -%}
 {%- if sticker_img_stripped != '' -%}
   <div
-    class="bacii-sticker{% if s.hide_on_mobile %} bacii-sticker--hide-mobile{% endif %}{% if s.mobile_inflow %} bacii-sticker--mobile-flow{% endif %}"
+    class="bacii-sticker{% if s.hide_on_mobile %} bacii-sticker--hide-mobile{% endif %}{% if s.mobile_inflow %} bacii-sticker--mobile-flow{% endif %}{% if s.hero_fullbleed %} bacii-sticker--hero{% endif %}"
     style="
       --sticker-size: {{ s.size }}px;
       --sticker-x: {{ s.pos_x }}%;
@@ -60,6 +60,16 @@
      `.section` (full-width band, already position:relative in base.css); in the
      hero it is `.hero__content-wrapper`. Positions are therefore % of the whole
      band, so a sticker can sit outside the text column (e.g. bottom-centre). */
+
+  /* Hero full-bleed: the hero renders blocks inside `.hero__content-wrapper`
+     (page-width, content-height), so by default a sticker can't reach the full
+     hero image. Neutralising that wrapper's positioning lets the sticker anchor
+     to `.hero__container` (the full-bleed hero) instead. Content layout is
+     unaffected — it's placed by grid + flex, not by this position. */
+  .hero__content-wrapper:has(> .bacii-sticker--hero) {
+    position: static;
+  }
+
   .bacii-sticker {
     position: absolute;
     top: var(--sticker-y);
@@ -203,6 +213,13 @@
       "type": "checkbox",
       "id": "flip_horizontal",
       "label": "Flip horizontally",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "hero_fullbleed",
+      "label": "Anchor to full hero",
+      "info": "Turn on when this sticker is inside a Hero section so position is measured against the whole hero image, not the text column.",
       "default": false
     },
     {
