@@ -458,7 +458,7 @@
 
 <div
   id="Hero-{{ section.id }}"
-  class="hero{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}{% if section.blocks.size == 0 and section.settings.section_height == 'auto' %} hero--no-blocks-auto-height{% endif %}{% if section.settings.stack_media_on_mobile %} hero--stack-mobile{% endif %}"
+  class="hero{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}{% if section.blocks.size == 0 and section.settings.section_height == 'auto' %} hero--no-blocks-auto-height{% endif %}{% if section.settings.stack_media_on_mobile %} hero--stack-mobile{% endif %}{% if section.settings.mobile_content_position and section.settings.mobile_content_position != 'inherit' %} hero--m-valign-{{ section.settings.mobile_content_position }}{% endif %}"
   style="
     --hero-border-style: {{ section.settings.border }};
     --hero-border-width: {{ section.settings.border_width }}px;
@@ -566,6 +566,21 @@
   @media screen and (max-width: 749px) {
     .hero {
       min-height: calc(var(--hero-min-height-mobile, var(--hero-min-height)) - var(--hero-height-offset));
+    }
+
+    /* Mobile-only content vertical position (desktop keeps its own alignment) */
+    .hero--m-valign-flex-start .hero__container {
+      align-items: flex-start;
+    }
+    .hero--m-valign-center .hero__container {
+      align-items: center;
+    }
+    .hero--m-valign-flex-end .hero__container {
+      align-items: flex-end;
+    }
+    /* Keep a gap under the content when pinned to the bottom */
+    .hero--m-valign-flex-end .hero__content-wrapper {
+      margin-block-end: var(--hero-mobile-bottom-gap, 6svh);
     }
   }
 
@@ -1164,6 +1179,19 @@
       "step": 5,
       "default": 0,
       "unit": "svh"
+    },
+    {
+      "type": "select",
+      "id": "mobile_content_position",
+      "label": "Mobile content position",
+      "info": "Where the text sits on mobile. Use Bottom with a taller mobile height so decals get the top of the image.",
+      "options": [
+        { "value": "inherit", "label": "Same as desktop" },
+        { "value": "flex-start", "label": "Top" },
+        { "value": "center", "label": "Center" },
+        { "value": "flex-end", "label": "Bottom" }
+      ],
+      "default": "inherit"
     },
     {
       "type": "header",
