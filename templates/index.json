@@ -88,14 +88,49 @@
           "name": "Pretzel sticker",
           "settings": {
             "asset_filename": "sticker-periwinkle.svg",
-            "size": 165,
-            "pos_x": 78,
-            "pos_y": 82,
+            "size": 240,
+            "pos_x": 91,
+            "pos_y": 85,
             "rotate": -4,
             "flip_horizontal": false,
+            "hero_fullbleed": true,
             "hide_on_mobile": true,
             "animation": "sway",
             "speed": 3
+          },
+          "blocks": {}
+        },
+        "sticker_snack": {
+          "type": "sticker",
+          "name": "Snack Attack bubble",
+          "settings": {
+            "asset_filename": "sticker-pink-flower.svg",
+            "size": 180,
+            "pos_x": 80,
+            "pos_y": 34,
+            "rotate": 4,
+            "flip_horizontal": false,
+            "hero_fullbleed": true,
+            "hide_on_mobile": true,
+            "animation": "pulse",
+            "speed": 4
+          },
+          "blocks": {}
+        },
+        "sticker_pudding": {
+          "type": "sticker",
+          "name": "Pudding bubble",
+          "settings": {
+            "asset_filename": "sticker-cloud.svg",
+            "size": 190,
+            "pos_x": 69,
+            "pos_y": 50,
+            "rotate": -3,
+            "flip_horizontal": false,
+            "hero_fullbleed": true,
+            "hide_on_mobile": true,
+            "animation": "float",
+            "speed": 4
           },
           "blocks": {}
         }
@@ -104,7 +139,9 @@
         "text_heading",
         "text_subheading",
         "button_cta",
-        "sticker_pretzel"
+        "sticker_pretzel",
+        "sticker_snack",
+        "sticker_pudding"
       ],
       "name": "Hero",
       "settings": {

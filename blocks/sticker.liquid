@@ -51,6 +51,12 @@
       style="{% if s.animation != 'none' %}animation: bacii-sticker-{{ s.animation }} {{ s.speed }}s ease-in-out infinite;{% endif %}"
     >
       {{ sticker_img }}
+      {%- if s.text != blank -%}
+        <span
+          class="bacii-sticker__caption"
+          style="color: {{ s.text_color }}; font-size: {{ s.text_size }}px;"
+        >{{ s.text }}</span>
+      {%- endif -%}
     </div>
   </div>
 {%- endif -%}
@@ -81,8 +87,24 @@
   }
 
   .bacii-sticker__inner {
+    position: relative;
     transform-origin: center 70%;
     will-change: transform;
+  }
+
+  .bacii-sticker__caption {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20%;
+    font-family: var(--font-heading--family, inherit);
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.5px;
+    pointer-events: none;
   }
 
   .bacii-sticker__img {
@@ -164,6 +186,32 @@
       "label": "Or theme asset filename",
       "info": "Used when no image is uploaded above. e.g. sticker-mint-star.svg",
       "default": "sticker-mint-star.svg"
+    },
+    {
+      "type": "header",
+      "content": "Caption (optional)",
+      "info": "Overlays text centred on the sticker, e.g. for speech-bubble decals."
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Caption text"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Caption colour",
+      "default": "#fcf5ef"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Caption size",
+      "min": 8,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 15
     },
     {
       "type": "header",
