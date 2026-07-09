@@ -1080,6 +1080,22 @@
                 "custom_width_mobile": 100
               },
               "blocks": {}
+            },
+            "sticker_star": {
+              "type": "sticker",
+              "name": "Mint star sticker",
+              "settings": {
+                "asset_filename": "sticker-mint-star.svg",
+                "size": 220,
+                "pos_x": 36,
+                "pos_y": 76,
+                "rotate": -6,
+                "flip_horizontal": false,
+                "hide_on_mobile": true,
+                "animation": "sway",
+                "speed": 3
+              },
+              "blocks": {}
             }
           },
           "block_order": [
@@ -1087,7 +1103,8 @@
             "spacer_q6grtx",
             "about_heading",
             "about_body",
-            "about_btn"
+            "about_btn",
+            "sticker_star"
           ]
         }
       },
@@ -1355,6 +1372,22 @@
                 "custom_width_mobile": 100
               },
               "blocks": {}
+            },
+            "sticker_cloud": {
+              "type": "sticker",
+              "name": "Cloud sticker",
+              "settings": {
+                "asset_filename": "sticker-cloud.svg",
+                "size": 180,
+                "pos_x": 94,
+                "pos_y": 72,
+                "rotate": 6,
+                "flip_horizontal": false,
+                "hide_on_mobile": true,
+                "animation": "float",
+                "speed": 4
+              },
+              "blocks": {}
             }
           },
           "block_order": [
@@ -1362,7 +1395,8 @@
             "spacer_K6x468",
             "vision_heading",
             "vision_body",
-            "vision_btn"
+            "vision_btn",
+            "sticker_cloud"
           ]
         }
       },
