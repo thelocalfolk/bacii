@@ -1481,7 +1481,7 @@
                 "mobile_inflow": false,
                 "size_mobile": 150,
                 "pos_x_mobile": 67,
-                "pos_y_mobile": 50,
+                "pos_y_mobile": 49,
                 "animation": "float",
                 "speed": 4
               },
