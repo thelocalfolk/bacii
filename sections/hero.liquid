@@ -471,6 +471,9 @@
     {% else %}
       --hero-min-height: var(--section-height-{{ section.settings.section_height }});
     {% endif %}
+    {% if section.settings.mobile_min_height > 0 %}
+      --hero-min-height-mobile: {{ section.settings.mobile_min_height }}svh;
+    {% endif %}
   "
   {% if request.visual_preview_mode %}
     data-shopify-visual-preview
@@ -558,6 +561,12 @@
   .hero {
     position: relative;
     min-height: calc(var(--hero-min-height) - var(--hero-height-offset));
+  }
+
+  @media screen and (max-width: 749px) {
+    .hero {
+      min-height: calc(var(--hero-min-height-mobile, var(--hero-min-height)) - var(--hero-height-offset));
+    }
   }
 
   .hero[data-shopify-visual-preview] {
@@ -1144,6 +1153,17 @@
       "default": 50,
       "unit": "%",
       "visible_if": "{{ section.settings.section_height == 'custom' }}"
+    },
+    {
+      "type": "range",
+      "id": "mobile_min_height",
+      "label": "Mobile height",
+      "info": "Overrides the height on screens under 750px. Set to 0 to reuse the desktop height.",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "default": 0,
+      "unit": "svh"
     },
     {
       "type": "header",

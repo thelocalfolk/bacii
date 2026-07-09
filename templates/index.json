@@ -113,8 +113,8 @@
             "hero_fullbleed": true,
             "hide_on_mobile": false,
             "size_mobile": 150,
-            "pos_x_mobile": 60,
-            "pos_y_mobile": 33,
+            "pos_x_mobile": 62,
+            "pos_y_mobile": 24,
             "animation": "pulse",
             "speed": 4
           },
@@ -134,7 +134,7 @@
             "hide_on_mobile": false,
             "size_mobile": 175,
             "pos_x_mobile": 36,
-            "pos_y_mobile": 43,
+            "pos_y_mobile": 33,
             "animation": "float",
             "speed": 4
           },
