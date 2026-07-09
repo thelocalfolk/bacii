@@ -33,7 +33,7 @@
 {%- assign sticker_img_stripped = sticker_img | strip -%}
 {%- if sticker_img_stripped != '' -%}
   <div
-    class="bacii-sticker{% if s.hide_on_mobile %} bacii-sticker--hide-mobile{% endif %}{% if s.mobile_inflow %} bacii-sticker--mobile-flow{% endif %}{% if s.hero_fullbleed %} bacii-sticker--hero{% endif %}"
+    class="bacii-sticker{% if s.hide_on_mobile %} bacii-sticker--hide-mobile{% endif %}{% if s.mobile_inflow %} bacii-sticker--mobile-flow{% endif %}{% if s.hero_fullbleed %} bacii-sticker--hero{% endif %}{% if s.split_fullbleed %} bacii-sticker--fullsplit{% endif %}"
     style="
       --sticker-size: {{ s.size }}px;
       --sticker-x: {{ s.pos_x }}%;
@@ -73,6 +73,15 @@
      to `.hero__container` (the full-bleed hero) instead. Content layout is
      unaffected — it's placed by grid + flex, not by this position. */
   .hero__content-wrapper:has(> .bacii-sticker--hero) {
+    position: static;
+  }
+
+  /* Full-split: in a media-with-content split the sticker sits inside the
+     `.group-block-content` column (position:relative), so it can only reach
+     that column. Neutralising the column's positioning lets it anchor to the
+     whole `.section` split and sit over the image side too. */
+  .media-with-content .group-block:has(.bacii-sticker--fullsplit),
+  .media-with-content .group-block-content:has(> .bacii-sticker--fullsplit) {
     position: static;
   }
 
@@ -268,6 +277,13 @@
       "id": "hero_fullbleed",
       "label": "Anchor to full hero",
       "info": "Turn on when this sticker is inside a Hero section so position is measured against the whole hero image, not the text column.",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "split_fullbleed",
+      "label": "Span full split width",
+      "info": "Turn on when this sticker is inside an image-with-text split so it can be positioned across the whole section (over the image side too), not just its own column.",
       "default": false
     },
     {
