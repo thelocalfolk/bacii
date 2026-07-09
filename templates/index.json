@@ -186,7 +186,7 @@
         "section_width": "page-width",
         "section_height": "large",
         "section_height_custom": 50,
-        "mobile_min_height": 100,
+        "mobile_min_height": 95,
         "mobile_content_position": "flex-end",
         "background_color": "rgba(0,0,0,0)",
         "toggle_overlay": false,
