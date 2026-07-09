@@ -126,7 +126,7 @@
             "size_mobile": 115,
             "pos_x_mobile": 46,
             "pos_y_mobile": 33,
-            "animation": "pulse",
+            "animation": "wiggle",
             "speed": 4
           },
           "blocks": {}
