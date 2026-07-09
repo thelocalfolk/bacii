@@ -104,7 +104,7 @@
           "type": "sticker",
           "name": "Snack Attack bubble",
           "settings": {
-            "asset_filename": "sticker-pink-flower.svg",
+            "asset_filename": "sticker-pink-sun-alt.svg",
             "size": 180,
             "pos_x": 80,
             "pos_y": 34,
@@ -121,8 +121,8 @@
           "type": "sticker",
           "name": "Pudding bubble",
           "settings": {
-            "asset_filename": "sticker-cloud.svg",
-            "size": 190,
+            "asset_filename": "sticker-waving-arms.svg",
+            "size": 210,
             "pos_x": 69,
             "pos_y": 50,
             "rotate": -3,
