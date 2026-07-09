@@ -1181,7 +1181,7 @@
                 "size_mobile": 150,
                 "pos_x_mobile": 75,
                 "pos_y_mobile": 33,
-                "animation": "sway",
+                "animation": "float",
                 "speed": 3
               },
               "blocks": {}
