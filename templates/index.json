@@ -1482,7 +1482,7 @@
                 "size_mobile": 150,
                 "pos_x_mobile": 67,
                 "pos_y_mobile": 49,
-                "animation": "float",
+                "animation": "wiggle",
                 "speed": 4
               },
               "blocks": {}
