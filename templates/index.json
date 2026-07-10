@@ -1338,6 +1338,20 @@
         "padding-block-end": 48
       }
     },
+    "bacii_club_Ud8yyB": {
+      "type": "bacii-club",
+      "name": "The Bacii Club",
+      "settings": {
+        "heading": "The Bacii Club",
+        "subtext": "Real families, real kids and lots of big personalities.",
+        "heading_color": "#007DFE",
+        "text_color": "#59697A",
+        "background_color": "{{ settings.color_palette.background }}",
+        "section_width": "page-width",
+        "padding_block_start": 72,
+        "padding_block_end": 72
+      }
+    },
     "our_vision_split": {
       "type": "media-with-content",
       "blocks": {
@@ -1843,6 +1857,7 @@
     "value_props_butter",
     "about_split",
     "shop_collections",
+    "bacii_club_Ud8yyB",
     "our_vision_split",
     "featured_blog",
     "newsletter_bacii_club"
