@@ -1,0 +1,36 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "size_guide": {
+      "type": "bacii-size-guide",
+      "blocks": {
+        "s1": { "type": "size", "settings": { "label": "Size 1", "age": "12–18 months" } },
+        "s2": { "type": "size", "settings": { "label": "Size 2", "age": "2 years" } },
+        "s3": { "type": "size", "settings": { "label": "Size 3", "age": "3 years" } },
+        "s4": { "type": "size", "settings": { "label": "Size 4", "age": "4 years" } },
+        "s5": { "type": "size", "settings": { "label": "Size 5", "age": "5 years" } },
+        "s6": { "type": "size", "settings": { "label": "Size 6", "age": "6 years" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4", "s5", "s6"],
+      "settings": {
+        "heading": "Size Guide",
+        "intro": "<p>Available in sizes 1–6,</p><p>True age sizing with a relaxed fit.</p>",
+        "heading_color": "#007DFE",
+        "text_color": "#59697A",
+        "background_color": "#FCF5EF",
+        "content_width": 640,
+        "padding_block_start": 72,
+        "padding_block_end": 72
+      }
+    }
+  },
+  "order": ["size_guide"]
+}

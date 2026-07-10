@@ -1,0 +1,204 @@
+{%- comment -%}
+  Bacii — Simple size guide section.
+  Heading + intro copy + a two-column size table (size label / age range).
+  Rows are theme blocks so the client can edit/add/remove sizes in the editor.
+{%- endcomment -%}
+
+<div
+  class="bacii-sizeguide section"
+  style="
+    --sg-heading-color: {{ section.settings.heading_color }};
+    --sg-text-color: {{ section.settings.text_color }};
+    --sg-bg: {{ section.settings.background_color }};
+    --sg-max-width: {{ section.settings.content_width }}px;
+    padding-block-start: {{ section.settings.padding_block_start }}px;
+    padding-block-end: {{ section.settings.padding_block_end }}px;
+  "
+>
+  <div class="bacii-sizeguide__inner">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="bacii-sizeguide__heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+
+    {%- if section.settings.intro != blank -%}
+      <div class="bacii-sizeguide__intro">{{ section.settings.intro }}</div>
+    {%- endif -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <ul class="bacii-sizeguide__list" role="list">
+        {%- for block in section.blocks -%}
+          <li class="bacii-sizeguide__row" {{ block.shopify_attributes }}>
+            <span class="bacii-sizeguide__size">{{ block.settings.label }}</span>
+            <span class="bacii-sizeguide__age">{{ block.settings.age }}</span>
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+  </div>
+</div>
+
+{% stylesheet %}
+  .bacii-sizeguide {
+    background: var(--sg-bg, #fcf5ef);
+    color: var(--sg-text-color, #59697a);
+  }
+
+  .bacii-sizeguide__inner {
+    max-width: var(--sg-max-width, 640px);
+    margin-inline: auto;
+    padding-inline: 24px;
+  }
+
+  .bacii-sizeguide__heading {
+    color: var(--sg-heading-color, #007dfe);
+    text-align: center;
+    margin: 0 0 16px;
+  }
+
+  .bacii-sizeguide__intro {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .bacii-sizeguide__intro > * {
+    margin: 0 0 4px;
+  }
+
+  .bacii-sizeguide__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bacii-sizeguide__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 24px;
+    padding-block: 16px;
+    border-block-end: 1px solid rgba(89, 105, 122, 0.22);
+  }
+
+  .bacii-sizeguide__row:first-child {
+    border-block-start: 1px solid rgba(89, 105, 122, 0.22);
+  }
+
+  .bacii-sizeguide__size {
+    font-family: var(--font-heading--family);
+    font-weight: var(--font-heading--weight);
+  }
+
+  .bacii-sizeguide__age {
+    text-align: right;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Size guide",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Size Guide"
+    },
+    {
+      "type": "richtext",
+      "id": "intro",
+      "label": "Intro text",
+      "default": "<p>Available in sizes 1–6,</p><p>True age sizing with a relaxed fit.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Colours"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading colour",
+      "default": "#007DFE"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text colour",
+      "default": "#59697A"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background colour",
+      "default": "#FCF5EF"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "content_width",
+      "label": "Content width",
+      "min": 400,
+      "max": 900,
+      "step": 20,
+      "unit": "px",
+      "default": 640
+    },
+    {
+      "type": "range",
+      "id": "padding_block_start",
+      "label": "Padding top",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_block_end",
+      "label": "Padding bottom",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 72
+    }
+  ],
+  "blocks": [
+    {
+      "type": "size",
+      "name": "Size row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Size label",
+          "default": "Size 1"
+        },
+        {
+          "type": "text",
+          "id": "age",
+          "label": "Age range",
+          "default": "12–18 months"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Size guide",
+      "blocks": [
+        { "type": "size", "settings": { "label": "Size 1", "age": "12–18 months" } },
+        { "type": "size", "settings": { "label": "Size 2", "age": "2 years" } },
+        { "type": "size", "settings": { "label": "Size 3", "age": "3 years" } },
+        { "type": "size", "settings": { "label": "Size 4", "age": "4 years" } },
+        { "type": "size", "settings": { "label": "Size 5", "age": "5 years" } },
+        { "type": "size", "settings": { "label": "Size 6", "age": "6 years" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
