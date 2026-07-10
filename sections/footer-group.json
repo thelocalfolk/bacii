@@ -66,13 +66,25 @@
         "padding-block-end": 20
       }
     },
+    "bacii_footer_brand": {
+      "type": "bacii-footer-brand",
+      "settings": {
+        "show_wave": true,
+        "background_color": "#d8f9f2",
+        "wave_height": 110,
+        "wordmark_width": 82,
+        "wordmark_width_mobile": 88,
+        "padding_top": 24,
+        "padding_bottom": 40
+      }
+    },
     "footer_m9NzUG": {
       "type": "footer",
       "blocks": {
         "menu_shop": {
           "type": "menu",
           "settings": {
-            "menu": "",
+            "menu": "shop-footer",
             "heading": "Shop",
             "menu_spacing": 8,
             "show_as_accordion": false,
@@ -92,7 +104,7 @@
         "menu_bacii": {
           "type": "menu",
           "settings": {
-            "menu": "",
+            "menu": "bacii-footer",
             "heading": "Bacii",
             "menu_spacing": 8,
             "show_as_accordion": false,
@@ -112,7 +124,7 @@
         "menu_care": {
           "type": "menu",
           "settings": {
-            "menu": "",
+            "menu": "customer-care-footer",
             "heading": "Customer Care",
             "menu_spacing": 8,
             "show_as_accordion": false,
@@ -175,7 +187,7 @@
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h5",
+                "type_preset": "h4",
                 "font": "var(--font-body--family)",
                 "font_size": "",
                 "line_height": "normal",
@@ -186,7 +198,7 @@
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
-                "padding-block-start": 0,
+                "padding-block-start": 15,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
@@ -390,18 +402,6 @@
         "divider_color": "{{ settings.color_palette.color2 }}",
         "padding-block-start": 20,
         "padding-block-end": 48
-      }
-    },
-    "bacii_footer_brand": {
-      "type": "bacii-footer-brand",
-      "settings": {
-        "show_wave": true,
-        "background_color": "#D8F9F2",
-        "wave_height": 110,
-        "wordmark_width": 82,
-        "wordmark_width_mobile": 88,
-        "padding_top": 24,
-        "padding_bottom": 40
       }
     }
   },
