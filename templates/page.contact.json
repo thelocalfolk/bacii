@@ -213,12 +213,30 @@
             "speed": 4
           },
           "blocks": {}
+        },
+        "sticker_snack_green": {
+          "type": "sticker",
+          "name": "Snack Attack oval",
+          "settings": {
+            "asset_filename": "sticker-snack-attack-green.svg",
+            "size": 170,
+            "pos_x": 89,
+            "pos_y": 24,
+            "rotate": 4,
+            "hero_fullbleed": false,
+            "split_fullbleed": false,
+            "hide_on_mobile": true,
+            "animation": "float",
+            "speed": 4
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "form_heading",
         "form_intro",
         "contact_form_block",
+        "sticker_snack_green",
         "sticker_pink_circle"
       ],
       "name": "Contact Form",
