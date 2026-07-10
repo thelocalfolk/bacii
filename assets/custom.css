@@ -241,3 +241,16 @@
 .bacii-sg-modal__close:hover {
   background: rgba(89, 105, 122, 0.12);
 }
+
+/* ============================================================
+   From-the-blog: allow real spacing between stacked posts on mobile.
+   Horizon caps the mobile grid gap at 12px (--resource-list-mobile-gap-max),
+   which clamped the section's Vertical gap (23px) down to 12px so the cards
+   nearly touched. Raise the cap for this section so the row gap applies; tune
+   it via the section's "Vertical gap" setting.
+   ============================================================ */
+@media screen and (max-width: 749px) {
+  [id*="featured_blog"] .resource-list {
+    --resource-list-mobile-gap-max: 120px;
+  }
+}
