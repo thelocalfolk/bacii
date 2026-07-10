@@ -94,7 +94,7 @@
         "mobile_min_height": 75,
         "mobile_content_position": "flex-end",
         "background_color": "rgba(0,0,0,0)",
-        "toggle_overlay": false,
+        "toggle_overlay": true,
         "overlay_color": "#12121226",
         "overlay_style": "solid",
         "gradient_direction": "to top",
