@@ -330,6 +330,23 @@
                 "custom_width_mobile": 100
               },
               "blocks": {}
+            },
+            "sticker_pretzel": {
+              "type": "sticker",
+              "name": "Butter pretzel",
+              "settings": {
+                "asset_filename": "sticker-pretzel-butter.svg",
+                "size": 180,
+                "pos_x": 88,
+                "pos_y": 78,
+                "rotate": -3,
+                "hero_fullbleed": false,
+                "split_fullbleed": true,
+                "hide_on_mobile": true,
+                "animation": "sway",
+                "speed": 3
+              },
+              "blocks": {}
             }
           },
           "block_order": [
@@ -337,7 +354,8 @@
             "spacer_8LV4EN",
             "faq_heading",
             "faq_body",
-            "faq_btn"
+            "faq_btn",
+            "sticker_pretzel"
           ]
         }
       },
