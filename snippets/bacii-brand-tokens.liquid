@@ -81,6 +81,13 @@
     position: relative;
     z-index: 2;
   }
+
+  /* Homepage hero heading — slightly larger on small screens. The heading uses
+     clamp(2.125rem, 7.2vw, 4.5rem); on phones 7.2vw falls below the floor, so it
+     was pinned at 34px. Raise only the floor (desktop max 72px is unchanged). */
+  .hero .h1 {
+    --font-h1--size: clamp(2.5rem, 7.2vw, 4.5rem);
+  }
   {%- endif -%}
 
   /* Pill nav header — cream capsule floating over the page at all scroll states */
