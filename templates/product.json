@@ -741,7 +741,7 @@
                   "type": "_accordion-row",
                   "name": "Fabrication",
                   "settings": {
-                    "heading": "Fabrication",
+                    "heading": "The Good Stuff",
                     "open_by_default": false,
                     "icon": "none",
                     "width": 20
@@ -751,7 +751,7 @@
                       "type": "text",
                       "name": "Text",
                       "settings": {
-                        "text": "<p>{# TODO: confirm Fabrication copy #}Fabrication details.</p>",
+                        "text": "<p>{{ closest.product.metafields.custom.fabrication | metafield_tag }}</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -792,7 +792,7 @@
                       "type": "text",
                       "name": "Text",
                       "settings": {
-                        "text": "<p>{# TODO: confirm Product Care copy #}Product care details.</p>",
+                        "text": "<p>{{ closest.product.metafields.custom.product_care | metafield_tag }}</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -833,7 +833,7 @@
                       "type": "text",
                       "name": "Text",
                       "settings": {
-                        "text": "<p>{# TODO: confirm Shipping copy #}Shipping &amp; delivery details.</p>",
+                        "text": "<p>{{ metaobjects.shipping_delivery[\"packed-with-love-shipped-australia-wide-for-12\"].shipping | metafield_tag }}</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
