@@ -1,0 +1,41 @@
+{%- comment -%}
+  Shared Bacii size-guide content (heading + intro + size table).
+  Rendered by both the size-guide page section and the PDP size-guide lightbox
+  so both show an identical design. Component styles live in assets/custom.css
+  (.bacii-sizeguide*) so they are available on every page that uses this.
+
+  @param [heading] {string}
+  @param [intro] {string} - richtext HTML
+  @param [heading_color] {string}
+  @param [text_color] {string}
+  @param [content_width] {number} - max content width in px
+{%- endcomment -%}
+{%- liquid
+  assign sg_heading = heading | default: 'Size Guide'
+  assign sg_intro = intro
+  if sg_intro == blank
+    assign sg_intro = '<p>Available in sizes 1–6,</p><p>True age sizing with a relaxed fit.</p>'
+  endif
+  assign sg_heading_color = heading_color | default: '#007DFE'
+  assign sg_text_color = text_color | default: '#59697A'
+  assign sg_width = content_width | default: 640
+-%}
+<div
+  class="bacii-sizeguide__inner"
+  style="--sg-heading-color: {{ sg_heading_color }}; --sg-text-color: {{ sg_text_color }}; --sg-max-width: {{ sg_width }}px;"
+>
+  {%- if sg_heading != blank -%}
+    <h2 class="bacii-sizeguide__heading">{{ sg_heading }}</h2>
+  {%- endif -%}
+  {%- if sg_intro != blank -%}
+    <div class="bacii-sizeguide__intro">{{ sg_intro }}</div>
+  {%- endif -%}
+  <ul class="bacii-sizeguide__list" role="list">
+    <li class="bacii-sizeguide__row"><span class="bacii-sizeguide__size">Size 1</span><span class="bacii-sizeguide__age">12–18 months</span></li>
+    <li class="bacii-sizeguide__row"><span class="bacii-sizeguide__size">Size 2</span><span class="bacii-sizeguide__age">2 years</span></li>
+    <li class="bacii-sizeguide__row"><span class="bacii-sizeguide__size">Size 3</span><span class="bacii-sizeguide__age">3 years</span></li>
+    <li class="bacii-sizeguide__row"><span class="bacii-sizeguide__size">Size 4</span><span class="bacii-sizeguide__age">4 years</span></li>
+    <li class="bacii-sizeguide__row"><span class="bacii-sizeguide__size">Size 5</span><span class="bacii-sizeguide__age">5 years</span></li>
+    <li class="bacii-sizeguide__row"><span class="bacii-sizeguide__size">Size 6</span><span class="bacii-sizeguide__age">6 years</span></li>
+  </ul>
+</div>

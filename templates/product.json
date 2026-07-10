@@ -331,21 +331,9 @@
                   ]
                 },
                 "size_guide": {
-                  "type": "button",
-                  "name": "Size Guide",
+                  "type": "custom-liquid",
                   "settings": {
-                    "label": "Size Guide",
-                    "link": "/pages/size-guide",
-                    "open_in_new_tab": false,
-                    "style_class": "link",
-                    "custom_button_background": "",
-                    "custom_button_text": "",
-                    "custom_button_border": "",
-                    "link_text_color": "",
-                    "width": "fit-content",
-                    "custom_width": 100,
-                    "width_mobile": "fit-content",
-                    "custom_width_mobile": 100
+                    "custom_liquid": "{% render 'bacii-size-guide-modal' %}"
                   },
                   "blocks": {}
                 }

@@ -1,0 +1,47 @@
+{%- comment -%}
+  PDP size-guide lightbox. Renders a "Size Guide" trigger link and a native
+  <dialog> containing the shared size-guide content + a close button.
+  Progressive enhancement: the trigger is a real link to /pages/size-guide, and
+  JS intercepts the click to open the modal instead (so no-JS users still reach
+  the page). @param [label] {string} - trigger text (default "Size Guide")
+{%- endcomment -%}
+<size-guide-lightbox class="bacii-sg-lightbox">
+  <a
+    href="{{ pages['size-guide'].url | default: '/pages/size-guide' }}"
+    class="bacii-sg-trigger"
+    data-sg-open
+  >{{ label | default: 'Size Guide' }}</a>
+
+  <dialog class="bacii-sg-modal" data-sg-dialog aria-label="Size guide">
+    <button
+      type="button"
+      class="bacii-sg-modal__close"
+      data-sg-close
+      aria-label="Close size guide"
+    >&times;</button>
+    <div class="bacii-sg-modal__body">
+      {% render 'bacii-size-guide' %}
+    </div>
+  </dialog>
+</size-guide-lightbox>
+<script>
+  (function () {
+    document.querySelectorAll('size-guide-lightbox:not([data-sg-init])').forEach(function (root) {
+      root.setAttribute('data-sg-init', '');
+      var dlg = root.querySelector('[data-sg-dialog]');
+      var openEl = root.querySelector('[data-sg-open]');
+      var closeEl = root.querySelector('[data-sg-close]');
+      if (!dlg || !openEl) return;
+      openEl.addEventListener('click', function (e) {
+        if (typeof dlg.showModal === 'function') {
+          e.preventDefault();
+          dlg.showModal();
+        }
+      });
+      if (closeEl) closeEl.addEventListener('click', function () { dlg.close(); });
+      dlg.addEventListener('click', function (e) {
+        if (e.target === dlg) dlg.close();
+      });
+    });
+  })();
+</script>

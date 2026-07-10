@@ -11,58 +11,6 @@
   "sections": {
     "size_guide": {
       "type": "bacii-size-guide",
-      "blocks": {
-        "s1": {
-          "type": "size",
-          "settings": {
-            "label": "Size 1",
-            "age": "12–18 months"
-          }
-        },
-        "s2": {
-          "type": "size",
-          "settings": {
-            "label": "Size 2",
-            "age": "2 years"
-          }
-        },
-        "s3": {
-          "type": "size",
-          "settings": {
-            "label": "Size 3",
-            "age": "3 years"
-          }
-        },
-        "s4": {
-          "type": "size",
-          "settings": {
-            "label": "Size 4",
-            "age": "4 years"
-          }
-        },
-        "s5": {
-          "type": "size",
-          "settings": {
-            "label": "Size 5",
-            "age": "5 years"
-          }
-        },
-        "s6": {
-          "type": "size",
-          "settings": {
-            "label": "Size 6",
-            "age": "6 years"
-          }
-        }
-      },
-      "block_order": [
-        "s1",
-        "s2",
-        "s3",
-        "s4",
-        "s5",
-        "s6"
-      ],
       "settings": {
         "heading": "Size Guide",
         "intro": "<p>Available in sizes 1–6,</p><p>True age sizing with a relaxed fit.</p>",

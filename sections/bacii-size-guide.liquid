@@ -1,95 +1,32 @@
 {%- comment -%}
-  Bacii — Simple size guide section.
-  Heading + intro copy + a two-column size table (size label / age range).
-  Rows are theme blocks so the client can edit/add/remove sizes in the editor.
+  Bacii — Size guide page section.
+  Thin wrapper (background, width, padding) around the shared size-guide content
+  snippet, so the page and the PDP lightbox render an identical design.
+  Component styles live in assets/custom.css (.bacii-sizeguide*).
 {%- endcomment -%}
 
 <div
   class="bacii-sizeguide section"
   style="
-    --sg-heading-color: {{ section.settings.heading_color }};
-    --sg-text-color: {{ section.settings.text_color }};
-    --sg-bg: {{ section.settings.background_color }};
-    --sg-max-width: {{ section.settings.content_width }}px;
+    background: {{ section.settings.background_color }};
     padding-block-start: {{ section.settings.padding_block_start }}px;
     padding-block-end: {{ section.settings.padding_block_end }}px;
   "
 >
-  <div class="bacii-sizeguide__inner">
-    {%- if section.settings.heading != blank -%}
-      <h2 class="bacii-sizeguide__heading">{{ section.settings.heading }}</h2>
-    {%- endif -%}
-
-    {%- if section.settings.intro != blank -%}
-      <div class="bacii-sizeguide__intro">{{ section.settings.intro }}</div>
-    {%- endif -%}
-
-    {%- if section.blocks.size > 0 -%}
-      <ul class="bacii-sizeguide__list" role="list">
-        {%- for block in section.blocks -%}
-          <li class="bacii-sizeguide__row" {{ block.shopify_attributes }}>
-            <span class="bacii-sizeguide__size">{{ block.settings.label }}</span>
-            <span class="bacii-sizeguide__age">{{ block.settings.age }}</span>
-          </li>
-        {%- endfor -%}
-      </ul>
-    {%- endif -%}
+  <div class="bacii-sizeguide__pad">
+    {% render 'bacii-size-guide',
+      heading: section.settings.heading,
+      intro: section.settings.intro,
+      heading_color: section.settings.heading_color,
+      text_color: section.settings.text_color,
+      content_width: section.settings.content_width
+    %}
   </div>
 </div>
 
 {% stylesheet %}
-  .bacii-sizeguide {
-    background: var(--sg-bg, #fcf5ef);
-    color: var(--sg-text-color, #59697a);
-  }
-
-  .bacii-sizeguide__inner {
-    max-width: var(--sg-max-width, 640px);
-    margin-inline: auto;
+  .bacii-sizeguide__pad {
     padding-inline: 24px;
-  }
-
-  .bacii-sizeguide__heading {
-    color: var(--sg-heading-color, #007dfe);
-    text-align: center;
-    margin: 0 0 16px;
-  }
-
-  .bacii-sizeguide__intro {
-    text-align: center;
-    margin-bottom: 32px;
-  }
-
-  .bacii-sizeguide__intro > * {
-    margin: 0 0 4px;
-  }
-
-  .bacii-sizeguide__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .bacii-sizeguide__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 24px;
-    padding-block: 16px;
-    border-block-end: 1px solid rgba(89, 105, 122, 0.22);
-  }
-
-  .bacii-sizeguide__row:first-child {
-    border-block-start: 1px solid rgba(89, 105, 122, 0.22);
-  }
-
-  .bacii-sizeguide__size {
-    font-family: var(--font-heading--family);
-    font-weight: var(--font-heading--weight);
-  }
-
-  .bacii-sizeguide__age {
-    text-align: right;
   }
 {% endstylesheet %}
 
@@ -167,37 +104,9 @@
       "default": 72
     }
   ],
-  "blocks": [
-    {
-      "type": "size",
-      "name": "Size row",
-      "settings": [
-        {
-          "type": "text",
-          "id": "label",
-          "label": "Size label",
-          "default": "Size 1"
-        },
-        {
-          "type": "text",
-          "id": "age",
-          "label": "Age range",
-          "default": "12–18 months"
-        }
-      ]
-    }
-  ],
   "presets": [
     {
-      "name": "Size guide",
-      "blocks": [
-        { "type": "size", "settings": { "label": "Size 1", "age": "12–18 months" } },
-        { "type": "size", "settings": { "label": "Size 2", "age": "2 years" } },
-        { "type": "size", "settings": { "label": "Size 3", "age": "3 years" } },
-        { "type": "size", "settings": { "label": "Size 4", "age": "4 years" } },
-        { "type": "size", "settings": { "label": "Size 5", "age": "5 years" } },
-        { "type": "size", "settings": { "label": "Size 6", "age": "6 years" } }
-      ]
+      "name": "Size guide"
     }
   ]
 }
