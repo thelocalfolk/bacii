@@ -183,12 +183,12 @@
             "connect_h": {
               "type": "text",
               "settings": {
-                "text": "<h5>Connect</h5>",
+                "text": "<h3>Connect</h3>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h4",
-                "font": "var(--font-body--family)",
+                "type_preset": "h3",
+                "font": "var(--font-heading--family)",
                 "font_size": "",
                 "line_height": "normal",
                 "letter_spacing": "normal",
