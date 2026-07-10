@@ -291,7 +291,7 @@
         "border_color": "",
         "border_radius": 0,
         "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-end": 100
       }
     },
     "wavy_marquee": {
@@ -300,6 +300,9 @@
         "text": "♡ Made for big personalities ♡ 100% Organic Cotton ♡ Designed in Australia ♡ Original Illustrations ♡ Made to be passed down ♡ Ethically Made ♡ Made for big personalities ♡ 100% Organic Cotton ♡ Designed in Australia ♡ Original Illustrations ♡ Made to be passed down ♡ Ethically Made",
         "bg_color": "#f5a8b8",
         "text_color": "#fcf5ef",
+        "separator": "♡",
+        "separator_scale": 55,
+        "text_scale": 34,
         "band_thickness": 56,
         "band_height": 110,
         "speed": 50,
