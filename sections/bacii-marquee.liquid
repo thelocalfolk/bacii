@@ -7,21 +7,36 @@
 {%- endcomment -%}
 
 {%- liquid
-  assign items = section.settings.text | split: '|'
-  capture phrase
-    for item in items
-      echo item | strip
-      echo ' ✿ '
-    endfor
-  endcapture
-  assign phrase = phrase | strip | append: ' '
+  assign sep = section.settings.separator | default: '♡'
+  comment
+    Two ways to author the text:
+    - pipe-separated phrases → the separator glyph is inserted between them
+      (and once more for the seamless loop seam)
+    - a single string with the separator typed inline → used as-is
+    Either way the separator glyph is rendered smaller (see .bmw__sep).
+  endcomment
+  if section.settings.text contains '|'
+    assign items = section.settings.text | split: '|'
+    capture phrase
+      for item in items
+        echo item | strip
+        echo ' '
+        echo sep
+        echo ' '
+      endfor
+    endcapture
+    assign phrase = phrase | strip | append: ' '
+  else
+    assign phrase = section.settings.text | strip | append: ' '
+  endif
 -%}
 
 <div class="bmw bmw--{{ section.id }}"
      data-phrase="{{ phrase | escape }}"
      data-speed="{{ section.settings.speed }}"
      data-thick="{{ section.settings.band_thickness }}"
-     style="--bmw-color:{{ section.settings.text_color }};--bmw-bg:{{ section.settings.bg_color }};--bmw-height:{{ section.settings.band_height }}px;margin-top:-{{ section.settings.overlap }}px;">
+     data-sep="{{ sep | escape }}"
+     style="--bmw-color:{{ section.settings.text_color }};--bmw-bg:{{ section.settings.bg_color }};--bmw-height:{{ section.settings.band_height }}px;--bmw-sep-scale:{{ section.settings.separator_scale | divided_by: 100.0 }};margin-top:-{{ section.settings.overlap }}px;">
   <svg class="bmw__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-label="{{ phrase | strip | escape }}">
     <path class="bmw__line" id="bmw-line-{{ section.id }}" fill="none"
           stroke="{{ section.settings.bg_color }}" stroke-width="{{ section.settings.band_thickness }}" stroke-linecap="butt"
@@ -48,6 +63,9 @@
     height: 100%;
     display: block;
   }
+  .bmw--{{ section.id }} .bmw__sep {
+    font-size: calc(1em * var(--bmw-sep-scale, 0.6));
+  }
 {%- endstyle -%}
 
 <script>
@@ -62,7 +80,25 @@
     var text = root.querySelector('.bmw__text');
     var tp = root.querySelector('.bmw__tp');
     var phrase = root.getAttribute('data-phrase');
+    var sepChar = root.getAttribute('data-sep') || '♡';
     var speed = parseFloat(root.getAttribute('data-speed')) || 40; // px per second
+
+    var SVGNS = 'http://www.w3.org/2000/svg';
+    // Render text into the textPath, wrapping every separator glyph in a
+    // smaller <tspan> so hearts/flowers don't dwarf the words.
+    function setContent(str) {
+      while (tp.firstChild) tp.removeChild(tp.firstChild);
+      var parts = str.split(sepChar);
+      for (var i = 0; i < parts.length; i++) {
+        if (parts[i]) tp.appendChild(document.createTextNode(parts[i]));
+        if (i < parts.length - 1) {
+          var ts = document.createElementNS(SVGNS, 'tspan');
+          ts.setAttribute('class', 'bmw__sep');
+          ts.textContent = sepChar;
+          tp.appendChild(ts);
+        }
+      }
+    }
 
     var H = 120, mid = 60, amp = 22, thick = 70, fontSize = 30;
     var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -102,13 +138,13 @@
       line.setAttribute('d', wavePath(-period, W + period, period));
 
       // measure one repetition length, then fill enough repetitions to cover W + 1 rep
-      tp.textContent = phrase;
+      setContent(phrase);
       repLen = text.getComputedTextLength();
       if (!repLen || repLen < 5) { setTimeout(build, 250); return; }
       var need = Math.ceil((W + repLen) / repLen) + 1;
       var s = '';
       for (var i = 0; i < need; i++) s += phrase;
-      tp.textContent = s;
+      setContent(s);
     }
 
     var offset = 0, last = null, raf = null;
@@ -153,6 +189,14 @@
     },
     { "type": "color", "id": "bg_color", "label": "Band colour", "default": "#F5A8B8" },
     { "type": "color", "id": "text_color", "label": "Text colour", "default": "#FCF5EF" },
+    {
+      "type": "text", "id": "separator", "label": "Separator glyph", "default": "♡",
+      "info": "Shown between phrases (and if you type it inline in the text). Rendered smaller than the words."
+    },
+    {
+      "type": "range", "id": "separator_scale", "min": 30, "max": 100, "step": 5, "unit": "%",
+      "label": "Separator size", "default": 55
+    },
     {
       "type": "range", "id": "band_thickness", "min": 24, "max": 120, "step": 2, "unit": "px",
       "label": "Band thickness", "default": 56
