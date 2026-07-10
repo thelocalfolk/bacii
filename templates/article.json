@@ -256,6 +256,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
+            "image": "shopify://shop_images/9b9bed3633e0df2274405c267b827f4dc9bdd348.png",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -386,180 +387,11 @@
         "padding-block-start": 0,
         "padding-block-end": 0
       }
-    },
-    "newsletter_bacii_club": {
-      "type": "section",
-      "blocks": {
-        "nl_text": {
-          "type": "group",
-          "name": "Text",
-          "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "flex-start",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "flex-start",
-            "gap": 12,
-            "width": "custom",
-            "custom_width": 40,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "background_media": "none",
-            "background_color": "",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "newsletter_heading": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Join the Bacii Club</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h4",
-                "font": "var(--font-heading--family)",
-                "font_size": "",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "#fcf5ef",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "newsletter_subtext": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Made for the little personalities who keep us laughing. Sign up for early access to new collections, exclusive offers and first dibs on our latest drops.</p>",
-                "width": "fill",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "0.75rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "#fcf5ef",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "newsletter_heading",
-            "newsletter_subtext"
-          ]
-        },
-        "newsletter_form": {
-          "type": "email-signup",
-          "settings": {
-            "width": "custom",
-            "custom_width": 56,
-            "heading": "",
-            "heading_text_color": "#fcf5ef",
-            "heading_preset": "h3",
-            "border_style": "all",
-            "input_style": "custom",
-            "border_width": 2,
-            "border_radius": 100,
-            "input_background_color": "rgba(0,0,0,0)",
-            "input_text_color": "#fcf5ef",
-            "input_border_color": "#fcf5ef",
-            "input_type_preset": "paragraph",
-            "style_class": "button-custom",
-            "custom_button_background": "rgba(0,0,0,0)",
-            "custom_button_text": "#fcf5ef",
-            "custom_button_border": "rgba(0,0,0,0)",
-            "link_text_color": "",
-            "display_type": "arrow",
-            "label": "Sign up",
-            "integrated_button": true,
-            "button_type_preset": "paragraph",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "nl_text",
-        "newsletter_form"
-      ],
-      "name": "Newsletter",
-      "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "space-between",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 48,
-        "section_width": "page-width",
-        "section_height": "fit",
-        "section_height_custom": 50,
-        "mobile_padding_block_start": 0,
-        "mobile_padding_block_end": 0,
-        "background_media": "none",
-        "background_color": "#007dfe",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "toggle_overlay": false,
-        "overlay_color": "#12121266",
-        "overlay_style": "solid",
-        "gradient_direction": "to bottom",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_color": "",
-        "border_radius": 0,
-        "padding-block-start": 64,
-        "padding-block-end": 64
-      }
     }
   },
   "order": [
     "section",
     "related_posts",
-    "article_faq",
-    "newsletter_bacii_club"
+    "article_faq"
   ]
 }
