@@ -21,7 +21,7 @@
 
 <div class="section-background color-custom-{{ section_id }}"></div>
 <div
-  class="section section--{{ section.settings.section_width }} color-custom-{{ section_id }}"
+  class="section section--{{ section.settings.section_width }} color-custom-{{ section_id }}{% if section.settings.mobile_min_height > 0 %} section--m-minheight{% endif %}"
   data-testid="ui-test-section"
 
   {% if request.visual_preview_mode %}
@@ -35,6 +35,9 @@
       --section-min-height: 100svh;
     {% elsif section.settings.section_height != '' %}
       --section-min-height: var(--section-height-{{ section.settings.section_height }});
+    {% endif %}
+    {% if section.settings.mobile_min_height > 0 %}
+      --section-min-height-mobile: {{ section.settings.mobile_min_height }}svh;
     {% endif %}
 
     {% if section.settings.section_height != '' %}
@@ -107,5 +110,13 @@
 
   .custom-section-content {
     z-index: var(--layer-flat);
+  }
+
+  /* Mobile-only min-height override (desktop keeps its own height). Extra class
+     gives the specificity to win over the base .section min-height. */
+  @media screen and (max-width: 749px) {
+    .section.section--m-minheight {
+      min-height: var(--section-min-height-mobile);
+    }
   }
 {% endstylesheet %}

@@ -230,6 +230,17 @@
       "visible_if": "{{ section.settings.section_height == 'custom' }}"
     },
     {
+      "type": "range",
+      "id": "mobile_min_height",
+      "label": "Mobile min height",
+      "info": "Forces a taller section on screens under 750px (e.g. to fit decals below the text). 0 = reuse the desktop height.",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "default": 0,
+      "unit": "svh"
+    },
+    {
       "type": "header",
       "content": "t:content.appearance"
     },
