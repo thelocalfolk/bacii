@@ -1,0 +1,161 @@
+{%- comment -%}
+  Bacii — Footer brand band.
+  Tiffany-blue wave top edge (Figma Group 44 / node 2121:688, exact path) with
+  the oversized centred "bacii" wordmark below it, sitting directly above the
+  footer columns. The wave is transparent above its crest so the (cream) section
+  above shows through; below the crest it is solid tiffany and flows seamlessly
+  into the wordmark band and the footer columns beneath.
+{%- endcomment -%}
+
+<div
+  class="footer-brand"
+  style="
+    --fb-bg: {{ section.settings.background_color }};
+    --fb-wave-h: {{ section.settings.wave_height }}px;
+    --fb-wordmark-w: {{ section.settings.wordmark_width }}%;
+    --fb-wordmark-w-mobile: {{ section.settings.wordmark_width_mobile }}%;
+    --fb-pad-top: {{ section.settings.padding_top }}px;
+    --fb-pad-bottom: {{ section.settings.padding_bottom }}px;
+  "
+>
+  {%- if section.settings.show_wave -%}
+    <svg
+      class="footer-brand__wave"
+      viewBox="0 -10 1440 150"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path
+        d="M-551.91 407.437C-560 420.908 -579.315 430.203 -598.63 440L1824.93 421.946C1815.4 415.293 1808.1 408.086 1805.6 399.823C1794.77 363.722 1876.08 341.572 1907.33 314.417C1991.27 241.523 1968.01 141.368 1843.72 84.7676C1764.54 48.7734 1651.48 34.6101 1550.04 47.9215C1473.29 57.985 1397.44 84.7676 1315.53 79.1768C1245.45 74.3847 1188.41 47.2826 1124.5 33.5984C1057.04 19.1688 977.253 21.5649 913.34 40.0411C849.123 58.6239 797.548 92.7544 724.735 97.0141C671.44 100.102 619.865 85.8325 577.391 68.5809C534.917 51.3292 497.095 30.5101 450.171 16.826C369.875 -6.54892 265.916 -5.484 187.339 19.4883C126.561 38.8165 85.0979 71.4029 24.1175 90.6246C-91.0677 126.938 -187.544 56.4408 -300.404 46.2176C-410.431 36.2607 -531.179 53.885 -608.744 97.0673C-721.907 160.057 -726.963 268.625 -619.767 334.49C-584.675 356.108 -535.729 380.282 -551.91 407.437Z"
+        fill="{{ section.settings.background_color }}"
+      />
+    </svg>
+  {%- endif -%}
+
+  <div class="footer-brand__body">
+    <img
+      class="footer-brand__wordmark"
+      src="{{ 'bacii-wordmark.svg' | asset_url }}"
+      alt="{{ shop.name }}"
+      width="121"
+      height="43"
+      loading="lazy"
+    >
+  </div>
+</div>
+
+{%- style -%}
+  .footer-brand {
+    position: relative;
+    background: transparent;
+    overflow: hidden;
+  }
+
+  .footer-brand__wave {
+    display: block;
+    width: 100%;
+    height: var(--fb-wave-h, 110px);
+    margin-block-end: -1px; /* seal the seam against the body */
+  }
+
+  .footer-brand__body {
+    background: var(--fb-bg, #d8f9f2);
+    padding-block: var(--fb-pad-top, 24px) var(--fb-pad-bottom, 40px);
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-brand__wordmark {
+    width: var(--fb-wordmark-w, 82%);
+    max-width: 1240px;
+    height: auto;
+    display: block;
+  }
+
+  @media screen and (max-width: 749px) {
+    .footer-brand__wave {
+      height: calc(var(--fb-wave-h, 110px) * 0.6);
+    }
+
+    .footer-brand__wordmark {
+      width: var(--fb-wordmark-w-mobile, 88%);
+    }
+  }
+{%- endstyle -%}
+
+{% schema %}
+{
+  "name": "Footer brand wave",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_wave",
+      "label": "Show wave top edge",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Band colour",
+      "default": "#D8F9F2"
+    },
+    {
+      "type": "range",
+      "id": "wave_height",
+      "label": "Wave height",
+      "min": 40,
+      "max": 220,
+      "step": 5,
+      "unit": "px",
+      "default": 110
+    },
+    {
+      "type": "range",
+      "id": "wordmark_width",
+      "label": "Wordmark width (desktop)",
+      "min": 40,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 82
+    },
+    {
+      "type": "range",
+      "id": "wordmark_width_mobile",
+      "label": "Wordmark width (mobile)",
+      "min": 40,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 88
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Space above wordmark",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Space below wordmark",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "Footer brand wave"
+    }
+  ]
+}
+{% endschema %}
