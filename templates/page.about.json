@@ -196,7 +196,7 @@
             "mobile_inflow": false,
             "size_mobile": 120,
             "pos_x_mobile": 28,
-            "pos_y_mobile": 80,
+            "pos_y_mobile": 85,
             "animation": "sway",
             "speed": 3
           },
@@ -221,7 +221,7 @@
             "mobile_inflow": false,
             "size_mobile": 115,
             "pos_x_mobile": 70,
-            "pos_y_mobile": 76,
+            "pos_y_mobile": 82,
             "animation": "wiggle",
             "speed": 4
           },
@@ -246,9 +246,23 @@
             "mobile_inflow": false,
             "size_mobile": 135,
             "pos_x_mobile": 52,
-            "pos_y_mobile": 90,
+            "pos_y_mobile": 93,
             "animation": "float",
             "speed": 4
+          },
+          "blocks": {}
+        },
+        "spacer_mobile": {
+          "type": "spacer",
+          "name": "Mobile decal space",
+          "settings": {
+            "size": "pixel",
+            "percent_size": 100,
+            "pixel_size": 0,
+            "custom_mobile_size": true,
+            "size_mobile": "pixel",
+            "percent_size_mobile": 100,
+            "pixel_size_mobile": 180
           },
           "blocks": {}
         }
@@ -256,6 +270,7 @@
       "block_order": [
         "intro_heading",
         "intro_body",
+        "spacer_mobile",
         "sticker_snack_attack",
         "sticker_iscream",
         "sticker_sweet_salty"
