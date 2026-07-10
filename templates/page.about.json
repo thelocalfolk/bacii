@@ -273,6 +273,7 @@
         "section_width": "page-width",
         "section_height": "small",
         "section_height_custom": 50,
+        "mobile_min_height": 85,
         "background_media": "none",
         "background_color": "#fcf5ef",
         "video_position": "cover",
