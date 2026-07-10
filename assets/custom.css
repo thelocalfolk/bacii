@@ -40,8 +40,83 @@
   }
 }
 
-/* Suppress Horizon's full-width hover underlay — it expands to 100% height
-   on nav hover and visually swallows the pill. We handle our own bg. */
-#header-component .header__underlay-closed {
-  display: none;
+/* ============================================================
+   Pill-style nav dropdowns (desktop)
+   Horizon's native mega-menu opens as a full-width panel and
+   grows a full-width background (.header__underlay-open) that
+   swallows the floating cream pill. We reshape each submenu into
+   a compact cream rounded-card anchored under its own nav item
+   and kill the full-width fill, so the pill is preserved.
+   Only affects desktop "menu" mode; the mobile drawer is untouched.
+   ============================================================ */
+
+/* 1. Kill the full-width hover underlays that swallow the pill. */
+#header-component .header__underlay-closed,
+#header-component .header__underlay-open {
+  display: none !important;
+}
+
+@media screen and (min-width: 750px) {
+  /* 2. Anchor each submenu under its own top-level item. */
+  #header-component .menu-list__list-item {
+    position: relative;
+  }
+
+  /* 3. Reshape the submenu: compact, positioned under the item,
+        no clip-path reveal, no header-height offset transform. */
+  #header-component
+    .menu-list__list-item:where(:not([slot='overflow']))
+    > .menu-list__submenu {
+    position: absolute;
+    inset: auto auto auto 0;
+    top: calc(100% + 8px);
+    width: max-content;
+    min-width: 220px;
+    max-width: 340px;
+    padding-inline: 0;
+    background-color: transparent;
+    clip-path: none;
+    transform: none;
+  }
+
+  /* 4. Neutralise the full-width mega wrapper + build the pill card. */
+  #header-component .menu-list__submenu .mega-menu {
+    width: auto;
+    margin: 0;
+  }
+
+  #header-component .menu-list__submenu-inner {
+    display: block;
+    margin: 0;
+    padding: 8px 22px;
+    background-color: var(--color-cream);
+    border-radius: 24px;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.12);
+    transform: none;
+    max-height: none;
+    overflow: visible;
+  }
+
+  /* 5. Force a single vertical column of links. */
+  #header-component .menu-list__submenu .mega-menu__grid,
+  #header-component .menu-list__submenu .mega-menu__list,
+  #header-component .menu-list__submenu .mega-menu__column {
+    display: block !important;
+    width: 100% !important;
+    grid-template-columns: none !important;
+    gap: 0 !important;
+  }
+
+  /* 6. Link rows with the divider lines from the design. */
+  #header-component .menu-list__submenu .mega-menu__link {
+    display: block;
+    padding-block: 13px;
+    border-block-end: 1px solid rgba(89, 105, 122, 0.22); /* dark-grey 22% */
+    color: var(--color-dark-grey);
+    white-space: nowrap;
+  }
+
+  #header-component .menu-list__submenu .mega-menu__link:last-child {
+    border-block-end: none;
+  }
 }
