@@ -92,7 +92,7 @@
         "section_width": "page-width",
         "section_height": "custom",
         "section_height_custom": 100,
-        "mobile_min_height": 0,
+        "mobile_min_height": 75,
         "mobile_content_position": "inherit",
         "background_color": "rgba(0,0,0,0)",
         "toggle_overlay": true,
