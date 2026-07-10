@@ -37,15 +37,42 @@
             "padding-inline-end": 0
           },
           "blocks": {}
+        },
+        "text_G6qwc4": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>This Shipping Policy outlines our processing times, delivery estimates and shipping options so you know exactly what to expect when placing an order with Bacii.</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "{{ settings.color_palette.background }}",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "hero_heading"
+        "hero_heading",
+        "text_G6qwc4"
       ],
       "name": "Shipping Hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/11066bbaffbe2267c7f7da4d1e22f7a8b1eb85fe.jpg",
+        "image_1": "shopify://shop_images/c690936ce093b6509f170ad3212fd7237e1ea512.jpg",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
@@ -64,6 +91,8 @@
         "section_width": "page-width",
         "section_height": "custom",
         "section_height_custom": 35,
+        "mobile_min_height": 65,
+        "mobile_content_position": "flex-end",
         "background_color": "rgba(0,0,0,0)",
         "toggle_overlay": false,
         "overlay_color": "#12121226",
@@ -283,6 +312,8 @@
         "section_width": "page-width",
         "section_height": "fit",
         "section_height_custom": 50,
+        "mobile_padding_block_start": 0,
+        "mobile_padding_block_end": 0,
         "background_media": "none",
         "background_color": "#fcf5ef",
         "video_position": "cover",
