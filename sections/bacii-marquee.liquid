@@ -36,6 +36,7 @@
      data-speed="{{ section.settings.speed }}"
      data-thick="{{ section.settings.band_thickness }}"
      data-sep="{{ sep | escape }}"
+     data-fontscale="{{ section.settings.text_scale }}"
      style="--bmw-color:{{ section.settings.text_color }};--bmw-bg:{{ section.settings.bg_color }};--bmw-height:{{ section.settings.band_height }}px;--bmw-sep-scale:{{ section.settings.separator_scale | divided_by: 100.0 }};margin-top:-{{ section.settings.overlap }}px;">
   <svg class="bmw__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-label="{{ phrase | strip | escape }}">
     <path class="bmw__line" id="bmw-line-{{ section.id }}" fill="none"
@@ -132,7 +133,8 @@
       // it reads as one gentle wave that fits the narrow width, instead of a
       // steep full oscillation.
       amp = Math.max(3, (Hpx - thick) / 2 * (isMobile ? 0.5 : 0.82));
-      fontSize = Math.max(13, Math.min(thick * 0.42, 40));
+      var fontScale = parseFloat(root.getAttribute('data-fontscale')) || 34;
+      fontSize = Math.max(11, Math.min(thick * fontScale / 100, 40));
       line.setAttribute('stroke-width', thick.toFixed(1));
       text.setAttribute('font-size', fontSize.toFixed(1));
 
@@ -200,6 +202,10 @@
     {
       "type": "range", "id": "separator_scale", "min": 30, "max": 100, "step": 5, "unit": "%",
       "label": "Separator size", "default": 55
+    },
+    {
+      "type": "range", "id": "text_scale", "min": 20, "max": 60, "step": 2, "unit": "%",
+      "label": "Text size", "info": "As a percentage of the band thickness.", "default": 34
     },
     {
       "type": "range", "id": "band_thickness", "min": 24, "max": 120, "step": 2, "unit": "px",
