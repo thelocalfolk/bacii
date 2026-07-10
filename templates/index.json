@@ -297,9 +297,11 @@
     "wavy_marquee": {
       "type": "bacii-marquee",
       "settings": {
-        "text": "Made for big personalities|100% Organic Cotton|Designed in Australia|Original Illustrations|Made to be Passed Down|Ethically Made|Designed for Everyday Play",
+        "text": "♡ Made for big personalities ♡ 100% Organic Cotton ♡ Designed in Australia ♡ Original Illustrations ♡ Made to be passed down ♡ Ethically Made ♡ Made for big personalities ♡ 100% Organic Cotton ♡ Designed in Australia ♡ Original Illustrations ♡ Made to be passed down ♡ Ethically Made",
         "bg_color": "#f5a8b8",
         "text_color": "#fcf5ef",
+        "band_thickness": 56,
+        "band_height": 110,
         "speed": 50,
         "overlap": 48
       }
