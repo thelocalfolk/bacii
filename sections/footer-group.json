@@ -72,7 +72,7 @@
         "menu_shop": {
           "type": "menu",
           "settings": {
-            "menu": "",
+            "menu": "shop-footer",
             "heading": "Shop",
             "menu_spacing": 8,
             "show_as_accordion": false,
@@ -92,7 +92,7 @@
         "menu_bacii": {
           "type": "menu",
           "settings": {
-            "menu": "",
+            "menu": "bacii-footer",
             "heading": "Bacii",
             "menu_spacing": 8,
             "show_as_accordion": false,
@@ -112,7 +112,7 @@
         "menu_care": {
           "type": "menu",
           "settings": {
-            "menu": "",
+            "menu": "customer-care-footer",
             "heading": "Customer Care",
             "menu_spacing": 8,
             "show_as_accordion": false,
@@ -162,7 +162,7 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
-            "padding-block-start": 0,
+            "padding-block-start": 10,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
@@ -171,11 +171,11 @@
             "connect_h": {
               "type": "text",
               "settings": {
-                "text": "<h5>Connect</h5>",
+                "text": "<h3>Connect</h3>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h5",
+                "type_preset": "h3",
                 "font": "var(--font-body--family)",
                 "font_size": "",
                 "line_height": "normal",
@@ -196,7 +196,7 @@
             "connect_social": {
               "type": "social-links",
               "settings": {
-                "icon_color": "#59697a",
+                "icon_color": "{{ settings.color_palette.foreground }}",
                 "facebook_url": "https://www.facebook.com/",
                 "instagram_url": "https://www.instagram.com/",
                 "youtube_url": "",
