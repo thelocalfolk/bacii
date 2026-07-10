@@ -90,7 +90,7 @@
         "gap": 24,
         "section_width": "page-width",
         "section_height": "custom",
-        "section_height_custom": 0,
+        "section_height_custom": 100,
         "mobile_min_height": 85,
         "mobile_content_position": "flex-end",
         "background_color": "rgba(0,0,0,0)",
