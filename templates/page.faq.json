@@ -92,7 +92,7 @@
         "section_height": "custom",
         "section_height_custom": 19,
         "mobile_min_height": 75,
-        "mobile_content_position": "inherit",
+        "mobile_content_position": "flex-end",
         "background_color": "rgba(0,0,0,0)",
         "toggle_overlay": false,
         "overlay_color": "#12121226",
