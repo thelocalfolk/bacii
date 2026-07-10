@@ -120,3 +120,19 @@
     border-block-end: none;
   }
 }
+
+/* ============================================================
+   Value-props band — more vertical space between the four groups
+   on mobile (they stack via .mobile-column). Scoped to the three
+   sections that use this band: index (value_props_butter),
+   about (section_nhVhqp), product (pdp_value_props). Matched on the
+   stable section-key suffix so the OS2.0 "template--…__" id prefix
+   doesn't matter. Desktop row spacing is untouched.
+   ============================================================ */
+@media screen and (max-width: 749px) {
+  [id*="value_props_butter"] .mobile-column,
+  [id*="section_nhVhqp"] .mobile-column,
+  [id*="pdp_value_props"] .mobile-column {
+    gap: 64px !important;
+  }
+}
