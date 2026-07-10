@@ -29,10 +29,13 @@
 }
 
 /* ----------------------------------------------------------
-   Hero height — Figma spec: 888px tall
+   Homepage hero height — Figma spec: 888px tall.
+   Scoped to the index template only so inner-page heroes keep
+   their own section "Height = Custom" slider (see hero.liquid
+   .hero--custom-height and bacii-brand-tokens.liquid).
    ---------------------------------------------------------- */
 @media screen and (min-width: 990px) {
-  .hero {
+  .template-index .hero {
     --hero-min-height: 888px !important;
   }
 }
