@@ -171,7 +171,7 @@
             "mobile_inflow": true,
             "size_mobile": 210,
             "pos_x_mobile": 50,
-            "pos_y_mobile": 77,
+            "pos_y_mobile": 50,
             "animation": "sway",
             "speed": 3
           },
