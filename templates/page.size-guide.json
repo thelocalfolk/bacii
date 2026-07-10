@@ -27,7 +27,7 @@
         "text_color": "#59697A",
         "background_color": "#FCF5EF",
         "content_width": 640,
-        "padding_block_start": 72,
+        "padding_block_start": 140,
         "padding_block_end": 72
       }
     }
