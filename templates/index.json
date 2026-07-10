@@ -1182,8 +1182,8 @@
                 "split_fullbleed": true,
                 "hide_on_mobile": false,
                 "mobile_inflow": false,
-                "size_mobile": 150,
-                "pos_x_mobile": 75,
+                "size_mobile": 185,
+                "pos_x_mobile": 73,
                 "pos_y_mobile": 33,
                 "animation": "float",
                 "speed": 3
