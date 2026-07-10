@@ -88,10 +88,11 @@
       grid-template-columns: repeat(var(--grid-columns), 1fr);
     }
 
-    /* 5-column footer: four equal menu/social columns + a wider newsletter,
-       matching the Bacii footer design. */
+    /* 5-column footer: four capped menu/social columns + a flexible newsletter,
+       matching the Bacii footer design. Capping keeps the menu columns tight
+       (design gap ~220px) on wide viewports; the newsletter absorbs the slack. */
     .footer-content[style*='--grid-columns: 5'] {
-      grid-template-columns: repeat(4, minmax(0, 1fr)) minmax(0, 1.7fr);
+      grid-template-columns: repeat(4, minmax(0, 220px)) minmax(340px, 1fr);
     }
 
     /* Single item centered */
