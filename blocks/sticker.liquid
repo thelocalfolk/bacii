@@ -41,6 +41,7 @@
       --sticker-size-m: {{ s.size_mobile | default: s.size }}px;
       --sticker-x-m: {{ s.pos_x_mobile | default: s.pos_x }}%;
       --sticker-y-m: {{ s.pos_y_mobile | default: s.pos_y }}%;
+      --sticker-flow-mt: {{ s.pos_y_mobile | default: 50 | minus: 50 | times: 3 }}px;
       --sticker-rotate: {{ s.rotate }}deg;
       --sticker-flip: {{ flip_scale }};
     "
@@ -129,15 +130,19 @@
       width: var(--sticker-size-m);
     }
 
-    /* In-flow mode: sit below the section content instead of overlaying it.
-       The flex content wrapper centres it and its gap provides the breathing
-       room; the band grows to fit so nothing overlaps the paragraph. */
+    /* In-flow mode: sit below the section content instead of overlaying it, so
+       the section grows to make room. Horizontal position (mobile) shifts it
+       across via a margin; vertical position (mobile) nudges it up/down (below
+       50% pulls up to overlap the row above, above 50% pushes down). */
     .bacii-sticker--mobile-flow {
       position: static;
       top: auto;
       left: auto;
+      align-self: flex-start;
       width: var(--sticker-size-m);
-      margin-block-start: var(--sticker-flow-gap, 24px);
+      margin-inline-start: calc(var(--sticker-x-m) - var(--sticker-size-m) / 2);
+      margin-inline-end: auto;
+      margin-block-start: calc(var(--sticker-flow-gap, 24px) + var(--sticker-flow-mt, 0px));
       transform: rotate(var(--sticker-rotate)) scaleX(var(--sticker-flip));
     }
 
@@ -301,7 +306,7 @@
       "type": "checkbox",
       "id": "mobile_inflow",
       "label": "Place below content on mobile",
-      "info": "Sits the sticker beneath the section content (in normal flow) instead of overlaying it, so the section grows to make room. Horizontal/vertical position are ignored in this mode.",
+      "info": "Sits the sticker beneath the section content (in normal flow) so the section grows to make room. Horizontal position (mobile) shifts it across; vertical position (mobile) nudges it up (below 50%) or down (above 50%).",
       "default": false
     },
     {
