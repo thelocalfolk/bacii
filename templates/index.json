@@ -16,7 +16,7 @@
           "type": "text",
           "name": "Heading",
           "settings": {
-            "text": "<p>Little clothes.<br/>Big personalities.</p>",
+            "text": "<h1>Little clothes.<br/>Big personalities.</h1>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
