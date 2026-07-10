@@ -569,18 +569,9 @@
     }
 
     /* Mobile-only content vertical position (desktop keeps its own alignment).
-       The content wrapper stretches to the hero height and distributes its
-       children via justify-content, so we override that (and align-items as a
-       fallback for the content-height case). */
-    .hero--m-valign-flex-start .hero__container {
-      align-items: flex-start;
-    }
-    .hero--m-valign-center .hero__container {
-      align-items: center;
-    }
-    .hero--m-valign-flex-end .hero__container {
-      align-items: flex-end;
-    }
+       Only touches the content wrapper's own justify-content — it stretches to
+       the full hero and distributes the text/button inside it. The image lives
+       in a separate absolute .hero__media-grid, so it is never affected. */
     .hero--m-valign-flex-start .hero__content-wrapper {
       justify-content: flex-start;
     }
@@ -589,11 +580,7 @@
     }
     .hero--m-valign-flex-end .hero__content-wrapper {
       justify-content: flex-end;
-      align-self: end;
       margin-block-end: var(--hero-mobile-bottom-gap, 6svh);
-    }
-    .hero--m-valign-flex-start .hero__content-wrapper {
-      align-self: start;
     }
   }
 
