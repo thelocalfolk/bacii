@@ -21,7 +21,7 @@
 
 <div class="section-background color-custom-{{ section_id }}"></div>
 <div
-  class="section section--{{ section.settings.section_width }} color-custom-{{ section_id }}{% if section.settings.mobile_min_height > 0 %} section--m-minheight{% endif %}{% if section.settings.mobile_content_position and section.settings.mobile_content_position != 'inherit' %} section--m-valign-{{ section.settings.mobile_content_position }}{% endif %}"
+  class="section section--{{ section.settings.section_width }} color-custom-{{ section_id }}{% if section.settings.mobile_padding_block_start > 0 or section.settings.mobile_padding_block_end > 0 %} section--m-pad{% endif %}"
   data-testid="ui-test-section"
 
   {% if request.visual_preview_mode %}
@@ -36,8 +36,11 @@
     {% elsif section.settings.section_height != '' %}
       --section-min-height: var(--section-height-{{ section.settings.section_height }});
     {% endif %}
-    {% if section.settings.mobile_min_height > 0 %}
-      --section-min-height-mobile: {{ section.settings.mobile_min_height }}svh;
+    {% if section.settings.mobile_padding_block_start > 0 %}
+      --section-m-pt: {{ section.settings.mobile_padding_block_start }}px;
+    {% endif %}
+    {% if section.settings.mobile_padding_block_end > 0 %}
+      --section-m-pb: {{ section.settings.mobile_padding_block_end }}px;
     {% endif %}
 
     {% if section.settings.section_height != '' %}
@@ -112,23 +115,13 @@
     z-index: var(--layer-flat);
   }
 
-  /* Mobile-only min-height override (desktop keeps its own height). Extra class
-     gives the specificity to win over the base .section min-height. */
+  /* Mobile-only extra space at the top and/or bottom of the section (e.g. to fit
+     decals below the content). The section's coloured background covers it, and
+     the content stays inset above the bottom space. Desktop is unaffected. */
   @media screen and (max-width: 749px) {
-    .section.section--m-minheight {
-      min-height: var(--section-min-height-mobile);
-    }
-
-    /* Mobile-only content vertical position: pin content to top/center/bottom so
-       the extra min-height lands where you want it (e.g. all at the bottom). */
-    .section--m-valign-flex-start .section-content-wrapper {
-      justify-content: flex-start;
-    }
-    .section--m-valign-center .section-content-wrapper {
-      justify-content: center;
-    }
-    .section--m-valign-flex-end .section-content-wrapper {
-      justify-content: flex-end;
+    .section--m-pad {
+      padding-block-start: var(--section-m-pt, 0);
+      padding-block-end: var(--section-m-pb, 0);
     }
   }
 {% endstylesheet %}

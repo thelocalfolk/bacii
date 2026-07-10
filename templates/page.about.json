@@ -196,7 +196,7 @@
             "mobile_inflow": false,
             "size_mobile": 120,
             "pos_x_mobile": 28,
-            "pos_y_mobile": 80,
+            "pos_y_mobile": 84,
             "animation": "sway",
             "speed": 3
           },
@@ -221,7 +221,7 @@
             "mobile_inflow": false,
             "size_mobile": 115,
             "pos_x_mobile": 70,
-            "pos_y_mobile": 77,
+            "pos_y_mobile": 81,
             "animation": "wiggle",
             "speed": 4
           },
@@ -246,7 +246,7 @@
             "mobile_inflow": false,
             "size_mobile": 135,
             "pos_x_mobile": 52,
-            "pos_y_mobile": 90,
+            "pos_y_mobile": 94,
             "animation": "float",
             "speed": 4
           },
@@ -273,7 +273,6 @@
         "section_width": "page-width",
         "section_height": "small",
         "section_height_custom": 50,
-        "mobile_min_height": 85,
         "background_media": "none",
         "background_color": "#fcf5ef",
         "video_position": "cover",

@@ -231,27 +231,25 @@
     },
     {
       "type": "range",
-      "id": "mobile_min_height",
-      "label": "Mobile min height",
-      "info": "Forces a taller section on screens under 750px (e.g. to fit decals below the text). 0 = reuse the desktop height.",
+      "id": "mobile_padding_block_start",
+      "label": "Mobile extra space top",
+      "info": "Adds space above the content on screens under 750px only. Desktop is unaffected.",
       "min": 0,
-      "max": 150,
+      "max": 400,
       "step": 5,
       "default": 0,
-      "unit": "svh"
+      "unit": "px"
     },
     {
-      "type": "select",
-      "id": "mobile_content_position",
-      "label": "Mobile content position",
-      "info": "Where the content sits on mobile. Use Top with a taller Mobile min height so the extra space goes to the bottom (e.g. for decals).",
-      "options": [
-        { "value": "inherit", "label": "Same as desktop" },
-        { "value": "flex-start", "label": "Top" },
-        { "value": "center", "label": "Center" },
-        { "value": "flex-end", "label": "Bottom" }
-      ],
-      "default": "inherit"
+      "type": "range",
+      "id": "mobile_padding_block_end",
+      "label": "Mobile extra space bottom",
+      "info": "Adds space below the content on screens under 750px only (e.g. to fit decals). Desktop is unaffected.",
+      "min": 0,
+      "max": 400,
+      "step": 5,
+      "default": 0,
+      "unit": "px"
     },
     {
       "type": "header",
