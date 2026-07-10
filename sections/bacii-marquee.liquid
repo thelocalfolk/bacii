@@ -127,12 +127,16 @@
       // remaining vertical room so the band never clips at the container edge.
       mid = Hpx / 2;
       thick = parseFloat(root.getAttribute('data-thick')) || 56;
-      amp = Math.max(4, (Hpx - thick) / 2 * 0.82);
+      var isMobile = W < 750;
+      // Flatter wave on mobile: smaller amplitude + a much longer wavelength so
+      // it reads as one gentle wave that fits the narrow width, instead of a
+      // steep full oscillation.
+      amp = Math.max(3, (Hpx - thick) / 2 * (isMobile ? 0.5 : 0.82));
       fontSize = Math.max(13, Math.min(thick * 0.42, 40));
       line.setAttribute('stroke-width', thick.toFixed(1));
       text.setAttribute('font-size', fontSize.toFixed(1));
 
-      var period = W / Math.max(2, Math.round(W / 340));
+      var period = isMobile ? W * 1.25 : W / Math.max(2, Math.round(W / 340));
       // path spans one period beyond each edge so the band flows in/out of view
       // instead of showing a flat cut at the left/right edges
       line.setAttribute('d', wavePath(-period, W + period, period));
