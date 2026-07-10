@@ -9,10 +9,10 @@
  */
 {
   "sections": {
-    "blog_hero": {
+    "hero_XNXi8w": {
       "type": "hero",
       "blocks": {
-        "hero_heading": {
+        "text_hqCDfa": {
           "type": "text",
           "name": "Heading",
           "settings": {
@@ -38,17 +38,17 @@
           },
           "blocks": {}
         },
-        "hero_subheading": {
+        "text_VBRXdP": {
           "type": "text",
-          "name": "Subheading",
+          "name": "Body",
           "settings": {
             "text": "<p>A collection of notes on childhood, motherhood, style and everything in between. From behind-the-scenes updates to everyday moments, welcome to the world of bacii.</p>",
-            "width": "fit-content",
+            "width": "fill",
             "max_width": "normal",
             "alignment": "left",
             "type_preset": "rte",
             "font": "var(--font-body--family)",
-            "font_size": "0.75rem",
+            "font_size": "0.9375rem",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
@@ -58,7 +58,7 @@
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
-            "padding-block-end": 25,
+            "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
@@ -66,10 +66,10 @@
         }
       },
       "block_order": [
-        "hero_heading",
-        "hero_subheading"
+        "text_hqCDfa",
+        "text_VBRXdP"
       ],
-      "name": "Blog Hero",
+      "name": "About Hero",
       "settings": {
         "media_type_1": "image",
         "image_1": "shopify://shop_images/a5fd7f725c4ceb20fa3dbf2de207933417ae3fe2_741a61c9-1d3c-4351-a670-9e1170460efa.png",
@@ -83,21 +83,21 @@
         "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
-        "vertical_alignment": "flex-end",
+        "vertical_alignment": "center",
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "flex-end",
-        "gap": 16,
-        "section_width": "full-width",
-        "section_height": "small",
-        "section_height_custom": 50,
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 24,
+        "section_width": "page-width",
+        "section_height": "custom",
+        "section_height_custom": 100,
         "mobile_min_height": 0,
         "mobile_content_position": "inherit",
-        "background_color": "#f5a8b8",
+        "background_color": "rgba(0,0,0,0)",
         "toggle_overlay": true,
-        "overlay_color": "#59697a26",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
+        "overlay_color": "#12121221",
+        "overlay_style": "gradient",
+        "gradient_direction": "to right",
         "blurred_reflection": false,
         "reflection_opacity": 75,
         "padding-block-start": 0,
@@ -551,7 +551,7 @@
     }
   },
   "order": [
-    "blog_hero",
+    "hero_XNXi8w",
     "main",
     "blog_faq",
     "newsletter_bacii_club"
