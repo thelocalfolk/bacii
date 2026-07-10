@@ -130,9 +130,9 @@
    doesn't matter. Desktop row spacing is untouched.
    ============================================================ */
 @media screen and (max-width: 749px) {
-  [id*="value_props_butter"] .mobile-column,
-  [id*="section_nhVhqp"] .mobile-column,
-  [id*="pdp_value_props"] .mobile-column {
+  [id*="value_props_butter"] .layout-panel-flex--row.mobile-column,
+  [id*="section_nhVhqp"] .layout-panel-flex--row.mobile-column,
+  [id*="pdp_value_props"] .layout-panel-flex--row.mobile-column {
     gap: 64px !important;
   }
 }
