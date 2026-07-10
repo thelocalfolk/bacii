@@ -16,7 +16,7 @@
           "type": "text",
           "name": "Heading",
           "settings": {
-            "text": "<p>Privacy Policy</p>",
+            "text": "<p>Your privacy matters to us.</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -37,10 +37,37 @@
             "padding-inline-end": 0
           },
           "blocks": {}
+        },
+        "text_WtKVa9": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>This Privacy Policy outlines how Bacii collects, uses and protects your personal information when you visit our website, place an order or interact with our brand.</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "{{ settings.color_palette.background }}",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "hero_heading"
+        "hero_heading",
+        "text_WtKVa9"
       ],
       "name": "Privacy Policy Hero",
       "settings": {
@@ -62,8 +89,8 @@
         "vertical_alignment_flex_direction_column": "flex-end",
         "gap": 24,
         "section_width": "page-width",
-        "section_height": "small",
-        "section_height_custom": 35,
+        "section_height": "custom",
+        "section_height_custom": 18,
         "mobile_min_height": 65,
         "mobile_content_position": "flex-end",
         "background_color": "rgba(0,0,0,0)",
