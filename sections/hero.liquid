@@ -458,7 +458,7 @@
 
 <div
   id="Hero-{{ section.id }}"
-  class="hero{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}{% if section.blocks.size == 0 and section.settings.section_height == 'auto' %} hero--no-blocks-auto-height{% endif %}{% if section.settings.stack_media_on_mobile %} hero--stack-mobile{% endif %}{% if section.settings.mobile_content_position and section.settings.mobile_content_position != 'inherit' %} hero--m-valign-{{ section.settings.mobile_content_position }}{% endif %}"
+  class="hero{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}{% if section.blocks.size == 0 and section.settings.section_height == 'auto' %} hero--no-blocks-auto-height{% endif %}{% if section.settings.stack_media_on_mobile %} hero--stack-mobile{% endif %}{% if section.settings.mobile_content_position and section.settings.mobile_content_position != 'inherit' %} hero--m-valign-{{ section.settings.mobile_content_position }}{% endif %}{% if section.settings.section_height == 'custom' and section.settings.section_height_custom > 0 %} hero--custom-height{% endif %}"
   style="
     --hero-border-style: {{ section.settings.border }};
     --hero-border-width: {{ section.settings.border_width }}px;
@@ -561,6 +561,23 @@
   .hero {
     position: relative;
     min-height: calc(var(--hero-min-height) - var(--hero-height-offset));
+  }
+
+  /* Desktop only: when Height = Custom (value > 0), the slider is authoritative.
+     The hero becomes exactly that height, the text overlays the image band and
+     is clipped rather than propping the band taller. Presets/auto and a Custom
+     value of 0 keep the min-height (content-driven) behaviour. Mobile is handled
+     by the max-width block below and is unaffected. */
+  @media screen and (min-width: 750px) {
+    .hero--custom-height {
+      height: calc(var(--hero-min-height) - var(--hero-height-offset));
+      min-height: 0;
+    }
+
+    .hero--custom-height .hero__container {
+      height: 100%;
+      min-height: 0;
+    }
   }
 
   @media screen and (max-width: 749px) {
