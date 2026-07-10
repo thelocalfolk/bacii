@@ -20,13 +20,14 @@
 <div class="bmw bmw--{{ section.id }}"
      data-phrase="{{ phrase | escape }}"
      data-speed="{{ section.settings.speed }}"
-     style="--bmw-color:{{ section.settings.text_color }};--bmw-bg:{{ section.settings.bg_color }};margin-top:-{{ section.settings.overlap }}px;">
-  <svg class="bmw__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-label="{{ phrase | strip | escape }}">
+     data-thick="{{ section.settings.band_thickness }}"
+     style="--bmw-color:{{ section.settings.text_color }};--bmw-bg:{{ section.settings.bg_color }};--bmw-height:{{ section.settings.band_height }}px;margin-top:-{{ section.settings.overlap }}px;">
+  <svg class="bmw__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-label="{{ phrase | strip | escape }}">
     <path class="bmw__line" id="bmw-line-{{ section.id }}" fill="none"
-          stroke="{{ section.settings.bg_color }}" stroke-width="70" stroke-linecap="butt"
-          d="M0 60 C120 38 240 38 360 60 C480 82 600 82 720 60 C840 38 960 38 1080 60 C1200 82 1320 82 1440 60"></path>
+          stroke="{{ section.settings.bg_color }}" stroke-width="{{ section.settings.band_thickness }}" stroke-linecap="butt"
+          d="M0 55 C120 35 240 35 360 55 C480 75 600 75 720 55 C840 35 960 35 1080 55 C1200 75 1320 75 1440 55"></path>
     <text class="bmw__text" fill="{{ section.settings.text_color }}"
-          font-family="var(--font-heading--family)" font-size="30" font-weight="500"
+          font-family="var(--font-heading--family)" font-size="22" font-weight="500"
           letter-spacing="0.5" dominant-baseline="middle">
       <textPath class="bmw__tp" href="#bmw-line-{{ section.id }}" startOffset="0"></textPath>
     </text>
@@ -37,7 +38,7 @@
   .bmw--{{ section.id }} {
     position: relative;
     width: 100%;
-    height: clamp(84px, 9vw, 150px);
+    height: var(--bmw-height, 110px);
     overflow: hidden;
   }
   .bmw--{{ section.id }} .bmw__svg {
@@ -66,9 +67,9 @@
     var H = 120, mid = 60, amp = 22, thick = 70, fontSize = 30;
     var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    function wavePath(W, period) {
-      var half = period / 2, x = 0, dir = -1, d = 'M0 ' + mid;
-      while (x < W) {
+    function wavePath(startX, endX, period) {
+      var half = period / 2, x = startX, dir = -1, d = 'M' + x.toFixed(1) + ' ' + mid;
+      while (x < endX) {
         var nx = x + half, cy = mid + dir * amp;
         d += ' C' + (x + half / 2).toFixed(1) + ' ' + cy.toFixed(1) +
              ' ' + (nx - half / 2).toFixed(1) + ' ' + cy.toFixed(1) +
@@ -86,17 +87,19 @@
       // 1:1 viewBox in px so glyphs are not distorted
       svg.setAttribute('viewBox', '0 0 ' + W + ' ' + Hpx);
       svg.setAttribute('preserveAspectRatio', 'none');
-      // recompute wave geometry proportional to height
+      // recompute wave geometry: thickness from setting; amplitude auto-fits the
+      // remaining vertical room so the band never clips at the container edge.
       mid = Hpx / 2;
-      thick = Math.min(Hpx * 0.62, 96);
-      amp = Hpx * 0.18;
-      fontSize = Math.max(15, Math.min(Hpx * 0.26, 26));
+      thick = parseFloat(root.getAttribute('data-thick')) || 56;
+      amp = Math.max(4, (Hpx - thick) / 2 * 0.82);
+      fontSize = Math.max(13, Math.min(thick * 0.42, 40));
       line.setAttribute('stroke-width', thick.toFixed(1));
       text.setAttribute('font-size', fontSize.toFixed(1));
 
       var period = W / Math.max(2, Math.round(W / 340));
-      // path spans a bit beyond the viewport so the right edge always has wave/text
-      line.setAttribute('d', wavePath(W + period, period));
+      // path spans one period beyond each edge so the band flows in/out of view
+      // instead of showing a flat cut at the left/right edges
+      line.setAttribute('d', wavePath(-period, W + period, period));
 
       // measure one repetition length, then fill enough repetitions to cover W + 1 rep
       tp.textContent = phrase;
@@ -150,6 +153,14 @@
     },
     { "type": "color", "id": "bg_color", "label": "Band colour", "default": "#F5A8B8" },
     { "type": "color", "id": "text_color", "label": "Text colour", "default": "#FCF5EF" },
+    {
+      "type": "range", "id": "band_thickness", "min": 24, "max": 120, "step": 2, "unit": "px",
+      "label": "Band thickness", "default": 56
+    },
+    {
+      "type": "range", "id": "band_height", "min": 70, "max": 220, "step": 5, "unit": "px",
+      "label": "Section height", "info": "Overall height. The wave uses whatever room is left after the band thickness, so it never clips.", "default": 110
+    },
     {
       "type": "range", "id": "speed", "min": 15, "max": 160, "step": 5, "unit": "px",
       "label": "Scroll speed", "default": 55
