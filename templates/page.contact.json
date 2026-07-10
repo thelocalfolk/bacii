@@ -196,12 +196,30 @@
             }
           },
           "block_order": []
+        },
+        "sticker_pink_circle": {
+          "type": "sticker",
+          "name": "Pink flower circle",
+          "settings": {
+            "asset_filename": "sticker-pink-flower.svg",
+            "size": 180,
+            "pos_x": 92,
+            "pos_y": 34,
+            "rotate": -4,
+            "hero_fullbleed": false,
+            "split_fullbleed": false,
+            "hide_on_mobile": true,
+            "animation": "pulse",
+            "speed": 4
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "form_heading",
         "form_intro",
-        "contact_form_block"
+        "contact_form_block",
+        "sticker_pink_circle"
       ],
       "name": "Contact Form",
       "settings": {
