@@ -174,11 +174,65 @@
             "padding-inline-end": 0
           },
           "blocks": {}
+        },
+        "sticker_snack_attack": {
+          "type": "sticker",
+          "name": "Snack Attack flower",
+          "settings": {
+            "asset_filename": "sticker-snack-attack.svg",
+            "size": 185,
+            "pos_x": 28,
+            "pos_y": 58,
+            "rotate": -6,
+            "hero_fullbleed": false,
+            "split_fullbleed": false,
+            "hide_on_mobile": true,
+            "animation": "sway",
+            "speed": 3
+          },
+          "blocks": {}
+        },
+        "sticker_iscream": {
+          "type": "sticker",
+          "name": "I Scream and Run circle",
+          "settings": {
+            "asset_filename": "sticker-iscream.svg",
+            "size": 175,
+            "pos_x": 92,
+            "pos_y": 32,
+            "rotate": 6,
+            "hero_fullbleed": false,
+            "split_fullbleed": false,
+            "hide_on_mobile": true,
+            "animation": "wiggle",
+            "speed": 4
+          },
+          "blocks": {}
+        },
+        "sticker_sweet_salty": {
+          "type": "sticker",
+          "name": "Sweet and Salty ellipse",
+          "settings": {
+            "asset_filename": "sticker-sweet-salty.svg",
+            "size": 200,
+            "pos_x": 90,
+            "pos_y": 68,
+            "rotate": -4,
+            "hero_fullbleed": false,
+            "split_fullbleed": false,
+            "hide_on_mobile": true,
+            "animation": "float",
+            "speed": 4
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "intro_heading",
-        "intro_body"
+        "intro_body",
+        "sticker_snack_attack",
+        "sticker_iscream",
+        "sticker_sweet_salty"
       ],
       "name": "Intro",
       "settings": {
