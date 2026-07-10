@@ -98,6 +98,16 @@
     margin-inline: 48px;
   }
 
+  /* Cart count bubble — keep it dark-on-cream in EVERY header state.
+     Horizon only colours the bubble in the non-sticky transparent state, so on
+     scroll (sticky) it fell back to a colour that vanished on our always-cream
+     pill. Pin it on .header__row; the transparent-state rule (higher specificity)
+     still wins at the top of the page, so the top state is unchanged. */
+  #header-component .header__row {
+    --cart-bubble-background: var(--color-dark-grey);
+    --cart-bubble-text: var(--color-cream);
+  }
+
   /* Mobile: anchor the pill (smaller side margins) and shorten its height */
   @media screen and (max-width: 749px) {
     .header-section {
