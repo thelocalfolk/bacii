@@ -242,7 +242,7 @@
             "hide_on_mobile": false,
             "mobile_inflow": true,
             "size_mobile": 185,
-            "pos_x_mobile": 31,
+            "pos_x_mobile": 44,
             "pos_y_mobile": 0,
             "animation": "wiggle",
             "speed": 4
