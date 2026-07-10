@@ -1566,7 +1566,7 @@
               "type": "_featured-blog-posts-image",
               "static": true,
               "settings": {
-                "image_ratio": "square",
+                "image_ratio": "landscape",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
@@ -1605,7 +1605,7 @@
               "static": true,
               "settings": {
                 "show_date": true,
-                "show_author": true,
+                "show_author": false,
                 "type_preset": "",
                 "alignment": "left",
                 "text_color": "",
