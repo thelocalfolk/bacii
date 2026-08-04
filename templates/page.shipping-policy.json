@@ -215,7 +215,7 @@
           "type": "text",
           "name": "Body",
           "settings": {
-            "text": "<p>We ship all orders via Australia Post.</p><ul><li>Standard shipping: $12 AUD</li><li>Free shipping on orders over $100 AUD</li></ul><p>Once your order has been dispatched, you will receive a confirmation email with tracking details.</p><p>For overseas orders please contact us at <a href=\"mailto:hello@baciithelabel.com\">hello@baciithelabel.com</a></p>",
+            "text": "<p>We ship all orders via Australia Post.</p><ul><li>Standard shipping: $12 AUD</li><li>Free shipping on orders over $120 AUD</li></ul><p>Once your order has been dispatched, you will receive a confirmation email with tracking details.</p><p>For overseas orders please contact us at <a href=\"mailto:hello@baciithelabel.com\">hello@baciithelabel.com</a></p>",
             "width": "fill",
             "max_width": "normal",
             "alignment": "left",
