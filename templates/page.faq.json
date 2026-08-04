@@ -72,10 +72,10 @@
       "name": "FAQ Hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/11066bbaffbe2267c7f7da4d1e22f7a8b1eb85fe_1.jpg",
+        "image_1": "shopify://shop_images/MF.B7210.jpg",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
-        "custom_mobile_media": false,
+        "custom_mobile_media": true,
         "media_type_1_mobile": "image",
         "media_type_2_mobile": "image",
         "link": "",
@@ -1100,7 +1100,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/Image_7.jpg",
+            "image": "shopify://shop_images/MF.B8397.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
