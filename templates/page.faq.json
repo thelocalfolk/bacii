@@ -42,7 +42,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
+            "text": "<p>Got questions? We’ve got answers. Find everything you need to know about sizing, shipping, returns and caring for your Bacii pieces.</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
