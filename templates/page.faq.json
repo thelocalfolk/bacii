@@ -207,7 +207,7 @@
                 "q2_a": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We currently offer shipping within Australia.</p><p>For international enquiries, please contact us at: <a href=\"mailto:hello@baciithelabel.com.au\">hello@baciithelabel.com.au</a></p>",
+                    "text": "<p>We currently offer shipping within Australia.</p><p>For international enquiries, please contact us at: <a href=\"mailto:hello@baciithelabel.com.au\">hello@baciithelabel.com</a></p>",
                     "width": "fill",
                     "max_width": "normal",
                     "alignment": "left",
@@ -888,7 +888,7 @@
                 "q4_a": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We're always open to working with creators who align with the Bacii aesthetic and brand values.</p><p>If you'd like to collaborate or create content with us, please get in touch with a short introduction and links to your social channels or portfolio.</p><p><a href=\"mailto:hello@baciithelabel.com.au\">hello@baciithelabel.com.au</a></p>",
+                    "text": "<p>We're always open to working with creators who align with the Bacii aesthetic and brand values.</p><p>If you'd like to collaborate or create content with us, please get in touch with a short introduction and links to your social channels or portfolio.</p><p><a href=\"mailto:hello@baciithelabel.com.au\">hello@baciithelabel.com</a></p>",
                     "width": "fill",
                     "max_width": "normal",
                     "alignment": "left",
