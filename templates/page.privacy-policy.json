@@ -918,7 +918,7 @@
           "type": "text",
           "name": "Body",
           "settings": {
-            "text": "<p>For more information about our privacy practices or if you have any questions, please contact us:</p><p><a href=\"mailto:hello@baciithelabel.com.au\">hello@baciithelabel.com.au</a></p>",
+            "text": "<p>For more information about our privacy practices or if you have any questions, please contact us:</p><p><a href=\"mailto:hello@baciithelabel.com.au\">hello@baciithelabel.com</a></p>",
             "width": "fill",
             "max_width": "normal",
             "alignment": "left",
