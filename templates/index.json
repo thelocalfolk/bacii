@@ -1187,9 +1187,9 @@
                 "split_fullbleed": true,
                 "hide_on_mobile": false,
                 "mobile_inflow": false,
-                "size_mobile": 185,
-                "pos_x_mobile": 73,
-                "pos_y_mobile": 33,
+                "size_mobile": 140,
+                "pos_x_mobile": 82,
+                "pos_y_mobile": 34,
                 "animation": "float",
                 "speed": 3
               },
