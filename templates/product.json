@@ -2017,7 +2017,7 @@
               "type": "_accordion-row",
               "name": "Do you ship internationally?",
               "settings": {
-                "heading": "Do you ship internationally?",
+                "heading": "How can I track my delivery?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 100
@@ -2026,7 +2026,7 @@
                 "faq5_a": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>{# TODO: confirm answer #}Answer coming soon.</p>",
+                    "text": "<p>Once your order has been shipped, you’ll receive an email with tracking details via <strong>Australia Post</strong>.</p><p>You can track your order here:<br/><a href=\"https:// https://www.auspost.com.au/track/\" title=\"https:// https://www.auspost.com.au/track/\">https://www.auspost.com.au/track/</a></p><p>Please allow up to 24 hours for tracking to update.</p>",
                     "width": "fill",
                     "max_width": "normal",
                     "alignment": "left",
