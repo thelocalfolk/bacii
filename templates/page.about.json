@@ -63,31 +63,11 @@
             "padding-inline-end": 0
           },
           "blocks": {}
-        },
-        "hero_button": {
-          "type": "button",
-          "name": "CTA Button",
-          "settings": {
-            "label": "Our Story",
-            "link": "#our-story",
-            "open_in_new_tab": false,
-            "style_class": "button-custom",
-            "custom_button_background": "#ff835d",
-            "custom_button_text": "#fcf5ef",
-            "custom_button_border": "#ff835d",
-            "link_text_color": "",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
         }
       },
       "block_order": [
         "hero_heading",
-        "hero_body",
-        "hero_button"
+        "hero_body"
       ],
       "name": "About Hero",
       "settings": {
