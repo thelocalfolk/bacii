@@ -34,11 +34,15 @@
     --color-periwinkle:  #C9BCF4;
     --color-tiffany:     #D8F9F2;
 
-    /* H1 display face — Franie SemiBold overrides the Asap heading token.
-       Only H1 changes; H2–H6 stay on --font-heading--family (Asap). */
+    /* Display face — Franie SemiBold overrides the Asap heading token
+       for H1 and H2. H3–H6 stay on --font-heading--family (Asap). */
     --font-h1--family: 'Franie', {{ settings.type_heading_font.family }}, {{ settings.type_heading_font.fallback_families }};
     --font-h1--style: normal;
     --font-h1--weight: 600;
+
+    --font-h2--family: var(--font-h1--family);
+    --font-h2--style: normal;
+    --font-h2--weight: 600;
 
     /* Type scale — exact Figma values */
     --font-size-h1: 60px;
