@@ -2226,7 +2226,7 @@
                 "text_6ADDFK": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>At this stage, we do not offer gift receipts - however, no pricing is included in our packaging.</p>",
+                    "text": "<p>Our digital gift cards are delivered by email and can be used online across the Bacii collection.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -2341,7 +2341,7 @@
         "horizontal_alignment": "center",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
+        "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 24,
         "section_width": "page-width",
