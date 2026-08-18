@@ -117,7 +117,7 @@
             "text_color": "#fcf5ef",
             "text_size": 15,
             "size": 180,
-            "pos_x": 86,
+            "pos_x": 0,
             "pos_y": 36,
             "rotate": 4,
             "flip_horizontal": false,
