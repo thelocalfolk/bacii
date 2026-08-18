@@ -16,12 +16,12 @@
           "type": "_product-media-gallery",
           "static": true,
           "settings": {
-            "media_presentation": "carousel",
-            "media_columns": "one",
+            "media_presentation": "grid",
+            "media_columns": "two",
             "image_gap": 4,
             "large_first_image": false,
             "icons_style": "none",
-            "slideshow_controls_style": "counter",
+            "slideshow_controls_style": "thumbnails",
             "slideshow_mobile_controls_style": "dots",
             "thumbnail_position": "bottom",
             "thumbnail_width": 44,
@@ -1440,9 +1440,9 @@
       "settings": {
         "heading": "The Bacii Club",
         "subtext": "Real families, real kids and lots of big personalities.",
-        "heading_color": "#007DFE",
-        "text_color": "#59697A",
-        "background_color": "#FFECA8",
+        "heading_color": "#007dfe",
+        "text_color": "#59697a",
+        "background_color": "#ffeca8",
         "section_width": "page-width",
         "padding_block_start": 72,
         "padding_block_end": 72
