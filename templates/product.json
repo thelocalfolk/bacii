@@ -1817,7 +1817,7 @@
               "type": "_accordion-row",
               "name": "How long will it take to receive my order?",
               "settings": {
-                "heading": "How long will it take to receive my order?",
+                "heading": "Do your products run true to size?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 100
@@ -1826,7 +1826,7 @@
                 "faq0_a": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>{# TODO: confirm answer #}Answer coming soon.</p>",
+                    "text": "<p>Our pieces are designed with a relaxed fit. You can size up or down depending on your preferred look -stick to your usual size for a relaxed fit, or size down for something more fitted.</p><p><a href=\"/pages/size-guide\" target=\"_blank\" title=\"Size Guide\">Size guide<br/></a><strong>Available in sizes 1–6<br/>True age sizing with a relaxed fit.</strong></p><p><strong>Size Guide</strong></p><ul><li>Size 1 (12–18 months)</li><li>Size 2 (2 years)</li><li>Size 3 (3 years)</li><li>Size 4 (4 years)</li><li>Size 5 (5 years)</li><li>Size 6 (6 years)</li></ul>",
                     "width": "fill",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1857,7 +1857,7 @@
               "type": "_accordion-row",
               "name": "Can I exchange or return my order?",
               "settings": {
-                "heading": "Can I exchange or return my order?",
+                "heading": "How do I clean this product?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 100
@@ -1866,7 +1866,7 @@
                 "faq1_a": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>{# TODO: confirm answer #}Answer coming soon.</p>",
+                    "text": "<p>To keep your Bacii pieces looking their best:</p><ul><li>Cold gentle machine wash</li><li>Wash with like colours</li><li>Do not tumble dry</li><li>Do not bleach</li><li>Warm iron inside out if needed</li></ul><p>Always check the care label on each garment for specific instructions.</p>",
                     "width": "fill",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1895,9 +1895,9 @@
             },
             "faq2": {
               "type": "_accordion-row",
-              "name": "How do Bacii garments fit?",
+              "name": "What materials are your products made from?",
               "settings": {
-                "heading": "How do Bacii garments fit?",
+                "heading": "What materials are your products made from?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 100
@@ -1906,7 +1906,7 @@
                 "faq2_a": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>{# TODO: confirm answer #}Answer coming soon.</p>",
+                    "text": "<p>Our pieces are made from 100% organic cotton and eco-friendly fabrics. We work with ethically certified manufacturers, including those with GOTS (Global Organic Textile Standard) certification, ensuring responsible production from fibre to finished garment.</p>",
                     "width": "fill",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1935,9 +1935,9 @@
             },
             "faq3": {
               "type": "_accordion-row",
-              "name": "How do I care for my Bacii pieces?",
+              "name": "What are your store hours?",
               "settings": {
-                "heading": "How do I care for my Bacii pieces?",
+                "heading": "What are your store hours?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 100
@@ -1946,7 +1946,7 @@
                 "faq3_a": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>{# TODO: confirm answer #}Answer coming soon.</p>",
+                    "text": "<p>We are an online store, so you can shop with us 24/7 </p><p>Our customer support team is available Monday–Friday, and we aim to respond to all enquiries within 1–2 business days.</p>",
                     "width": "fill",
                     "max_width": "normal",
                     "alignment": "left",
