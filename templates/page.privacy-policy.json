@@ -138,6 +138,9 @@
       "block_order": [
         "text_J8eV7F"
       ],
+      "custom_css": [
+        ".rte ul,.rte ol {list-style-position: inside;}"
+      ],
       "name": "t:names.rich_text_section",
       "settings": {
         "content_direction": "column",
