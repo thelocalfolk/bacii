@@ -105,6 +105,74 @@
         "padding-block-end": 0
       }
     },
+    "section_NfFfHx": {
+      "type": "section",
+      "blocks": {
+        "text_rCzqww": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p><strong>Bacii the Label (Bear & Roo Co Pty Ltd)</strong></p><p><strong>Effective Date:</strong> May 2026</p><p></p><p></p><h3></h3><h3></h3><h3><strong>1. Overview</strong></h3><p>This website is operated by <strong>Bacii the Label</strong>, a trading name of <strong>Bear & Roo Co Pty Ltd</strong>. Throughout the site, the terms “we”, “us” and “our” refer to Bacii the Label.</p><p>By visiting our site and/or purchasing something from us, you engage in our “Service” and agree to be bound by the following Terms of Service.</p><p></p><h3></h3><h3></h3><h3><strong>2. Online Store Terms</strong></h3><p>By agreeing to these Terms, you confirm that:</p><ul><li>You are at least 18 years old or have permission from a parent/guardian</li><li>You will not use our products for any illegal or unauthorised purpose</li><li>You will not transmit any viruses or malicious code</li></ul><h3></h3><h3></h3><h3><strong>3. Products & Availability</strong></h3><p>We make every effort to display our products as accurately as possible. However:</p><ul><li>Colours may vary slightly due to screen settings</li><li>All products are subject to availability</li><li>We reserve the right to limit quantities or discontinue products at any time</li></ul><h3></h3><h3></h3><h3><strong>4. Pricing & Payments</strong></h3><p>All prices are listed in <strong>AUD</strong> and include GST (where applicable).</p><p>We reserve the right to:</p><ul><li>Change prices at any time</li><li>Refuse or cancel orders if pricing errors occur</li></ul><p>Payment must be received in full before orders are dispatched.</p><h3></h3><h3></h3><h3><strong>5. Orders</strong></h3><p>We reserve the right to refuse or cancel any order at our discretion, including:</p><ul><li>Suspected fraudulent activity</li><li>Incorrect pricing or product information</li><li>Stock availability issues</li></ul><p>If your order is cancelled, you will receive a full refund.</p><h3></h3><h3></h3><h3><strong>6. Shipping</strong></h3><p>We aim to dispatch orders within 2 business days.</p><p>Shipping times are estimates only and may vary. We are not responsible for delays caused by third-party carriers.</p><p>Risk of loss passes to you once the order is shipped.</p><h3></h3><h3></h3><h3><strong>7. Returns & Exchanges</strong></h3><p>Please refer to our <strong>Returns Policy</strong> for full details.</p><p>We do not accept returns for:</p><ul><li>Change of mind (unless stated otherwise)</li><li>Worn or damaged items</li></ul><p>Items must be returned in original condition with tags attached.</p><h3></h3><h3></h3><h3><strong>8. Product Use & Safety</strong></h3><p>Our garments are designed for everyday wear. However:</p><ul><li>Adult supervision is recommended for young children</li><li>Keep garments away from open flames</li><li>Remove packaging materials before use</li></ul><h3></h3><h3></h3><h3><strong>9. Intellectual Property</strong></h3><p>All content on this site (including logos, designs, graphics, and text) is the property of Bacii the Label and may not be used without permission.</p><h3></h3><h3></h3><h3><strong>10. Privacy</strong></h3><p>Your submission of personal information is governed by our <strong>Privacy Policy</strong>.</p><h3></h3><h3></h3><h3><strong>11. Limitation of Liability</strong></h3><p>To the maximum extent permitted by law, Bacii the Label shall not be liable for any indirect, incidental or consequential damages arising from the use of our products or website.</p><p>Nothing in these Terms excludes your rights under the <strong>Australian Consumer Law</strong>.</p><h3></h3><h3></h3><h3><strong>12. Changes to Terms</strong></h3><p>We reserve the right to update these Terms at any time. Changes will be effective immediately upon posting on this website.</p><h3></h3><h3></h3><h3><strong>13. Contact Information</strong></h3><p>For any questions, please contact us at:<br/>hello@baciithelabel.com.au</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_rCzqww"
+      ],
+      "custom_css": [
+        ".rte ul,.rte ol {list-style-position: inside;}"
+      ],
+      "name": "t:names.rich_text_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 25,
+        "section_width": "page-width",
+        "section_height": "small",
+        "section_height_custom": 50,
+        "mobile_padding_block_start": 0,
+        "mobile_padding_block_end": 0,
+        "background_media": "none",
+        "background_color": "",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    },
     "tos_content": {
       "type": "section",
       "blocks": {
@@ -840,6 +908,7 @@
         "tos_h4_13",
         "tos_body_13"
       ],
+      "disabled": true,
       "name": "Terms of Service Content",
       "settings": {
         "content_direction": "column",
@@ -875,6 +944,7 @@
   },
   "order": [
     "tos_hero",
+    "section_NfFfHx",
     "tos_content"
   ]
 }
