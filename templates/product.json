@@ -2292,46 +2292,6 @@
               "block_order": [
                 "text_VXW4jU"
               ]
-            },
-            "accordion_row_x7Fxjm": {
-              "type": "_accordion-row",
-              "name": "t:names.accordion_row",
-              "settings": {
-                "heading": "Do you work with creators or accept UGC collaborations?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_rEwVi7": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>We’re always open to working with creators who align with the Bacii aesthetic and brand values.</p><p>If you’d like to collaborate or create content with us, please get in touch with a short introduction and links to your social channels or portfolio.</p><p><a href=\"mailto:hello@baciithelabel.com.au\"><span style=\"text-decoration:underline\">hello@baciithelabel.com.au</span></a></p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_rEwVi7"
-              ]
             }
           },
           "block_order": [
@@ -2346,8 +2306,7 @@
             "accordion_row_eixxD7",
             "accordion_row_K9tkQh",
             "accordion_row_M7EVfg",
-            "accordion_row_AxwaaK",
-            "accordion_row_x7Fxjm"
+            "accordion_row_AxwaaK"
           ]
         },
         "faq_btn": {
