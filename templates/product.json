@@ -1815,7 +1815,7 @@
           "blocks": {
             "faq0": {
               "type": "_accordion-row",
-              "name": "How long will it take to receive my order?",
+              "name": "Do your products run true to size?",
               "settings": {
                 "heading": "Do your products run true to size?",
                 "open_by_default": false,
@@ -1855,7 +1855,7 @@
             },
             "faq1": {
               "type": "_accordion-row",
-              "name": "Can I exchange or return my order?",
+              "name": "How do I clean this product?",
               "settings": {
                 "heading": "How do I clean this product?",
                 "open_by_default": false,
@@ -2015,7 +2015,7 @@
             },
             "faq5": {
               "type": "_accordion-row",
-              "name": "Do you ship internationally?",
+              "name": "How can I track my delivery?",
               "settings": {
                 "heading": "How can I track my delivery?",
                 "open_by_default": false,
@@ -2052,6 +2052,286 @@
               "block_order": [
                 "faq5_a"
               ]
+            },
+            "accordion_row_X3hwaR": {
+              "type": "_accordion-row",
+              "name": "Do you ship internationally?",
+              "settings": {
+                "heading": "Do you ship internationally?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_JF6YjU": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>We currently offer shipping within Australia.</p><p>For international enquiries, please contact us at:<br/>hello@baciithelabel.com.au</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_JF6YjU"
+              ]
+            },
+            "accordion_row_RCtVGt": {
+              "type": "_accordion-row",
+              "name": "Can I cancel my order?",
+              "settings": {
+                "heading": "Can I cancel my order?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_g7ezEz": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>We’re unable to guarantee order cancellations once an order has been placed, as we aim to process orders quickly.</p><p>If you need to make a change, please contact us as soon as possible and we’ll do our best to help.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_g7ezEz"
+              ]
+            },
+            "accordion_row_eixxD7": {
+              "type": "_accordion-row",
+              "name": "Will I receive an order confirmation?",
+              "settings": {
+                "heading": "Will I receive an order confirmation?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_ygQemi": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Yes — once your order is placed, you’ll receive a confirmation email with your order details.</p><p>If you don’t receive this, please check your junk/spam folder or contact us.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_ygQemi"
+              ]
+            },
+            "accordion_row_K9tkQh": {
+              "type": "_accordion-row",
+              "name": "Can I use more than one discount code?",
+              "settings": {
+                "heading": "Can I use more than one discount code?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_9h67AF": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Only one discount code can be used per order.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_9h67AF"
+              ]
+            },
+            "accordion_row_M7EVfg": {
+              "type": "_accordion-row",
+              "name": "Do you offer gift receipts?",
+              "settings": {
+                "heading": "Do you offer gift receipts?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_6ADDFK": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>At this stage, we do not offer gift receipts - however, no pricing is included in our packaging.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_6ADDFK"
+              ]
+            },
+            "accordion_row_AxwaaK": {
+              "type": "_accordion-row",
+              "name": "Where are your products made?",
+              "settings": {
+                "heading": "Where are your products made?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_VXW4jU": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Our pieces are designed in Australia and carefully produced in China by trusted manufacturing partners, with an emphasis on quality, care, and ethical practices.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_VXW4jU"
+              ]
+            },
+            "accordion_row_x7Fxjm": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "Do you work with creators or accept UGC collaborations?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_rEwVi7": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>We’re always open to working with creators who align with the Bacii aesthetic and brand values.</p><p>If you’d like to collaborate or create content with us, please get in touch with a short introduction and links to your social channels or portfolio.</p><p><a href=\"mailto:hello@baciithelabel.com.au\"><span style=\"text-decoration:underline\">hello@baciithelabel.com.au</span></a></p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_rEwVi7"
+              ]
             }
           },
           "block_order": [
@@ -2060,7 +2340,14 @@
             "faq2",
             "faq3",
             "faq4",
-            "faq5"
+            "faq5",
+            "accordion_row_X3hwaR",
+            "accordion_row_RCtVGt",
+            "accordion_row_eixxD7",
+            "accordion_row_K9tkQh",
+            "accordion_row_M7EVfg",
+            "accordion_row_AxwaaK",
+            "accordion_row_x7Fxjm"
           ]
         },
         "faq_btn": {
