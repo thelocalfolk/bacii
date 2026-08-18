@@ -111,11 +111,11 @@
     z-index: 2;
   }
 
-  /* Homepage hero heading — slightly larger on small screens. The heading uses
-     clamp(2.125rem, 7.2vw, 4.5rem); on phones 7.2vw falls below the floor, so it
-     was pinned at 34px. Raise only the floor (desktop max 72px is unchanged). */
+  /* Homepage hero heading. Franie SemiBold reads larger on the page than Asap
+     did at the same pt size, so the ceiling comes down 72px -> 56px and the vw
+     ramp eases 7.2 -> 6. Mobile floor stays 40px. */
   .hero .h1 {
-    --font-h1--size: clamp(2.5rem, 7.2vw, 4.5rem);
+    --font-h1--size: clamp(2.5rem, 6vw, 3.5rem);
   }
   {%- endif -%}
 
