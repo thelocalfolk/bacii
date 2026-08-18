@@ -2,7 +2,26 @@
   Bacii brand design tokens — all named colours and type fine-tuning.
   Rendered once in theme.liquid after color-palette.liquid.
 {% enddoc %}
+
+{%- comment -%} H1 display face — Franie SemiBold (self-hosted, licensed). {%- endcomment -%}
+<link
+  rel="preload"
+  href="{{ 'franie-semibold.woff2' | asset_url }}"
+  as="font"
+  type="font/woff2"
+  crossorigin
+>
 {% style %}
+  @font-face {
+    font-family: 'Franie';
+    src:
+      url('{{ 'franie-semibold.woff2' | asset_url }}') format('woff2'),
+      url('{{ 'franie-semibold.woff' | asset_url }}') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
   :root {
     /* Brand colours */
     --color-cream:       #FCF5EF;
@@ -14,6 +33,12 @@
     --color-bubblegum:   #F5A8B8;
     --color-periwinkle:  #C9BCF4;
     --color-tiffany:     #D8F9F2;
+
+    /* H1 display face — Franie SemiBold overrides the Asap heading token.
+       Only H1 changes; H2–H6 stay on --font-heading--family (Asap). */
+    --font-h1--family: 'Franie', {{ settings.type_heading_font.family }}, {{ settings.type_heading_font.fallback_families }};
+    --font-h1--style: normal;
+    --font-h1--weight: 600;
 
     /* Type scale — exact Figma values */
     --font-size-h1: 60px;
