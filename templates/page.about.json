@@ -109,7 +109,7 @@
         "vertical_alignment_flex_direction_column": "center",
         "gap": 24,
         "section_width": "page-width",
-        "section_height": "custom",
+        "section_height": "full-screen",
         "section_height_custom": 100,
         "mobile_min_height": 0,
         "mobile_content_position": "inherit",
