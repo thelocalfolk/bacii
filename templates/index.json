@@ -1227,7 +1227,7 @@
             "text": "<p>Shop Collections</p>",
             "width": "fill",
             "max_width": "normal",
-            "alignment": "left",
+            "alignment": "center",
             "type_preset": "h2",
             "font": "var(--font-heading--family)",
             "font_size": "",
