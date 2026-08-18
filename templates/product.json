@@ -1975,9 +1975,9 @@
             },
             "faq4": {
               "type": "_accordion-row",
-              "name": "Are your garments ethically made?",
+              "name": "Where can I find your products in-store?",
               "settings": {
-                "heading": "Are your garments ethically made?",
+                "heading": "Where can I find your products in-store?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 100
@@ -1986,7 +1986,7 @@
                 "faq4_a": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>{# TODO: confirm answer #}Answer coming soon.</p>",
+                    "text": "<p>Bacii the Label is currently available exclusively online.</p><p>For wholesale enquiries, we’d love to connect - please reach out via email.<br/>hello@baciithelabel.com.au</p>",
                     "width": "fill",
                     "max_width": "normal",
                     "alignment": "left",
