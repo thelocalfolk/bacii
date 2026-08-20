@@ -2116,5 +2116,41 @@
         "default": "equal-width-buttons"
       }
     ]
+  },
+  {
+    "name": "Bacii",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Free shipping bar"
+      },
+      {
+        "type": "checkbox",
+        "id": "bacii_free_shipping_enabled",
+        "label": "Show free shipping progress bar",
+        "info": "Appears in the cart drawer and on the cart page. Make sure the threshold below matches your real rate in Settings > Shipping.",
+        "default": true
+      },
+      {
+        "type": "number",
+        "id": "bacii_free_shipping_threshold",
+        "label": "Free shipping threshold",
+        "info": "In your store currency, without the $. Bacii launch value: 120",
+        "default": 120
+      },
+      {
+        "type": "text",
+        "id": "bacii_free_shipping_progress",
+        "label": "Message before threshold is reached",
+        "info": "Use [amount] where the remaining amount should appear.",
+        "default": "You're [amount] away from free shipping"
+      },
+      {
+        "type": "text",
+        "id": "bacii_free_shipping_success",
+        "label": "Message once threshold is reached",
+        "default": "You've unlocked free shipping"
+      }
+    ]
   }
 ]
