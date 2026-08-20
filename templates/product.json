@@ -879,7 +879,7 @@
                 "text_B7PD9H": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2>Goes well with</h2>",
+                    "text": "<h2><strong>Goes well with</strong></h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
