@@ -1,0 +1,136 @@
+{% doc %}
+  Bacii free shipping progress bar.
+
+  Renders a progress track showing how far the customer is from the free
+  shipping threshold. Pure Liquid — the cart drawer and cart page are both
+  re-rendered by the Section Rendering API on every cart change, so the bar
+  recalculates itself with no JavaScript.
+
+  Threshold is set in Theme settings > Bacii > Free shipping.
+
+  @param {string} [context] - 'drawer' or 'page'. Adjusts spacing only.
+
+  {% render 'bacii-free-shipping-bar', context: 'drawer' %}
+{% enddoc %}
+
+{%- liquid
+  # Fall back to defaults when settings_data.json has no value stored yet —
+  # an unset theme setting resolves to nil, not to its schema default.
+  assign threshold_amount = settings.bacii_free_shipping_threshold | default: 120
+  assign threshold = threshold_amount | times: 100
+  assign total = cart.total_price
+  assign context = context | default: 'drawer'
+
+  assign message_progress = settings.bacii_free_shipping_progress | default: "You're [amount] away from free shipping"
+  assign message_success = settings.bacii_free_shipping_success | default: "You've unlocked free shipping"
+
+  # Only an explicit false switches the bar off.
+  assign show_bar = true
+  if settings.bacii_free_shipping_enabled == false
+    assign show_bar = false
+  endif
+  if threshold <= 0 or cart.item_count == 0
+    assign show_bar = false
+  endif
+
+  assign remaining = threshold | minus: total
+  if remaining <= 0
+    assign percent = 100
+  else
+    assign percent = total | times: 100.0 | divided_by: threshold
+  endif
+-%}
+
+{%- if show_bar -%}
+  <div class="bacii-shipping-bar bacii-shipping-bar--{{ context }}">
+    <p class="bacii-shipping-bar__message" role="status">
+      {%- comment -%} TODO: confirm copy — this bar is not in the Figma design {%- endcomment -%}
+      {%- if remaining <= 0 -%}
+        {{ message_success }}
+      {%- else -%}
+        {%- assign amount = remaining | money_without_trailing_zeros -%}
+        {{ message_progress | replace: '[amount]', amount }}
+      {%- endif -%}
+    </p>
+
+    {%- comment -%}
+      The message above already announces progress, so the track is decorative.
+      A role="progressbar" here would need its own accessible name.
+    {%- endcomment -%}
+    <div class="bacii-shipping-bar__track" aria-hidden="true">
+      <div
+        class="bacii-shipping-bar__fill{% if remaining <= 0 %} bacii-shipping-bar__fill--complete{% endif %}"
+        style="--bacii-shipping-progress: {{ percent | round: 2 }}%;"
+      ></div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% stylesheet %}
+  .bacii-shipping-bar {
+    /* The drawer summary uses align-items: center, which would otherwise
+       shrink this to the width of its own message text. */
+    width: 100%;
+    align-self: stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .bacii-shipping-bar--drawer {
+    padding: 4px var(--padding-lg, 20px) 18px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bacii-shipping-bar--drawer {
+      padding-inline: var(--padding-2xl, 32px);
+    }
+  }
+
+  .bacii-shipping-bar--page {
+    padding: 0 0 24px;
+  }
+
+  .bacii-shipping-bar__message {
+    margin: 0;
+    font-family: var(--font-body--family);
+    font-size: 13px;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: var(--color-dark-grey, #59697A);
+    text-align: center;
+  }
+
+  .bacii-shipping-bar__message strong {
+    font-weight: 600;
+    color: var(--color-blue, #007DFE);
+  }
+
+  .bacii-shipping-bar__track {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    border-radius: 1000px;
+    background: color-mix(in srgb, var(--color-dark-grey, #59697A) 14%, transparent);
+    overflow: hidden;
+  }
+
+  .bacii-shipping-bar__fill {
+    width: var(--bacii-shipping-progress, 0%);
+    height: 100%;
+    border-radius: 1000px;
+    background: var(--color-mint, #7BD8B3);
+    transition: width 0.4s ease;
+  }
+
+  .bacii-shipping-bar__fill--complete {
+    background: var(--color-coral, #FF835D);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bacii-shipping-bar__fill {
+      transition: none;
+    }
+  }
+{% endstylesheet %}
