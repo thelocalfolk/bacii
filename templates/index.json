@@ -170,7 +170,7 @@
       "name": "Hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/3f322d34-7be6-4de6-b2a3-4072fdef99ad.png",
+        "image_1": "shopify://shop_images/Header.png",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
