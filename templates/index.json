@@ -1340,6 +1340,17 @@
     },
     "bacii_club_Ud8yyB": {
       "type": "bacii-club",
+      "blocks": {
+        "tolstoy_ads_image_video_carousel_block_bXgwgg": {
+          "type": "shopify://apps/tolstoy-ads-image-video/blocks/carousel-block/06fa8282-42ff-403e-b67c-1936776aed11",
+          "settings": {
+            "publishId": "publishId"
+          }
+        }
+      },
+      "block_order": [
+        "tolstoy_ads_image_video_carousel_block_bXgwgg"
+      ],
       "name": "The Bacii Club",
       "settings": {
         "heading": "The Bacii Club",
