@@ -1341,15 +1341,68 @@
     "bacii_club_Ud8yyB": {
       "type": "bacii-club",
       "blocks": {
-        "tolstoy_ads_image_video_carousel_block_bXgwgg": {
-          "type": "shopify://apps/tolstoy-ads-image-video/blocks/carousel-block/06fa8282-42ff-403e-b67c-1936776aed11",
+        "video_qAUmPw": {
+          "type": "video",
           "settings": {
-            "publishId": "publishId"
+            "source": "uploaded",
+            "video": "shopify://files/videos/Baciihype.mp4",
+            "video_url": "",
+            "alt": "",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "video_3Mkp4a": {
+          "type": "video",
+          "settings": {
+            "source": "uploaded",
+            "video": "shopify://files/videos/IMG_9058.MOV",
+            "video_url": "",
+            "alt": "",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "video_AArWxV": {
+          "type": "video",
+          "settings": {
+            "source": "uploaded",
+            "video": "shopify://files/videos/IMG_9060.MOV",
+            "video_url": "",
+            "alt": "",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "video_DRVtYk": {
+          "type": "video",
+          "settings": {
+            "source": "uploaded",
+            "video": "shopify://files/videos/IMG_9103.MOV",
+            "video_url": "",
+            "alt": "",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "video_iBRBkm": {
+          "type": "video",
+          "settings": {
+            "source": "uploaded",
+            "video": "shopify://files/videos/IMG_9182 2.MOV",
+            "video_url": "",
+            "alt": "",
+            "caption": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "tolstoy_ads_image_video_carousel_block_bXgwgg"
+        "video_qAUmPw",
+        "video_3Mkp4a",
+        "video_AArWxV",
+        "video_DRVtYk",
+        "video_iBRBkm"
       ],
       "name": "The Bacii Club",
       "settings": {
