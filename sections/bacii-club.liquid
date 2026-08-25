@@ -64,31 +64,63 @@
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when 'video' -%}
+                {%- liquid
+                  assign poster = block.settings.cover_image
+                  if poster == blank and block.settings.source != 'url'
+                    assign poster = block.settings.video.preview_image
+                  endif
+                -%}
                 <li class="bacii-club__slide" {{ block.shopify_attributes }}>
-                  <div class="bacii-club__frame">
-                    {%- if block.settings.source == 'url' -%}
-                      {%- render 'video',
-                        video_from_url: true,
-                        video: block.settings.video_url.id,
-                        video_type: block.settings.video_url.type,
-                        video_alt: block.settings.alt,
-                        video_preview_image: block.settings.cover_image,
-                        video_autoplay: autoplay,
-                        video_loop: true,
-                        video_class: 'bacii-club__video',
-                        disable_controls: autoplay,
-                        loading: 'lazy'
-                      -%}
+                  <div class="bacii-club__frame" data-bacii-club-slide>
+                    {%- capture slide_video -%}
+                      {%- if block.settings.source == 'url' -%}
+                        {%- render 'video',
+                          video_from_url: true,
+                          video: block.settings.video_url.id,
+                          video_type: block.settings.video_url.type,
+                          video_alt: block.settings.alt,
+                          video_preview_image: block.settings.cover_image,
+                          video_autoplay: autoplay,
+                          video_loop: true,
+                          video_class: 'bacii-club__video',
+                          disable_controls: autoplay,
+                          loading: 'lazy'
+                        -%}
+                      {%- else -%}
+                        {%- render 'video',
+                          video: block.settings.video,
+                          video_preview_image: block.settings.cover_image,
+                          video_autoplay: autoplay,
+                          video_loop: true,
+                          video_class: 'bacii-club__video',
+                          disable_controls: autoplay,
+                          loading: 'lazy'
+                        -%}
+                      {%- endif -%}
+                    {%- endcapture -%}
+
+                    {%- if autoplay -%}
+                      {%- comment -%}
+                        Autoplay mode: the video markup is held in a <template> and only
+                        injected once the slide scrolls into view (see the JS below), so
+                        offscreen slides cost nothing. The poster paints immediately.
+                      {%- endcomment -%}
+                      {%- if poster != blank -%}
+                        {{
+                          poster
+                          | image_url: width: 1100
+                          | image_tag:
+                            widths: '240, 352, 540, 720, 1100',
+                            sizes: '(min-width: 750px) 25vw, 80vw',
+                            loading: 'lazy',
+                            class: 'bacii-club__poster',
+                            alt: block.settings.alt
+                        }}
+                      {%- endif -%}
+                      <template data-bacii-club-video>{{ slide_video }}</template>
+                      <noscript>{{ slide_video }}</noscript>
                     {%- else -%}
-                      {%- render 'video',
-                        video: block.settings.video,
-                        video_preview_image: block.settings.cover_image,
-                        video_autoplay: autoplay,
-                        video_loop: true,
-                        video_class: 'bacii-club__video',
-                        disable_controls: autoplay,
-                        loading: 'lazy'
-                      -%}
+                      {{ slide_video }}
                     {%- endif -%}
 
                     {%- if block.settings.link != blank -%}
@@ -223,8 +255,17 @@
   .bacii-club__frame .bacii-club__video,
   .bacii-club__frame deferred-media {
     display: block;
+    position: relative;
+    z-index: 1;
     width: 100%;
     height: 100%;
+  }
+
+  /* Poster shown until the slide scrolls into view and the video is injected */
+  .bacii-club__poster {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
   }
 
   .bacii-club__frame video,
@@ -309,6 +350,8 @@
       this.prev?.addEventListener('click', () => this.scrollByPage(-1));
       this.next?.addEventListener('click', () => this.scrollByPage(1));
 
+      this.setupLazyPlayback();
+
       this.onScroll = () => this.updateArrows();
       this.track.addEventListener('scroll', this.onScroll, { passive: true });
 
@@ -321,6 +364,58 @@
     disconnectedCallback() {
       this.track?.removeEventListener('scroll', this.onScroll);
       this.observer?.disconnect();
+      this.visibility?.disconnect();
+    }
+
+    // Only the slides actually on screen load and play. Slides scrolled out of
+    // the track (or the whole section scrolled off the page) are paused, so we
+    // never have more than a couple of videos decoding at once.
+    setupLazyPlayback() {
+      const slides = this.querySelectorAll('[data-bacii-club-slide]');
+      if (!slides.length) return;
+
+      this.reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      if (!('IntersectionObserver' in window)) {
+        slides.forEach((slide) => this.hydrate(slide));
+        return;
+      }
+
+      this.visibility = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              this.hydrate(entry.target);
+              this.play(entry.target);
+            } else {
+              this.pause(entry.target);
+            }
+          });
+        },
+        { rootMargin: '100px', threshold: 0.25 }
+      );
+
+      slides.forEach((slide) => this.visibility.observe(slide));
+    }
+
+    hydrate(slide) {
+      const template = slide.querySelector('template[data-bacii-club-video]');
+      if (!template) return;
+      slide.appendChild(template.content.cloneNode(true));
+      template.remove();
+      slide.classList.add('is-loaded');
+    }
+
+    play(slide) {
+      if (this.reducedMotion) return;
+      slide.querySelectorAll('video').forEach((video) => {
+        video.muted = true;
+        video.play?.().catch(() => {});
+      });
+    }
+
+    pause(slide) {
+      slide.querySelectorAll('video').forEach((video) => video.pause?.());
     }
 
     scrollByPage(direction) {
