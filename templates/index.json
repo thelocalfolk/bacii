@@ -1356,18 +1356,7 @@
           "type": "video",
           "settings": {
             "source": "uploaded",
-            "video": "shopify://files/videos/IMG_9058.MOV",
-            "video_url": "",
-            "alt": "",
-            "caption": "",
-            "link": ""
-          }
-        },
-        "video_AArWxV": {
-          "type": "video",
-          "settings": {
-            "source": "uploaded",
-            "video": "shopify://files/videos/IMG_9060.MOV",
+            "video": "shopify://files/videos/IMG_9216.mov",
             "video_url": "",
             "alt": "",
             "caption": "",
@@ -1379,6 +1368,17 @@
           "settings": {
             "source": "uploaded",
             "video": "shopify://files/videos/IMG_9103.MOV",
+            "video_url": "",
+            "alt": "",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "video_AArWxV": {
+          "type": "video",
+          "settings": {
+            "source": "uploaded",
+            "video": "shopify://files/videos/IMG_9060.MOV",
             "video_url": "",
             "alt": "",
             "caption": "",
@@ -1400,17 +1400,25 @@
       "block_order": [
         "video_qAUmPw",
         "video_3Mkp4a",
-        "video_AArWxV",
         "video_DRVtYk",
+        "video_AArWxV",
         "video_iBRBkm"
       ],
       "name": "The Bacii Club",
       "settings": {
         "heading": "The Bacii Club",
         "subtext": "Real families, real kids and lots of big personalities.",
+        "slides_per_view": 4,
+        "aspect_ratio": "4 / 5",
+        "gap": 16,
+        "corner_radius": 16,
+        "video_autoplay": true,
+        "show_arrows": true,
         "heading_color": "#007dfe",
         "text_color": "#59697a",
         "background_color": "{{ settings.color_palette.background }}",
+        "arrow_background": "#ffffff",
+        "arrow_color": "#59697a",
         "section_width": "page-width",
         "padding_block_start": 72,
         "padding_block_end": 72
