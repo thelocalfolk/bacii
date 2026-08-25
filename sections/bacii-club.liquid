@@ -1,8 +1,20 @@
 {%- comment -%}
-  Bacii Club — centred heading + subtext, with an area below for the Tolstoy
-  video app block. Add the Tolstoy widget via Add block → (app). Background is a
-  per-section setting so the homepage and PDP instances can differ.
+  Bacii Club — centred heading + subtext above a horizontal video carousel.
+
+  Each slide is a "Video" block (uploaded Shopify video, or a YouTube/Vimeo URL)
+  rendered through the theme's own `video` snippet, so posters, deferred loading
+  and play/pause behaviour match the rest of Horizon. App blocks are still
+  allowed, so a Tolstoy widget can be dropped in as a slide if wanted.
+
+  Scrolling uses CSS scroll-snap; the arrows are progressive enhancement via the
+  <bacii-club-carousel> element defined in the {% javascript %} block below.
+  Background is a per-section setting so the homepage and PDP instances differ.
 {%- endcomment -%}
+
+{%- liquid
+  assign per_view = section.settings.slides_per_view
+  assign autoplay = section.settings.video_autoplay
+-%}
 
 <div
   class="bacii-club section section--{{ section.settings.section_width }}"
@@ -10,6 +22,12 @@
     background: {{ section.settings.background_color }};
     padding-block-start: {{ section.settings.padding_block_start }}px;
     padding-block-end: {{ section.settings.padding_block_end }}px;
+    --bacii-club-per-view: {{ per_view }};
+    --bacii-club-gap: {{ section.settings.gap }}px;
+    --bacii-club-ratio: {{ section.settings.aspect_ratio }};
+    --bacii-club-radius: {{ section.settings.corner_radius }}px;
+    --bacii-club-arrow-bg: {{ section.settings.arrow_background }};
+    --bacii-club-arrow-fg: {{ section.settings.arrow_color }};
   "
 >
   <div class="bacii-club__head">
@@ -26,10 +44,94 @@
   </div>
 
   <div class="bacii-club__media">
-    {% content_for 'blocks' %}
-    {%- if request.design_mode and section.blocks.size == 0 -%}
+    {%- if section.blocks.size > 0 -%}
+      <bacii-club-carousel class="bacii-club__carousel">
+        {%- if section.settings.show_arrows -%}
+          <button
+            class="bacii-club__arrow bacii-club__arrow--prev"
+            type="button"
+            data-bacii-club-prev
+            aria-label="{{ 'accessibility.slideshow_previous' | t }}"
+            hidden
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M15 4 7 12l8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        {%- endif -%}
+
+        <ul class="bacii-club__track" data-bacii-club-track role="list">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'video' -%}
+                <li class="bacii-club__slide" {{ block.shopify_attributes }}>
+                  <div class="bacii-club__frame">
+                    {%- if block.settings.source == 'url' -%}
+                      {%- render 'video',
+                        video_from_url: true,
+                        video: block.settings.video_url.id,
+                        video_type: block.settings.video_url.type,
+                        video_alt: block.settings.alt,
+                        video_preview_image: block.settings.cover_image,
+                        video_autoplay: autoplay,
+                        video_loop: true,
+                        video_class: 'bacii-club__video',
+                        disable_controls: autoplay,
+                        loading: 'lazy'
+                      -%}
+                    {%- else -%}
+                      {%- render 'video',
+                        video: block.settings.video,
+                        video_preview_image: block.settings.cover_image,
+                        video_autoplay: autoplay,
+                        video_loop: true,
+                        video_class: 'bacii-club__video',
+                        disable_controls: autoplay,
+                        loading: 'lazy'
+                      -%}
+                    {%- endif -%}
+
+                    {%- if block.settings.link != blank -%}
+                      <a class="bacii-club__slide-link" href="{{ block.settings.link }}">
+                        <span class="visually-hidden">
+                          {{- block.settings.caption | default: block.settings.alt | default: section.settings.heading -}}
+                        </span>
+                      </a>
+                    {%- endif -%}
+                  </div>
+
+                  {%- if block.settings.caption != blank -%}
+                    <p class="bacii-club__caption" style="color: {{ section.settings.text_color }};">
+                      {{ block.settings.caption }}
+                    </p>
+                  {%- endif -%}
+                </li>
+              {%- else -%}
+                {%- comment -%} App block (e.g. Tolstoy) rendered as its own slide {%- endcomment -%}
+                <li class="bacii-club__slide bacii-club__slide--app" {{ block.shopify_attributes }}>
+                  {%- render block -%}
+                </li>
+            {%- endcase -%}
+          {%- endfor -%}
+        </ul>
+
+        {%- if section.settings.show_arrows -%}
+          <button
+            class="bacii-club__arrow bacii-club__arrow--next"
+            type="button"
+            data-bacii-club-next
+            aria-label="{{ 'accessibility.slideshow_next' | t }}"
+            hidden
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="m9 4 8 8-8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        {%- endif -%}
+      </bacii-club-carousel>
+    {%- elsif request.design_mode -%}
       <p class="bacii-club__placeholder">
-        Add your Tolstoy video block here — “Add block” → the Tolstoy app.
+        Add a video slide — “Add block” → Video. App blocks (e.g. Tolstoy) can be added here too.
       </p>
     {%- endif -%}
   </div>
@@ -65,13 +167,245 @@
     color: var(--color-dark-grey, #59697a);
     font-family: var(--font-body--family);
   }
+
+  /* Carousel — scroll-snap track with optional arrows */
+  .bacii-club__carousel {
+    display: block;
+    position: relative;
+  }
+
+  .bacii-club__track {
+    display: flex;
+    gap: var(--bacii-club-gap, 16px);
+    margin: 0;
+    padding: 0 24px;
+    list-style: none;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 24px;
+    scrollbar-width: none;
+  }
+
+  .bacii-club__track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .bacii-club__slide {
+    flex: 0 0 auto;
+    /* Mobile: 1.25 slides visible so the next one peeks */
+    width: calc((100% - 24px - (0.25 * var(--bacii-club-gap, 16px))) / 1.25);
+    scroll-snap-align: start;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bacii-club__track {
+      padding-inline: 40px;
+      scroll-padding-inline: 40px;
+    }
+
+    .bacii-club__slide {
+      width: calc(
+        (100% - ((var(--bacii-club-per-view, 4) - 1) * var(--bacii-club-gap, 16px))) / var(--bacii-club-per-view, 4)
+      );
+    }
+  }
+
+  .bacii-club__frame {
+    position: relative;
+    aspect-ratio: var(--bacii-club-ratio, 9 / 16);
+    border-radius: var(--bacii-club-radius, 16px);
+    overflow: hidden;
+    background: rgba(89, 105, 122, 0.08);
+  }
+
+  /* deferred-media renders as the direct child; make it and its media fill the frame */
+  .bacii-club__frame .bacii-club__video,
+  .bacii-club__frame deferred-media {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bacii-club__frame video,
+  .bacii-club__frame iframe,
+  .bacii-club__frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .bacii-club__slide-link {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+  }
+
+  .bacii-club__caption {
+    margin: 12px 0 0;
+    text-align: center;
+    font-family: var(--font-body--family);
+    font-size: 14px;
+  }
+
+  .bacii-club__arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    background: var(--bacii-club-arrow-bg, #ffffff);
+    color: var(--bacii-club-arrow-fg, #59697a);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+    transition: opacity 0.2s ease;
+  }
+
+  .bacii-club__arrow svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .bacii-club__arrow[hidden] {
+    display: none;
+  }
+
+  .bacii-club__arrow--prev {
+    left: 8px;
+  }
+
+  .bacii-club__arrow--next {
+    right: 8px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bacii-club__arrow--prev {
+      left: 16px;
+    }
+
+    .bacii-club__arrow--next {
+      right: 16px;
+    }
+  }
 {% endstylesheet %}
+
+{% javascript %}
+  // Arrow controls for the Bacii Club video carousel. Scrolling itself is CSS
+  // scroll-snap, so the carousel works with JS disabled — the arrows are extra.
+  class BaciiClubCarousel extends HTMLElement {
+    connectedCallback() {
+      this.track = this.querySelector('[data-bacii-club-track]');
+      if (!this.track) return;
+
+      this.prev = this.querySelector('[data-bacii-club-prev]');
+      this.next = this.querySelector('[data-bacii-club-next]');
+
+      this.prev?.addEventListener('click', () => this.scrollByPage(-1));
+      this.next?.addEventListener('click', () => this.scrollByPage(1));
+
+      this.onScroll = () => this.updateArrows();
+      this.track.addEventListener('scroll', this.onScroll, { passive: true });
+
+      this.observer = new ResizeObserver(() => this.updateArrows());
+      this.observer.observe(this.track);
+
+      this.updateArrows();
+    }
+
+    disconnectedCallback() {
+      this.track?.removeEventListener('scroll', this.onScroll);
+      this.observer?.disconnect();
+    }
+
+    scrollByPage(direction) {
+      const slide = this.track.querySelector('li');
+      const step = slide ? slide.getBoundingClientRect().width + this.gap() : this.track.clientWidth;
+      this.track.scrollBy({ left: step * direction, behavior: 'smooth' });
+    }
+
+    gap() {
+      return parseFloat(getComputedStyle(this.track).columnGap) || 0;
+    }
+
+    updateArrows() {
+      if (!this.prev || !this.next) return;
+      const max = this.track.scrollWidth - this.track.clientWidth;
+      const overflowing = max > 1;
+      this.prev.hidden = !overflowing || this.track.scrollLeft <= 1;
+      this.next.hidden = !overflowing || this.track.scrollLeft >= max - 1;
+    }
+  }
+
+  if (!customElements.get('bacii-club-carousel')) {
+    customElements.define('bacii-club-carousel', BaciiClubCarousel);
+  }
+{% endjavascript %}
 
 {% schema %}
 {
   "name": "The Bacii Club",
   "tag": "section",
-  "blocks": [{ "type": "@app" }],
+  "max_blocks": 20,
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "select",
+          "id": "source",
+          "label": "Video source",
+          "options": [
+            { "value": "uploaded", "label": "Uploaded video" },
+            { "value": "url", "label": "YouTube or Vimeo URL" }
+          ],
+          "default": "uploaded"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video",
+          "visible_if": "{{ block.settings.source == 'uploaded' }}"
+        },
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "label": "Video URL",
+          "accept": ["youtube", "vimeo"],
+          "visible_if": "{{ block.settings.source == 'url' }}"
+        },
+        {
+          "type": "image_picker",
+          "id": "cover_image",
+          "label": "Cover image",
+          "info": "Shown before the video plays. Recommended when autoplay is off."
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Video alt text"
+        },
+        {
+          "type": "text",
+          "id": "caption",
+          "label": "Caption"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link",
+          "info": "Optional — makes the whole slide clickable."
+        }
+      ]
+    },
+    { "type": "@app" }
+  ],
   "settings": [
     {
       "type": "text",
@@ -84,6 +418,63 @@
       "id": "subtext",
       "label": "Subtext",
       "default": "Real families, real kids and lots of big personalities."
+    },
+    {
+      "type": "header",
+      "content": "Carousel"
+    },
+    {
+      "type": "range",
+      "id": "slides_per_view",
+      "label": "Videos per row (desktop)",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "select",
+      "id": "aspect_ratio",
+      "label": "Video shape",
+      "options": [
+        { "value": "9 / 16", "label": "Portrait (9:16)" },
+        { "value": "4 / 5", "label": "Portrait (4:5)" },
+        { "value": "1 / 1", "label": "Square (1:1)" },
+        { "value": "16 / 9", "label": "Landscape (16:9)" }
+      ],
+      "default": "9 / 16"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Gap between videos",
+      "min": 0,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "corner_radius",
+      "label": "Corner radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "checkbox",
+      "id": "video_autoplay",
+      "label": "Autoplay videos (muted)",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrows",
+      "label": "Show arrows",
+      "default": true
     },
     {
       "type": "header",
@@ -106,6 +497,18 @@
       "id": "background_color",
       "label": "Background colour",
       "default": "#FFECA8"
+    },
+    {
+      "type": "color",
+      "id": "arrow_background",
+      "label": "Arrow background",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "arrow_color",
+      "label": "Arrow icon colour",
+      "default": "#59697A"
     },
     {
       "type": "header",
@@ -143,7 +546,15 @@
     }
   ],
   "presets": [
-    { "name": "The Bacii Club" }
+    {
+      "name": "The Bacii Club",
+      "blocks": [
+        { "type": "video" },
+        { "type": "video" },
+        { "type": "video" },
+        { "type": "video" }
+      ]
+    }
   ]
 }
 {% endschema %}
