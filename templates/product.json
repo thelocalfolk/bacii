@@ -200,7 +200,7 @@
                 "modal_theme": "mint",
                 "breakpoint": 749,
                 "text_align_mobile": "inherit",
-                "margin_top_mobile": 16,
+                "margin_top_mobile": 10,
                 "margin_bottom_mobile": 16,
                 "show_lower_limit": true,
                 "show_upper_limit": true,
