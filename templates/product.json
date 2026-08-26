@@ -1574,15 +1574,87 @@
         "padding-block-end": 64
       }
     },
-    "bacii_club_hhNTmK": {
+    "bacii_club_7aLgF3": {
       "type": "bacii-club",
+      "blocks": {
+        "video_3HbfcD": {
+          "type": "video",
+          "settings": {
+            "source": "uploaded",
+            "video": "shopify://files/videos/Baciihype.mp4",
+            "video_url": "",
+            "alt": "",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "video_WKEyzn": {
+          "type": "video",
+          "settings": {
+            "source": "uploaded",
+            "video": "shopify://files/videos/IMG_9216.mov",
+            "video_url": "",
+            "alt": "",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "video_p6URqN": {
+          "type": "video",
+          "settings": {
+            "source": "uploaded",
+            "video": "shopify://files/videos/IMG_9103.MOV",
+            "video_url": "",
+            "alt": "",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "video_TnwrGD": {
+          "type": "video",
+          "settings": {
+            "source": "uploaded",
+            "video": "shopify://files/videos/IMG_2571_985761b2-fd5a-444f-b249-15f790a1f117.mov",
+            "video_url": "",
+            "alt": "",
+            "caption": "",
+            "link": ""
+          }
+        },
+        "video_8DAcDm": {
+          "type": "video",
+          "settings": {
+            "source": "uploaded",
+            "video": "shopify://files/videos/IMG_9182 2.MOV",
+            "video_url": "",
+            "alt": "",
+            "caption": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_3HbfcD",
+        "video_WKEyzn",
+        "video_p6URqN",
+        "video_TnwrGD",
+        "video_8DAcDm"
+      ],
       "name": "The Bacii Club",
       "settings": {
         "heading": "The Bacii Club",
         "subtext": "Real families, real kids and lots of big personalities.",
+        "slides_per_view": 4,
+        "aspect_ratio": "4 / 5",
+        "gap": 16,
+        "corner_radius": 16,
+        "video_autoplay": true,
+        "show_arrows": true,
         "heading_color": "#007dfe",
         "text_color": "#59697a",
-        "background_color": "#ffeca8",
+        "background_color": "#FFECA8",
+        "arrow_background": "#ffffff",
+        "arrow_color": "#59697a",
         "section_width": "page-width",
         "padding_block_start": 72,
         "padding_block_end": 72
@@ -2511,7 +2583,7 @@
     "main",
     "pdp_marquee",
     "pdp_value_props",
-    "bacii_club_hhNTmK",
+    "bacii_club_7aLgF3",
     "178346696983e930d3",
     "product_recommendations_qggXJq",
     "pdp_collections",
