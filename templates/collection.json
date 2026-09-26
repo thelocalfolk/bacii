@@ -16,7 +16,7 @@
           "type": "text",
           "name": "Title",
           "settings": {
-            "text": "<h1>Snack Attack</h1>",
+            "text": "<h2>Snack Attack:&nbsp;</h2><h4>Launching 13.10</h4>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
