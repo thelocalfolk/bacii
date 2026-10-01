@@ -208,32 +208,6 @@
                 "product": "{{closest.product}}"
               }
             },
-            "text_aEtTtq": {
-              "type": "text",
-              "name": "Product description",
-              "settings": {
-                "text": "{{ closest.product.description }}",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-primary--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
             "qty_row": {
               "type": "group",
               "name": "Quantity & Size Guide",
@@ -451,6 +425,32 @@
                 }
               },
               "block_order": []
+            },
+            "text_BpYBJX": {
+              "type": "text",
+              "name": "Product description",
+              "settings": {
+                "text": "{{ closest.product.description }}",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-primary--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
             },
             "trust_badges": {
               "type": "group",
@@ -1026,10 +1026,10 @@
             "group_icgrde",
             "price_main",
             "afterpay_on_site_messaging_payments_messaging_fQ4k8B",
-            "text_aEtTtq",
             "qty_row",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
+            "text_BpYBJX",
             "trust_badges",
             "accordion_details",
             "product_recommendations_z8BKzx"
