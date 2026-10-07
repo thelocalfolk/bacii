@@ -207,7 +207,7 @@
                 "q2_a": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We currently offer shipping within Australia.</p><p>For international enquiries, please contact us at: <a href=\"mailto:hello@baciithelabel.com.au\">hello@baciithelabel.com</a></p>",
+                    "text": "<p>We currently offer shipping within Australia.</p><p>International friends 🩵 Please note your order may be subject to local duties, taxes or customs fees when it arrives. These charges are set by your country and are the responsibility of the customer.</p><p>For international enquiries, please contact us at: <a href=\"mailto:hello@baciithelabel.com.au\">hello@baciithelabel.com</a></p>",
                     "width": "fill",
                     "max_width": "normal",
                     "alignment": "left",
