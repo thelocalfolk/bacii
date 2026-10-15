@@ -12,6 +12,7 @@
     "logo": "shopify://shop_images/Bacii_201c32db-1f50-4bc1-a46a-fcc588028f8a.svg",
     "logo_height": 36,
     "logo_height_mobile": 28,
+    "favicon": "shopify://shop_images/Primary-colour_2.svg",
     "page_text_color": "{{ settings.color_palette.foreground }}",
     "type_body_font": "poppins_n4",
     "type_subheading_font": "asap_n4",
