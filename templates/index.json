@@ -42,7 +42,7 @@
           "type": "text",
           "name": "Subheading",
           "settings": {
-            "text": "<p>Playful organic cotton clothing for little personalities with big feelings, big imaginations and even bigger snack obsessions.</p>",
+            "text": "",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
