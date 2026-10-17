@@ -837,7 +837,7 @@
                   "type": "_accordion-row",
                   "name": "Shipping &amp; Delivery",
                   "settings": {
-                    "heading": "Shipping &amp; Delivery",
+                    "heading": "Shipping & Delivery",
                     "open_by_default": false,
                     "icon": "none",
                     "width": 20
@@ -847,7 +847,7 @@
                       "type": "text",
                       "name": "Text",
                       "settings": {
-                        "text": "<p>{{ metaobjects.shipping_delivery[\"packed-with-love-shipped-australia-wide-for-12\"].shipping | metafield_tag }}</p>",
+                        "text": "<p>Packed with love + shipped Australia-wide for $9.</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
