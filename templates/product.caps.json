@@ -541,7 +541,7 @@
                     "b1_t": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>100% Cotton</p>",
+                        "text": "<p>Made for everyday adventures</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
