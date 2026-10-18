@@ -541,7 +541,7 @@
                     "b1_t": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>100% Cotto</p>",
+                        "text": "<p>100% Cotton</p>",
                         "width": "fit-content",
                         "max_width": "normal",
                         "alignment": "left",
