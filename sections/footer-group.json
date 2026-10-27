@@ -11,6 +11,18 @@
   "type": "footer",
   "name": "Footer",
   "sections": {
+    "bacii_footer_brand": {
+      "type": "bacii-footer-brand",
+      "settings": {
+        "show_wave": true,
+        "background_color": "#d8f9f2",
+        "wave_height": 110,
+        "wordmark_width": 82,
+        "wordmark_width_mobile": 88,
+        "padding_top": 24,
+        "padding_bottom": 40
+      }
+    },
     "17834231053ddd3dc6": {
       "type": "_blocks",
       "blocks": {
@@ -64,18 +76,6 @@
         "border_radius": 0,
         "padding-block-start": 20,
         "padding-block-end": 20
-      }
-    },
-    "bacii_footer_brand": {
-      "type": "bacii-footer-brand",
-      "settings": {
-        "show_wave": true,
-        "background_color": "#d8f9f2",
-        "wave_height": 110,
-        "wordmark_width": 82,
-        "wordmark_width_mobile": 88,
-        "padding_top": 24,
-        "padding_bottom": 40
       }
     },
     "footer_m9NzUG": {
