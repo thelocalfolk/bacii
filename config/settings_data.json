@@ -90,6 +90,7 @@
     "mobile_quick_add": true,
     "quick_add_background": "{{ settings.color_palette.background }}",
     "quick_add_text": "{{ settings.color_palette.foreground }}",
+    "product_card_carousel": true,
     "product_corner_radius": 0,
     "card_corner_radius": 4,
     "show_variant_image": true,
