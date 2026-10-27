@@ -16,7 +16,7 @@
           "type": "text",
           "name": "Title",
           "settings": {
-            "text": "<p>MEET SNACK ATTACK 🥨</p>",
+            "text": "<p>SNACK ATTACK 🥨</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
