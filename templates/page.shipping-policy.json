@@ -16,7 +16,7 @@
           "type": "text",
           "name": "Heading",
           "settings": {
-            "text": "<p>Shipping</p>",
+            "text": "<p>Shipping & Returns</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
