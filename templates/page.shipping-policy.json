@@ -42,7 +42,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>This Shipping Policy outlines our processing times, delivery estimates and shipping options so you know exactly what to expect when placing an order with Bacii.</p>",
+            "text": "",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
