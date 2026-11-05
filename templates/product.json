@@ -164,7 +164,7 @@
               "type": "text",
               "name": "Product description",
               "settings": {
-                "text": "",
+                "text": "<p>100% organic cotton&nbsp;— soft on little skin</p><p>Relaxed, comfy fit&nbsp;— made for everyday adventures</p><p>Designed in Australia&nbsp;— for big little personalities</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
