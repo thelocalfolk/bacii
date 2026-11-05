@@ -51,7 +51,7 @@
             "custom_width_mobile": 100,
             "height": "fit",
             "details_position": "flex-start",
-            "gap": 15,
+            "gap": 12,
             "sticky_details_desktop": true,
             "background_media": "none",
             "background_color": "",
@@ -164,7 +164,7 @@
               "type": "text",
               "name": "Product description",
               "settings": {
-                "text": "<p>100% organic cotton&nbsp;— soft on little skin</p><p>Relaxed, comfy fit&nbsp;— made for everyday adventures</p><p>Designed in Australia&nbsp;— for big little personalities</p>",
+                "text": "<p><strong>100% organic cotton</strong>&nbsp;— soft on little skin</p><p><strong>Relaxed, comfy fit&nbsp;</strong>— made for everyday adventures</p><p><strong>Designed in Australia</strong>&nbsp;— for big little personalities</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
