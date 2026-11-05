@@ -258,7 +258,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<p>Our debut collection for little snack monsters, pudding lovers and muffin trouble-makers.</p>",
+                "text": "<h6>Made for little snack monsters, pudding lovers and certified troublemakers.</h6>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -416,6 +416,141 @@
         "padding-block-end": 48
       }
     },
+    "shop_collections": {
+      "type": "collection-list",
+      "blocks": {
+        "collections_heading": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Shop Collections</p>",
+            "width": "fill",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-heading--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "{{ settings.color_palette.foreground }}",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 16,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "static-collection-card": {
+          "type": "_collection-card",
+          "static": true,
+          "settings": {
+            "placement": "on_image",
+            "horizontal_alignment": "center",
+            "vertical_alignment": "center",
+            "collection_card_gap": 8,
+            "background_color": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0
+          },
+          "blocks": {
+            "collection_title_PaKmCi": {
+              "type": "collection-title",
+              "name": "t:names.collection_title",
+              "settings": {
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h4",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "{{ settings.color_palette.background }}",
+                "text_color": "#ffffff",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "collection-card-image": {
+              "type": "_collection-card-image",
+              "static": true,
+              "settings": {
+                "image_ratio": "portrait",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "collection_title_PaKmCi"
+          ]
+        }
+      },
+      "block_order": [
+        "collections_heading"
+      ],
+      "name": "Shop Collections",
+      "settings": {
+        "collection_list": [
+          "tees",
+          "shorts",
+          "dresses"
+        ],
+        "layout_type": "grid",
+        "carousel_on_mobile": true,
+        "columns": 3,
+        "mobile_columns": "2",
+        "mobile_card_size": "60cqw",
+        "columns_gap": 8,
+        "bento_gap": 8,
+        "rows_gap": 8,
+        "max_collections": 4,
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "section_width": "page-width",
+        "gap": 28,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    },
+    "wavy_marquee": {
+      "type": "bacii-marquee",
+      "settings": {
+        "text": "♡ Made for big personalities ♡ 100% Organic Cotton ♡ Designed in Australia ♡ Original Illustrations ♡ Made to be passed down ♡ Ethically Made ♡ Made for big personalities ♡ 100% Organic Cotton ♡ Designed in Australia ♡ Original Illustrations ♡ Made to be passed down ♡ Ethically Made",
+        "bg_color": "#f5a8b8",
+        "text_color": "#fcf5ef",
+        "separator": "♡",
+        "separator_scale": 55,
+        "text_scale": 34,
+        "band_thickness": 56,
+        "band_height": 110,
+        "speed": 50,
+        "overlap": 48
+      }
+    },
     "section_GFViaT": {
       "type": "section",
       "blocks": {
@@ -506,21 +641,6 @@
         "border_radius": 0,
         "padding-block-start": 48,
         "padding-block-end": 100
-      }
-    },
-    "wavy_marquee": {
-      "type": "bacii-marquee",
-      "settings": {
-        "text": "♡ Made for big personalities ♡ 100% Organic Cotton ♡ Designed in Australia ♡ Original Illustrations ♡ Made to be passed down ♡ Ethically Made ♡ Made for big personalities ♡ 100% Organic Cotton ♡ Designed in Australia ♡ Original Illustrations ♡ Made to be passed down ♡ Ethically Made",
-        "bg_color": "#f5a8b8",
-        "text_color": "#fcf5ef",
-        "separator": "♡",
-        "separator_scale": 55,
-        "text_scale": 34,
-        "band_thickness": 56,
-        "band_height": 110,
-        "speed": 50,
-        "overlap": 48
       }
     },
     "value_props_butter": {
@@ -1231,126 +1351,6 @@
         "background_color": "#c9bcf4",
         "padding-block-start": 0,
         "padding-block-end": 0
-      }
-    },
-    "shop_collections": {
-      "type": "collection-list",
-      "blocks": {
-        "collections_heading": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Shop Collections</p>",
-            "width": "fill",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "h2",
-            "font": "var(--font-heading--family)",
-            "font_size": "",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "{{ settings.color_palette.foreground }}",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 16,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "static-collection-card": {
-          "type": "_collection-card",
-          "static": true,
-          "settings": {
-            "placement": "on_image",
-            "horizontal_alignment": "center",
-            "vertical_alignment": "center",
-            "collection_card_gap": 8,
-            "background_color": "",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0
-          },
-          "blocks": {
-            "collection_title_PaKmCi": {
-              "type": "collection-title",
-              "name": "t:names.collection_title",
-              "settings": {
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h4",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "background": false,
-                "background_color": "{{ settings.color_palette.background }}",
-                "text_color": "#ffffff",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "collection-card-image": {
-              "type": "_collection-card-image",
-              "static": true,
-              "settings": {
-                "image_ratio": "portrait",
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_color": "",
-                "border_radius": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "collection_title_PaKmCi"
-          ]
-        }
-      },
-      "block_order": [
-        "collections_heading"
-      ],
-      "name": "Shop Collections",
-      "settings": {
-        "collection_list": [
-          "tees",
-          "shorts",
-          "dresses"
-        ],
-        "layout_type": "grid",
-        "carousel_on_mobile": true,
-        "columns": 3,
-        "mobile_columns": "2",
-        "mobile_card_size": "60cqw",
-        "columns_gap": 8,
-        "bento_gap": 8,
-        "rows_gap": 8,
-        "max_collections": 4,
-        "icons_style": "arrow",
-        "icons_shape": "none",
-        "section_width": "page-width",
-        "gap": 28,
-        "background_color": "{{ settings.color_palette.background }}",
-        "padding-block-start": 48,
-        "padding-block-end": 48
       }
     },
     "bacii_club_Ud8yyB": {
