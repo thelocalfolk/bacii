@@ -160,6 +160,32 @@
                 "review_stars"
               ]
             },
+            "text_L3fcjR": {
+              "type": "text",
+              "name": "Product description",
+              "settings": {
+                "text": "<h6><strong>100% organic cotton</strong>&nbsp;- soft on little skin</h6><h6><strong>Relaxed, comfy fit</strong>&nbsp;- made for everyday adventures</h6><h6><strong>Designed in Australia</strong>&nbsp;- for big little personalities</h6>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-primary--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "price_main": {
               "type": "price",
               "settings": {
@@ -1033,6 +1059,7 @@
           "block_order": [
             "variant_pill_css",
             "group_icgrde",
+            "text_L3fcjR",
             "price_main",
             "afterpay_on_site_messaging_payments_messaging_fQ4k8B",
             "qty_row",
