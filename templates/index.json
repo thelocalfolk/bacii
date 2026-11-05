@@ -16,7 +16,7 @@
           "type": "text",
           "name": "Heading",
           "settings": {
-            "text": "<h1>Little clothes.<br/>Big personalities.</h1>",
+            "text": "<h2>Little clothes.<br/>Big personalities.</h2>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -82,7 +82,7 @@
           "type": "button",
           "name": "CTA Button",
           "settings": {
-            "label": "Shop Snack Attack",
+            "label": "Shop Now",
             "link": "shopify://collections/all",
             "open_in_new_tab": false,
             "style_class": "button",
@@ -258,7 +258,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h6>Playful, 100% organic cotton kidswear designed in Australia</h6>",
+                "text": "<h6>Playful, 100% organic cotton kidswear designed in Australia.</h6>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
