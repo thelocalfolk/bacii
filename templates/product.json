@@ -476,6 +476,157 @@
                 "padding-inline-end": 0
               },
               "blocks": {
+                "accordion_qqAaDH": {
+                  "type": "accordion",
+                  "name": "Details",
+                  "settings": {
+                    "icon": "plus",
+                    "dividers": true,
+                    "divider_color": "{{ settings.color_palette.color2 }}",
+                    "type_preset": "paragraph",
+                    "background_color": "",
+                    "text_color": "",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_color": "",
+                    "border_radius": 0,
+                    "padding-block-start": 8,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {
+                    "r_fab": {
+                      "type": "_accordion-row",
+                      "name": "Fabrication",
+                      "settings": {
+                        "heading": "The Good Stuff",
+                        "open_by_default": false,
+                        "icon": "none",
+                        "width": 20
+                      },
+                      "blocks": {
+                        "fab_t": {
+                          "type": "text",
+                          "name": "Text",
+                          "settings": {
+                            "text": "<p>{{ closest.product.metafields.custom.fabrication | metafield_tag }}</p>",
+                            "width": "100%",
+                            "max_width": "normal",
+                            "alignment": "left",
+                            "type_preset": "rte",
+                            "font": "var(--font-body--family)",
+                            "font_size": "",
+                            "line_height": "normal",
+                            "letter_spacing": "normal",
+                            "case": "none",
+                            "wrap": "pretty",
+                            "text_color": "",
+                            "background": false,
+                            "background_color": "#00000026",
+                            "corner_radius": 0,
+                            "padding-block-start": 0,
+                            "padding-block-end": 0,
+                            "padding-inline-start": 0,
+                            "padding-inline-end": 0
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "fab_t"
+                      ]
+                    },
+                    "r_care": {
+                      "type": "_accordion-row",
+                      "name": "Product Care",
+                      "settings": {
+                        "heading": "Product Care",
+                        "open_by_default": false,
+                        "icon": "none",
+                        "width": 20
+                      },
+                      "blocks": {
+                        "care_t": {
+                          "type": "text",
+                          "name": "Text",
+                          "settings": {
+                            "text": "<p>{{ closest.product.metafields.custom.product_care | metafield_tag }}</p>",
+                            "width": "100%",
+                            "max_width": "normal",
+                            "alignment": "left",
+                            "type_preset": "rte",
+                            "font": "var(--font-body--family)",
+                            "font_size": "",
+                            "line_height": "normal",
+                            "letter_spacing": "normal",
+                            "case": "none",
+                            "wrap": "pretty",
+                            "text_color": "",
+                            "background": false,
+                            "background_color": "#00000026",
+                            "corner_radius": 0,
+                            "padding-block-start": 0,
+                            "padding-block-end": 0,
+                            "padding-inline-start": 0,
+                            "padding-inline-end": 0
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "care_t"
+                      ]
+                    },
+                    "r_ship": {
+                      "type": "_accordion-row",
+                      "name": "Shipping &amp; Delivery",
+                      "settings": {
+                        "heading": "Shipping & Delivery",
+                        "open_by_default": false,
+                        "icon": "none",
+                        "width": 20
+                      },
+                      "blocks": {
+                        "ship_t": {
+                          "type": "text",
+                          "name": "Text",
+                          "settings": {
+                            "text": "<p>Packed with love + shipped Australia-wide for $9.</p>",
+                            "width": "100%",
+                            "max_width": "normal",
+                            "alignment": "left",
+                            "type_preset": "rte",
+                            "font": "var(--font-body--family)",
+                            "font_size": "",
+                            "line_height": "normal",
+                            "letter_spacing": "normal",
+                            "case": "none",
+                            "wrap": "pretty",
+                            "text_color": "",
+                            "background": false,
+                            "background_color": "#00000026",
+                            "corner_radius": 0,
+                            "padding-block-start": 0,
+                            "padding-block-end": 0,
+                            "padding-inline-start": 0,
+                            "padding-inline-end": 0
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "ship_t"
+                      ]
+                    }
+                  },
+                  "block_order": [
+                    "r_fab",
+                    "r_care",
+                    "r_ship"
+                  ]
+                },
                 "b1": {
                   "type": "group",
                   "settings": {
@@ -709,6 +860,7 @@
                 }
               },
               "block_order": [
+                "accordion_qqAaDH",
                 "b1",
                 "b2",
                 "b3"
@@ -722,157 +874,6 @@
                 "show_shop_reviews": false,
                 "empty_state": "empty_widget"
               }
-            },
-            "accordion_details": {
-              "type": "accordion",
-              "name": "Details",
-              "settings": {
-                "icon": "plus",
-                "dividers": true,
-                "divider_color": "{{ settings.color_palette.color2 }}",
-                "type_preset": "paragraph",
-                "background_color": "",
-                "text_color": "",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_color": "",
-                "border_radius": 0,
-                "padding-block-start": 8,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "r_fab": {
-                  "type": "_accordion-row",
-                  "name": "Fabrication",
-                  "settings": {
-                    "heading": "The Good Stuff",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "width": 20
-                  },
-                  "blocks": {
-                    "fab_t": {
-                      "type": "text",
-                      "name": "Text",
-                      "settings": {
-                        "text": "<p>{{ closest.product.metafields.custom.fabrication | metafield_tag }}</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "text_color": "",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "fab_t"
-                  ]
-                },
-                "r_care": {
-                  "type": "_accordion-row",
-                  "name": "Product Care",
-                  "settings": {
-                    "heading": "Product Care",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "width": 20
-                  },
-                  "blocks": {
-                    "care_t": {
-                      "type": "text",
-                      "name": "Text",
-                      "settings": {
-                        "text": "<p>{{ closest.product.metafields.custom.product_care | metafield_tag }}</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "text_color": "",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "care_t"
-                  ]
-                },
-                "r_ship": {
-                  "type": "_accordion-row",
-                  "name": "Shipping &amp; Delivery",
-                  "settings": {
-                    "heading": "Shipping & Delivery",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "width": 20
-                  },
-                  "blocks": {
-                    "ship_t": {
-                      "type": "text",
-                      "name": "Text",
-                      "settings": {
-                        "text": "<p>Packed with love + shipped Australia-wide for $9.</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "text_color": "",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "ship_t"
-                  ]
-                }
-              },
-              "block_order": [
-                "r_fab",
-                "r_care",
-                "r_ship"
-              ]
             },
             "product_recommendations_z8BKzx": {
               "type": "product-recommendations",
@@ -1026,7 +1027,6 @@
             "text_BpYBJX",
             "trust_badges",
             "judge_me_reviews_review_widget_QbqWei",
-            "accordion_details",
             "product_recommendations_z8BKzx"
           ]
         }
