@@ -153,11 +153,38 @@
                     "alignment": "left"
                   },
                   "blocks": {}
+                },
+                "text_eKxtyj": {
+                  "type": "text",
+                  "name": "Product description",
+                  "settings": {
+                    "text": "<h5><strong>Lightweight & comfy</strong> - made for everyday adventures</h5><h5><strong>Adjustable fit</strong> - designed to grow with little heads</h5><h5><strong>Made for little personalities</strong> - the finishing touch to every outfit</h5>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-primary--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
                 "text_xrnftG",
-                "review_stars"
+                "review_stars",
+                "text_eKxtyj"
               ]
             },
             "price_main": {
@@ -207,141 +234,6 @@
                 "show_if_outside_limits": true,
                 "product": "{{closest.product}}"
               }
-            },
-            "qty_row": {
-              "type": "group",
-              "name": "Quantity & Size Guide",
-              "settings": {
-                "content_direction": "row",
-                "vertical_on_mobile": false,
-                "horizontal_alignment": "space-between",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "background_media": "none",
-                "background_color": "",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_color": "",
-                "border_radius": 0,
-                "link": "",
-                "open_in_new_tab": false,
-                "placeholder": "",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "qty_left": {
-                  "type": "group",
-                  "settings": {
-                    "content_direction": "row",
-                    "vertical_on_mobile": false,
-                    "horizontal_alignment": "flex-start",
-                    "vertical_alignment": "center",
-                    "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "flex-start",
-                    "vertical_alignment_flex_direction_column": "center",
-                    "gap": 12,
-                    "width": "fit-content",
-                    "custom_width": 100,
-                    "width_mobile": "fit-content",
-                    "custom_width_mobile": 100,
-                    "height": "fit",
-                    "custom_height": 100,
-                    "background_media": "none",
-                    "background_color": "",
-                    "video_position": "cover",
-                    "background_image_position": "cover",
-                    "toggle_overlay": false,
-                    "overlay_color": "#00000026",
-                    "overlay_style": "solid",
-                    "gradient_direction": "to top",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_color": "",
-                    "border_radius": 0,
-                    "link": "",
-                    "open_in_new_tab": false,
-                    "placeholder": "",
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {
-                    "qty_lbl": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>Quantity</p>",
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "paragraph",
-                        "font": "var(--font-body--family)",
-                        "font_size": "",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "text_color": "",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    },
-                    "qty_stepper": {
-                      "type": "quantity",
-                      "settings": {
-                        "input_style": "custom",
-                        "input_background_color": "{{ settings.color_palette.background }}",
-                        "input_text_color": "{{ settings.color_palette.foreground }}",
-                        "input_border_color": "{{ settings.color_palette.foreground }}",
-                        "border_width": 1,
-                        "border_radius": 50
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "qty_lbl",
-                    "qty_stepper"
-                  ]
-                },
-                "size_guide": {
-                  "type": "custom-liquid",
-                  "settings": {
-                    "custom_liquid": "{% render 'bacii-size-guide-modal' %}"
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "qty_left",
-                "size_guide"
-              ]
             },
             "variant_picker_R3rGDr": {
               "type": "variant-picker",
@@ -426,7 +318,7 @@
               },
               "block_order": []
             },
-            "text_BpYBJX": {
+            "text_Nxw3gG": {
               "type": "text",
               "name": "Product description",
               "settings": {
@@ -1026,10 +918,9 @@
             "group_icgrde",
             "price_main",
             "afterpay_on_site_messaging_payments_messaging_fQ4k8B",
-            "qty_row",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
-            "text_BpYBJX",
+            "text_Nxw3gG",
             "trust_badges",
             "accordion_details",
             "product_recommendations_z8BKzx"
