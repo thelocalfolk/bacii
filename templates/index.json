@@ -217,113 +217,6 @@
         "padding-block-end": 0
       }
     },
-    "section_GFViaT": {
-      "type": "section",
-      "blocks": {
-        "text_iK86Ff": {
-          "type": "text",
-          "name": "t:names.heading",
-          "settings": {
-            "text": "<h2>Bacii was created to celebrate the big personalities packed into little people.</h2>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "h2",
-            "font": "var(--font-heading--family)",
-            "font_size": "",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "#fcf5ef",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "text_qGqBm6": {
-          "type": "text",
-          "name": "t:names.text",
-          "settings": {
-            "text": "<p>Inspired by the funny things kids say, do and obsess over, our collections are designed for the little characters who keep us laughing every day.</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "0.75rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "#fcf5ef",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_iK86Ff",
-        "text_qGqBm6"
-      ],
-      "name": "t:names.rich_text_section",
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 25,
-        "section_width": "page-width",
-        "section_height": "small",
-        "section_height_custom": 50,
-        "mobile_padding_block_start": 0,
-        "mobile_padding_block_end": 0,
-        "background_media": "none",
-        "background_color": "#ff835d",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_color": "",
-        "border_radius": 0,
-        "padding-block-start": 48,
-        "padding-block-end": 100
-      }
-    },
-    "wavy_marquee": {
-      "type": "bacii-marquee",
-      "settings": {
-        "text": "♡ Made for big personalities ♡ 100% Organic Cotton ♡ Designed in Australia ♡ Original Illustrations ♡ Made to be passed down ♡ Ethically Made ♡ Made for big personalities ♡ 100% Organic Cotton ♡ Designed in Australia ♡ Original Illustrations ♡ Made to be passed down ♡ Ethically Made",
-        "bg_color": "#f5a8b8",
-        "text_color": "#fcf5ef",
-        "separator": "♡",
-        "separator_scale": 55,
-        "text_scale": 34,
-        "band_thickness": 56,
-        "band_height": 110,
-        "speed": 50,
-        "overlap": 48
-      }
-    },
     "product_list_fa6P9H": {
       "type": "product-list",
       "blocks": {
@@ -521,6 +414,113 @@
         "background_color": "{{ settings.color_palette.background }}",
         "padding-block-start": 48,
         "padding-block-end": 48
+      }
+    },
+    "section_GFViaT": {
+      "type": "section",
+      "blocks": {
+        "text_iK86Ff": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2>Bacii was created to celebrate the big personalities packed into little people.</h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-heading--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#fcf5ef",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_qGqBm6": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Inspired by the funny things kids say, do and obsess over, our collections are designed for the little characters who keep us laughing every day.</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "0.75rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "#fcf5ef",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_iK86Ff",
+        "text_qGqBm6"
+      ],
+      "name": "t:names.rich_text_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 25,
+        "section_width": "page-width",
+        "section_height": "small",
+        "section_height_custom": 50,
+        "mobile_padding_block_start": 0,
+        "mobile_padding_block_end": 0,
+        "background_media": "none",
+        "background_color": "#ff835d",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 48,
+        "padding-block-end": 100
+      }
+    },
+    "wavy_marquee": {
+      "type": "bacii-marquee",
+      "settings": {
+        "text": "♡ Made for big personalities ♡ 100% Organic Cotton ♡ Designed in Australia ♡ Original Illustrations ♡ Made to be passed down ♡ Ethically Made ♡ Made for big personalities ♡ 100% Organic Cotton ♡ Designed in Australia ♡ Original Illustrations ♡ Made to be passed down ♡ Ethically Made",
+        "bg_color": "#f5a8b8",
+        "text_color": "#fcf5ef",
+        "separator": "♡",
+        "separator_scale": 55,
+        "text_scale": 34,
+        "band_thickness": 56,
+        "band_height": 110,
+        "speed": 50,
+        "overlap": 48
       }
     },
     "value_props_butter": {
@@ -1938,12 +1938,12 @@
   },
   "order": [
     "hero_jVaWmY",
-    "section_GFViaT",
-    "wavy_marquee",
     "product_list_fa6P9H",
+    "shop_collections",
+    "wavy_marquee",
+    "section_GFViaT",
     "value_props_butter",
     "about_split",
-    "shop_collections",
     "bacii_club_Ud8yyB",
     "our_vision_split",
     "featured_blog",
