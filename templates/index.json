@@ -1341,6 +1341,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "About Us",
       "settings": {
         "media_position": "left",
@@ -1608,6 +1609,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "Our Vision",
       "settings": {
         "media_position": "right",
@@ -1747,6 +1749,7 @@
           "block_order": []
         }
       },
+      "disabled": true,
       "name": "From the Blog",
       "settings": {
         "blog": "news",
