@@ -258,7 +258,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h6><strong>100% organic cotton kidswear. Designed in Australia.</strong></h6>",
+                "text": "<h6>100% organic cotton kidswear. Designed in Australia.</h6>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
