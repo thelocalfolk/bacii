@@ -258,7 +258,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h6>100% organic cotton kidswear. Designed in Australia.</h6>",
+                "text": "<h1>The Good Stuff</h1><p>100% organic cotton kidswear. Designed in Australia.</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -422,11 +422,11 @@
         "collections_heading": {
           "type": "text",
           "settings": {
-            "text": "<p>Shop Snack Attack now</p>",
+            "text": "<h1>Shop By Category</h1>",
             "width": "fill",
             "max_width": "normal",
             "alignment": "center",
-            "type_preset": "h2",
+            "type_preset": "h3",
             "font": "var(--font-heading--family)",
             "font_size": "",
             "line_height": "normal",
