@@ -1156,7 +1156,7 @@
             "max_width": 1100,
             "corner_styling": "soft",
             "quote_marks_style": "serif",
-            "card_color": "#F9F9F9",
+            "card_color": "#FFECA8",
             "stars_and_quote_marks_color": "{{ settings.color_palette.color1 }}",
             "text_color": "{{ settings.color_palette.foreground }}",
             "arrows_color": "{{ settings.color_palette.foreground }}",
