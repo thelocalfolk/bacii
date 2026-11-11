@@ -258,11 +258,11 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h1>The Good Stuff</h1><p>100% organic cotton kidswear. Designed in Australia.</p>",
+                "text": "<p>Shop Bacii</p><p>100% organic cotton kidswear. Designed in Australia.</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h5",
+                "type_preset": "h3",
                 "font": "var(--font-heading--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
