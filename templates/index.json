@@ -258,11 +258,11 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<p>Shop Bacii</p><p>100% organic cotton kidswear. Designed in Australia.</p>",
+                "text": "<p>Shop Bacii</p><h5>100% organic cotton. Designed in Australia.</h5>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h3",
+                "type_preset": "h5",
                 "font": "var(--font-heading--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
