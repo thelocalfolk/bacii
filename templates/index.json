@@ -258,11 +258,11 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<p>Shop Bacii</p><h5>100% organic cotton. Designed in Australia.</h5>",
+                "text": "<h5>Our Faves</h5>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h5",
+                "type_preset": "h3",
                 "font": "var(--font-heading--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
