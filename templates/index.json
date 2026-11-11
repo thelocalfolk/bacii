@@ -525,7 +525,7 @@
         "mobile_card_size": "60cqw",
         "columns_gap": 8,
         "bento_gap": 8,
-        "rows_gap": 8,
+        "rows_gap": 10,
         "max_collections": 4,
         "icons_style": "arrow",
         "icons_shape": "none",
@@ -533,7 +533,7 @@
         "gap": 28,
         "background_color": "{{ settings.color_palette.background }}",
         "padding-block-start": 35,
-        "padding-block-end": 40
+        "padding-block-end": 54
       }
     },
     "wavy_marquee": {
@@ -558,7 +558,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2>Bacii was created to celebrate the big personalities packed into little people.</h2>",
+            "text": "<h4>Bacii was created to celebrate the big personalities packed into little people.</h4>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "center",
