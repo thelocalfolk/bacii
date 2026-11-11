@@ -1149,7 +1149,7 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "flex-start",
-        "gap": 32,
+        "gap": 0,
         "section_width": "page-width",
         "section_height": "fit",
         "section_height_custom": 50,
@@ -1937,6 +1937,7 @@
         "nl_text",
         "newsletter_form"
       ],
+      "disabled": true,
       "name": "Newsletter",
       "settings": {
         "content_direction": "row",
