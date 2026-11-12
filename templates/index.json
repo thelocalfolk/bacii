@@ -682,7 +682,7 @@
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "flex-start",
-            "gap": 11,
+            "gap": 0,
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -785,6 +785,7 @@
                 },
                 "col1_body": {
                   "type": "text",
+                  "disabled": true,
                   "settings": {
                     "text": "<p>Made from soft, GOTS-certified organic cotton that's gentle on growing bodies and durable enough for everyday play.</p>",
                     "width": "fill",
@@ -889,6 +890,7 @@
                 },
                 "col2_body": {
                   "type": "text",
+                  "disabled": true,
                   "settings": {
                     "text": "<p>Every graphic starts as an original Bacii character, inspired by the funny, messy and memorable moments of childhood.</p>",
                     "width": "fill",
@@ -993,6 +995,7 @@
                 },
                 "col3_body": {
                   "type": "text",
+                  "disabled": true,
                   "settings": {
                     "text": "<p>Quality fabrics, timeless fits and durable prints mean our pieces are made to be loved by more than one little personality.</p>",
                     "width": "fill",
@@ -1097,6 +1100,7 @@
                 },
                 "col4_body": {
                   "type": "text",
+                  "disabled": true,
                   "settings": {
                     "text": "<p>Produced in a carefully selected factory that shares our commitment to quality, responsibility and safe working conditions.</p>",
                     "width": "fill",
