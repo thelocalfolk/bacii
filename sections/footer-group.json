@@ -18,7 +18,7 @@
           "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
             "title": "Follow us on intagram @baciithelabel",
-            "title_color": "{{ settings.color_palette.foreground }}",
+            "title_color": "{{ settings.color_palette.color1 }}",
             "title_size_v2": 16,
             "alignment": "center",
             "instafeed_margin_top": 0,
