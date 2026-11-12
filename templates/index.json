@@ -1151,7 +1151,7 @@
         "vertical_alignment_flex_direction_column": "flex-start",
         "gap": 0,
         "section_width": "page-width",
-        "section_height": "fit",
+        "section_height": "small",
         "section_height_custom": 50,
         "mobile_padding_block_start": 0,
         "mobile_padding_block_end": 0,
