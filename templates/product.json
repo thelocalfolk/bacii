@@ -164,7 +164,7 @@
               "type": "text",
               "name": "Product description",
               "settings": {
-                "text": "<h5><strong>100% organic cotton&nbsp;</strong></h5><h5><strong>Relaxed, comfy fit&nbsp;</strong></h5><h5><strong>Designed in Australia&nbsp;</strong></h5>",
+                "text": "<h5><strong>100% organic cotton&nbsp;</strong></h5><h5><strong>relaxed, comfy fit&nbsp;</strong></h5><h5><strong>designed in Australia&nbsp;</strong></h5>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
