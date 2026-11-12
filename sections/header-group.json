@@ -17,7 +17,7 @@
         "announcement_BxgCk9": {
           "type": "_announcement",
           "settings": {
-            "text": "BLACK FRIDAY | 13.11 🩵 20% OFF SITEWIDE — SIGN UP HERE FOR YOUR CODE",
+            "text": "BLACK FRIDAY IS ON 20% OFF SITEWIDE - SIGN UP TO RECEIVE YOUR CODE!&nbsp;",
             "link": "https://bear--roo-co-pry-ltd.myklpages.com/l/VPNMMP",
             "font": "var(--font-body--family)",
             "font_size": "",
@@ -36,7 +36,7 @@
       "settings": {
         "speed": 5,
         "section_width": "full-width",
-        "background_color": "#7BD8B3",
+        "background_color": "#7bd8b3",
         "divider_width": 0,
         "divider_color": "",
         "padding-block-start": 13,
