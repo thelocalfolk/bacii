@@ -1436,8 +1436,8 @@
         "arrow_background": "#ffffff",
         "arrow_color": "#59697a",
         "section_width": "page-width",
-        "padding_block_start": 48,
-        "padding_block_end": 48
+        "padding_block_start": 32,
+        "padding_block_end": 32
       }
     },
     "our_vision_split": {
