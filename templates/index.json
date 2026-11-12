@@ -16,7 +16,7 @@
           "type": "text",
           "name": "Heading",
           "settings": {
-            "text": "<h2>Little clothes.<br/>Big personalities.</h2>",
+            "text": "<p>BLACK FRIDAY<br/>20% OFF SITEWIDE</p>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
