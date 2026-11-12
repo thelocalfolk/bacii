@@ -164,7 +164,7 @@
               "type": "text",
               "name": "Product description",
               "settings": {
-                "text": "<p><strong>100% organic cotton</strong>&nbsp;— soft on little skin</p><p><strong>Relaxed, comfy fit&nbsp;</strong>— made for everyday adventures</p><p><strong>Designed in Australia</strong>&nbsp;— for big little personalities</p>",
+                "text": "<h5><strong>100% organic cotton&nbsp;</strong></h5><h5><strong>Relaxed, comfy fit&nbsp;</strong></h5><h5><strong>Designed in Australia&nbsp;</strong></h5>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -202,7 +202,7 @@
                 "case": "none",
                 "text_color": "",
                 "padding-block-start": 0,
-                "padding-block-end": 0,
+                "padding-block-end": 10,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
