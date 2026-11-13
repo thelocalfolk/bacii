@@ -42,7 +42,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<h5>BLACK FRIDAY | 20% OFF&nbsp;</h5><h5>Use code BACIIBF - Limited time only.</h5>",
+            "text": "<h5>BLACK FRIDAY | 20% OFF&nbsp;</h5><p>Automatically applied at checkout. Limited time only!&nbsp;</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
