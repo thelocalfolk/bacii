@@ -16,7 +16,7 @@
           "type": "text",
           "name": "Heading",
           "settings": {
-            "text": "<p>BLACK FRIDAY<br/>20% OFF SITEWIDE</p>",
+            "text": "<p><strong>LAST CHANCE!&nbsp;</strong></p><p><strong>20% OFF ENDS SUNDAY</strong></p>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
