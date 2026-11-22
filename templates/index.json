@@ -16,7 +16,7 @@
           "type": "text",
           "name": "Heading",
           "settings": {
-            "text": "<p><strong>LAST CHANCE!&nbsp;</strong></p><p><strong>20% OFF ENDS SUNDAY</strong></p>",
+            "text": "<p><strong>Little Clothes.&nbsp;</strong></p><p><strong>Big Personalities.</strong></p>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",

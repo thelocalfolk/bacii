@@ -42,7 +42,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><strong>LAST CHANCE! 20% OFF ENDS SUNDAY</strong></p><p><strong>Code automatically applied at checkout</strong></p>",
+            "text": "<p><strong>LAST CHANCE! 20% OFF ENDS SUNDAY 11:59PM</strong></p><p><strong>Code automatically applied at checkout</strong></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
