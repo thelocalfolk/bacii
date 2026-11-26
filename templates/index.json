@@ -542,9 +542,9 @@
             "display_order": "media_first",
             "no_image_fallback": "review_text_only",
             "max_reviews": 20,
-            "review_length": "medium",
-            "text_size": "medium",
-            "image_ratio": "1",
+            "review_length": "small",
+            "text_size": "small",
+            "image_ratio": "0.75",
             "reviews_shown": 4,
             "show_reviewer_name": true,
             "show_product_name": true,
@@ -558,7 +558,7 @@
             "stars_color": "#007DFE",
             "arrows_color": "#000000",
             "transition_speed": 5,
-            "header_text": "Little Clothes, Big Love.",
+            "header_text": "Big Love.",
             "show_average_rating": true,
             "rating_display": "default"
           }
