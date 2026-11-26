@@ -121,56 +121,6 @@
             "speed": 3
           },
           "blocks": {}
-        },
-        "sticker_snack": {
-          "type": "sticker",
-          "name": "Snack Attack bubble",
-          "settings": {
-            "asset_filename": "sticker-pink-sun-alt.svg",
-            "text": "",
-            "text_color": "#fcf5ef",
-            "text_size": 15,
-            "size": 180,
-            "pos_x": 89,
-            "pos_y": 39,
-            "rotate": 4,
-            "flip_horizontal": false,
-            "hero_fullbleed": true,
-            "split_fullbleed": false,
-            "hide_on_mobile": false,
-            "mobile_inflow": false,
-            "size_mobile": 115,
-            "pos_x_mobile": 16,
-            "pos_y_mobile": 33,
-            "animation": "wiggle",
-            "speed": 4
-          },
-          "blocks": {}
-        },
-        "sticker_pudding": {
-          "type": "sticker",
-          "name": "Pudding bubble",
-          "settings": {
-            "asset_filename": "sticker-waving-arms.svg",
-            "text": "",
-            "text_color": "#fcf5ef",
-            "text_size": 15,
-            "size": 150,
-            "pos_x": 76,
-            "pos_y": 47,
-            "rotate": -3,
-            "flip_horizontal": false,
-            "hero_fullbleed": true,
-            "split_fullbleed": false,
-            "hide_on_mobile": false,
-            "mobile_inflow": false,
-            "size_mobile": 130,
-            "pos_x_mobile": 28,
-            "pos_y_mobile": 47,
-            "animation": "float",
-            "speed": 4
-          },
-          "blocks": {}
         }
       },
       "block_order": [
@@ -178,9 +128,7 @@
         "text_subheading",
         "spacer_PPrhjA",
         "button_cta",
-        "sticker_pretzel",
-        "sticker_snack",
-        "sticker_pudding"
+        "sticker_pretzel"
       ],
       "name": "Hero",
       "settings": {
