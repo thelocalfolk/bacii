@@ -411,7 +411,7 @@
         "section_width": "page-width",
         "horizontal_alignment": "flex-start",
         "gap": 28,
-        "background_color": "#FEFEFE",
+        "background_color": "#fefefe",
         "padding-block-start": 35,
         "padding-block-end": 26
       }
@@ -531,7 +531,7 @@
         "icons_shape": "none",
         "section_width": "page-width",
         "gap": 28,
-        "background_color": "#FEFEFE",
+        "background_color": "#fefefe",
         "padding-block-start": 17,
         "padding-block-end": 68
       }
@@ -554,6 +554,14 @@
     "section_GFViaT": {
       "type": "section",
       "blocks": {
+        "judge_me_reviews_review_widget_homepage_wK6i6G": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget_homepage/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "product": "",
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
+        },
         "text_iK86Ff": {
           "type": "text",
           "name": "t:names.heading",
@@ -608,6 +616,7 @@
         }
       },
       "block_order": [
+        "judge_me_reviews_review_widget_homepage_wK6i6G",
         "text_iK86Ff",
         "text_qGqBm6"
       ],
@@ -1156,7 +1165,7 @@
         "mobile_padding_block_start": 0,
         "mobile_padding_block_end": 0,
         "background_media": "none",
-        "background_color": "#FEFEFE",
+        "background_color": "#fefefe",
         "video_position": "cover",
         "background_image_position": "cover",
         "toggle_overlay": false,
@@ -1433,7 +1442,7 @@
         "heading_color": "{{ settings.color_palette.color1 }}",
         "text_color": "#59697a",
         "background_color": "{{ settings.color_palette.background }}",
-        "arrow_background": "#FEFEFE",
+        "arrow_background": "#fefefe",
         "arrow_color": "#59697a",
         "section_width": "page-width",
         "padding_block_start": 32,
@@ -2000,6 +2009,37 @@
         "padding-block-start": 0,
         "padding-block-end": 0
       }
+    },
+    "1795693047c2c16ac5": {
+      "type": "_blocks",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
     }
   },
   "order": [
@@ -2015,6 +2055,7 @@
     "featured_blog",
     "17943688566539e54b",
     "newsletter_bacii_club",
-    "1794368943df5a44c8"
+    "1794368943df5a44c8",
+    "1795693047c2c16ac5"
   ]
 }
