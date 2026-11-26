@@ -506,7 +506,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p><strong>Little clothes. Big love.</strong></p>",
+            "text": "",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "center",
@@ -527,6 +527,41 @@
             "padding-inline-end": 0
           },
           "blocks": {}
+        },
+        "judge_me_reviews_cards_carousel_qBgaqC": {
+          "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "show_sample_reviews": true,
+            "reviews_selection": "all",
+            "products": [],
+            "filter_pinned": false,
+            "filter_featured": false,
+            "filter_custom_tags": "",
+            "star_rating": "all",
+            "show_review_media": true,
+            "display_order": "media_first",
+            "no_image_fallback": "review_text_only",
+            "max_reviews": 20,
+            "review_length": "medium",
+            "text_size": "medium",
+            "image_ratio": "1",
+            "reviews_shown": 4,
+            "show_reviewer_name": true,
+            "show_product_name": true,
+            "hide_arrows_mobile": true,
+            "arrows_position": "sides",
+            "max_width": 1100,
+            "corner_styling": "soft",
+            "header_text_color": "{{ settings.color_palette.background }}",
+            "text_color": "{{ settings.color_palette.foreground }}",
+            "card_color": "{{ settings.color_palette.color1 }}",
+            "stars_color": "#007DFE",
+            "arrows_color": "#000000",
+            "transition_speed": 5,
+            "header_text": "Little Clothes, Big Love.",
+            "show_average_rating": true,
+            "rating_display": "default"
+          }
         },
         "judge_me_reviews_review_snippet_widget_6YwzgU": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_snippet_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
@@ -582,6 +617,7 @@
       },
       "block_order": [
         "text_iK86Ff",
+        "judge_me_reviews_cards_carousel_qBgaqC",
         "judge_me_reviews_review_snippet_widget_6YwzgU",
         "text_qGqBm6"
       ],
@@ -2005,6 +2041,37 @@
         "padding-block-start": 0,
         "padding-block-end": 0
       }
+    },
+    "1795694510a7ad9e5b": {
+      "type": "_blocks",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
     }
   },
   "order": [
@@ -2021,6 +2088,7 @@
     "17943688566539e54b",
     "newsletter_bacii_club",
     "1794368943df5a44c8",
-    "1795693047c2c16ac5"
+    "1795693047c2c16ac5",
+    "1795694510a7ad9e5b"
   ]
 }
