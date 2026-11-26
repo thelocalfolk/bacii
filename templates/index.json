@@ -484,21 +484,6 @@
         "padding-block-end": 68
       }
     },
-    "wavy_marquee": {
-      "type": "bacii-marquee",
-      "settings": {
-        "text": "♡ Made for big personalities ♡ 100% Organic Cotton ♡ Designed in Australia ♡ Original Illustrations ♡ Made to be passed down ♡ Ethically Made ♡ Made for big personalities ♡ 100% Organic Cotton ♡ Designed in Australia ♡ Original Illustrations ♡ Made to be passed down ♡ Ethically Made",
-        "bg_color": "#f5a8b8",
-        "text_color": "#fcf5ef",
-        "separator": "♡",
-        "separator_scale": 55,
-        "text_scale": 34,
-        "band_thickness": 56,
-        "band_height": 110,
-        "speed": 50,
-        "overlap": 48
-      }
-    },
     "section_GFViaT": {
       "type": "section",
       "blocks": {
@@ -625,6 +610,21 @@
         "border_radius": 0,
         "padding-block-start": 15,
         "padding-block-end": 15
+      }
+    },
+    "wavy_marquee": {
+      "type": "bacii-marquee",
+      "settings": {
+        "text": "♡ Made for big personalities ♡ 100% Organic Cotton ♡ Designed in Australia ♡ Original Illustrations ♡ Made to be passed down ♡ Ethically Made ♡ Made for big personalities ♡ 100% Organic Cotton ♡ Designed in Australia ♡ Original Illustrations ♡ Made to be passed down ♡ Ethically Made",
+        "bg_color": "#f5a8b8",
+        "text_color": "#fcf5ef",
+        "separator": "♡",
+        "separator_scale": 55,
+        "text_scale": 34,
+        "band_thickness": 56,
+        "band_height": 110,
+        "speed": 50,
+        "overlap": 48
       }
     },
     "value_props_butter": {
@@ -2052,8 +2052,8 @@
     "hero_jVaWmY",
     "product_list_fa6P9H",
     "shop_collections",
-    "wavy_marquee",
     "section_GFViaT",
+    "wavy_marquee",
     "value_props_butter",
     "about_split",
     "bacii_club_Ud8yyB",
