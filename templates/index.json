@@ -539,7 +539,7 @@
             "min_star_rating": "5",
             "show_review_media": true,
             "max_reviews": 30,
-            "review_length": "small",
+            "review_length": "medium",
             "text_size": "medium",
             "max_width": 1140,
             "max_image_size": "medium",
