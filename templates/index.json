@@ -156,7 +156,7 @@
         "mobile_content_position": "flex-end",
         "background_color": "rgba(0,0,0,0)",
         "toggle_overlay": false,
-        "overlay_color": "#FCF5EF00",
+        "overlay_color": "rgba(0,0,0,0)",
         "overlay_style": "gradient",
         "gradient_direction": "to top",
         "blurred_reflection": false,
@@ -548,7 +548,7 @@
             "corner_styling": "soft",
             "text_color": "",
             "card_color": "{{ settings.color_palette.color1 }}",
-            "stars_color": "#007DFE",
+            "stars_color": "#007dfe",
             "arrows_color": "",
             "arrows_background_color": ""
           }
