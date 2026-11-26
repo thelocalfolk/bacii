@@ -563,31 +563,6 @@
             "rating_display": "default"
           }
         },
-        "judge_me_reviews_review_snippet_widget_6YwzgU": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_snippet_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "reviews_selection": "all",
-            "products": [],
-            "filter_pinned": false,
-            "filter_featured": false,
-            "filter_custom_tags": "",
-            "min_star_rating": "5",
-            "show_review_media": true,
-            "max_reviews": 30,
-            "review_length": "medium",
-            "text_size": "medium",
-            "max_width": 1140,
-            "max_image_size": "medium",
-            "arrows_visibility": "always_shown",
-            "transition_speed": 4,
-            "corner_styling": "soft",
-            "text_color": "",
-            "card_color": "{{ settings.color_palette.color1 }}",
-            "stars_color": "#007dfe",
-            "arrows_color": "",
-            "arrows_background_color": ""
-          }
-        },
         "text_qGqBm6": {
           "type": "text",
           "name": "t:names.text",
@@ -618,7 +593,6 @@
       "block_order": [
         "text_iK86Ff",
         "judge_me_reviews_cards_carousel_qBgaqC",
-        "judge_me_reviews_review_snippet_widget_6YwzgU",
         "text_qGqBm6"
       ],
       "name": "t:names.rich_text_section",
