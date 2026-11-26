@@ -531,7 +531,7 @@
         "icons_shape": "none",
         "section_width": "page-width",
         "gap": 28,
-        "background_color": "{{ settings.color_palette.background }}",
+        "background_color": "#FEFEFE",
         "padding-block-start": 17,
         "padding-block-end": 68
       }
@@ -1156,7 +1156,7 @@
         "mobile_padding_block_start": 0,
         "mobile_padding_block_end": 0,
         "background_media": "none",
-        "background_color": "{{ settings.color_palette.background }}",
+        "background_color": "#FEFEFE",
         "video_position": "cover",
         "background_image_position": "cover",
         "toggle_overlay": false,
@@ -1433,7 +1433,7 @@
         "heading_color": "{{ settings.color_palette.color1 }}",
         "text_color": "#59697a",
         "background_color": "{{ settings.color_palette.background }}",
-        "arrow_background": "#ffffff",
+        "arrow_background": "#FEFEFE",
         "arrow_color": "#59697a",
         "section_width": "page-width",
         "padding_block_start": 32,
