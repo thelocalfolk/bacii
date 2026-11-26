@@ -597,7 +597,7 @@
             "max_image_size": "medium",
             "arrows_visibility": "always_shown",
             "transition_speed": 4,
-            "corner_styling": "inherit",
+            "corner_styling": "soft",
             "text_color": "",
             "card_color": "{{ settings.color_palette.color1 }}",
             "stars_color": "#007DFE",
