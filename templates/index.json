@@ -554,68 +554,11 @@
     "section_GFViaT": {
       "type": "section",
       "blocks": {
-        "judge_me_reviews_review_snippet_widget_6YwzgU": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_snippet_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "reviews_selection": "auto",
-            "products": [],
-            "filter_pinned": false,
-            "filter_featured": false,
-            "filter_custom_tags": "",
-            "min_star_rating": "5",
-            "show_review_media": true,
-            "max_reviews": 5,
-            "review_length": "medium",
-            "text_size": "medium",
-            "max_width": 1140,
-            "max_image_size": "small",
-            "arrows_visibility": "always_shown",
-            "transition_speed": 5,
-            "corner_styling": "inherit",
-            "text_color": "",
-            "card_color": "",
-            "stars_color": "",
-            "arrows_color": "",
-            "arrows_background_color": ""
-          }
-        },
-        "judge_me_reviews_reviews_grid_widget_DgrmBR": {
-          "type": "shopify://apps/judge-me-reviews/blocks/reviews_grid_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "show_sample_reviews": true,
-            "review_selection": "all",
-            "products": [],
-            "filter_pinned": false,
-            "filter_featured": false,
-            "filter_custom_tags": "",
-            "show_media_only": false,
-            "display_order": "media_first",
-            "card_grouping": "per_media",
-            "columns_desktop": 3,
-            "rows_desktop": 3,
-            "columns_mobile": "2",
-            "rows_mobile": 6,
-            "show_stars": true,
-            "show_reviewer_name": true,
-            "show_review_title_on_hover_desktop": true,
-            "max_width": 1100,
-            "corner_styling": "soft",
-            "card_spacing": "medium",
-            "header_text_color": "#000000",
-            "star_and_reviewer_name_color": "#F9F9F9",
-            "drop_shadow_color": "#000000",
-            "overlay_and_background_color": "#000000",
-            "content_color": "#F9F9F9",
-            "header_text": "From our customers",
-            "show_average_rating": true,
-            "rating_display": "default"
-          }
-        },
         "text_iK86Ff": {
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h4>Bacii was created to celebrate the big personalities packed into little people.</h4>",
+            "text": "<p><strong>Little clothes. Big love.</strong></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "center",
@@ -637,11 +580,36 @@
           },
           "blocks": {}
         },
+        "judge_me_reviews_review_snippet_widget_6YwzgU": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_snippet_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "reviews_selection": "all",
+            "products": [],
+            "filter_pinned": false,
+            "filter_featured": false,
+            "filter_custom_tags": "",
+            "min_star_rating": "5",
+            "show_review_media": true,
+            "max_reviews": 30,
+            "review_length": "small",
+            "text_size": "medium",
+            "max_width": 1140,
+            "max_image_size": "medium",
+            "arrows_visibility": "always_shown",
+            "transition_speed": 5,
+            "corner_styling": "inherit",
+            "text_color": "",
+            "card_color": "{{ settings.color_palette.color1 }}",
+            "stars_color": "",
+            "arrows_color": "",
+            "arrows_background_color": ""
+          }
+        },
         "text_qGqBm6": {
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Inspired by the funny things kids say, do and obsess over, our collections are designed for the little characters who keep us laughing every day.</p>",
+            "text": "",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "center",
@@ -665,9 +633,8 @@
         }
       },
       "block_order": [
-        "judge_me_reviews_review_snippet_widget_6YwzgU",
-        "judge_me_reviews_reviews_grid_widget_DgrmBR",
         "text_iK86Ff",
+        "judge_me_reviews_review_snippet_widget_6YwzgU",
         "text_qGqBm6"
       ],
       "name": "t:names.rich_text_section",
